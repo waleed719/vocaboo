@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vocaboo/screens/faqs.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -11,10 +10,12 @@ class ProfileScreen extends StatelessWidget {
         title: 'Personal Information',
         subtitle: 'Control Your Account Security here',
         icondata: Icons.person,
-        fn: () {},
+        fn: () {
+          Navigator.pushNamed(context, '/personalInfo');
+        },
       ),
       ProfileListTile(
-        title: 'Language optiond',
+        title: 'Language options',
         subtitle: 'Choose which language to use in the app',
         icondata: Icons.language,
         fn: () {},
@@ -29,23 +30,24 @@ class ProfileScreen extends StatelessWidget {
         title: 'Delete Account',
         subtitle: 'Check how to delete your account',
         icondata: Icons.delete,
-        fn: () {},
+        fn: () {
+          Navigator.pushNamed(context, '/deleteAccount');
+        },
       ),
       ProfileListTile(
         title: 'Support Center',
         subtitle: 'See how to contact us',
         icondata: Icons.messenger,
-        fn: () {},
+        fn: () {
+          Navigator.pushNamed(context, '/supportCenter');
+        },
       ),
       ProfileListTile(
-        title: 'FQA',
+        title: 'FAQs',
         subtitle: 'See Frequently Asked Questions',
         icondata: Icons.help_outlined,
         fn: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (builder) => const FAQScreen()),
-          );
+          Navigator.pushNamed(context, '/faqs');
         },
       ),
     ];

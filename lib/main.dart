@@ -4,12 +4,16 @@ import 'package:vocaboo/provider/language_provider.dart';
 import 'package:vocaboo/routes/routes.dart';
 import 'package:vocaboo/screens/account_process/confirmation_screen.dart';
 import 'package:vocaboo/screens/account_process/language_selection_screen.dart';
+import 'package:vocaboo/screens/delete_account_screen.dart';
+import 'package:vocaboo/screens/faqs.dart';
 import 'package:vocaboo/screens/home_screen.dart';
 import 'package:vocaboo/screens/account_process/login_screen.dart';
 import 'package:vocaboo/screens/language_progress_screen.dart';
 import 'package:vocaboo/screens/onboarding_screen.dart';
+import 'package:vocaboo/screens/personal_info_screen.dart';
 import 'package:vocaboo/screens/setting_screen.dart';
 import 'package:vocaboo/screens/account_process/signup_screen.dart';
+import 'package:vocaboo/screens/support_center_screen.dart';
 
 void main() {
   runApp(
@@ -43,6 +47,10 @@ class MyApp extends StatelessWidget {
             (context) => const LanguageSelectionScreen(),
         AppRoutes.languageProgressScreen:
             (context) => const LanguageProgressScreen(),
+        AppRoutes.faqs: (context) => const FAQScreen(),
+        AppRoutes.personaInfo: (context) => const PersonalInfoScreen(),
+        AppRoutes.deleteAccount: (context) => const DeleteAccountScreen(),
+        AppRoutes.supportCenter: (context) => const SupportCenterScreen(),
       },
       // home: const OnboardingScreen(),
     );

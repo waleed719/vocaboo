@@ -7,4 +7,8 @@ class AppRoutes {
   static const String confirmation = '/confirmation';
   static const String languageSelection = '/languageSelection';
   static const String languageProgressScreen = '/languageProgress';
+  static const String faqs = '/faqs';
+  static const String personaInfo = '/personalInfo';
+  static const String deleteAccount = '/deleteAccount';
+  static const String supportCenter = '/supportCenter';
 }
