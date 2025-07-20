@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:vocaboo/screens/grammer_screens/grammar_screen.dart';
+import 'package:vocaboo/screens/listening_screens/listening_screen.dart';
+import 'package:vocaboo/screens/speaking_screens/speaking_screen.dart';
+import 'package:vocaboo/screens/vocab_screens/vocab_screen.dart';
 import 'package:vocaboo/utils/leaderboard_list.dart';
 
 class LanguageProgressScreen extends StatefulWidget {
@@ -51,6 +55,13 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
         Icons.mic_outlined,
       ),
       _buildProgressCircle('Listening', 25, 8, Colors.pink, Icons.volume_up),
+    ];
+
+    final List<Widget> screens = [
+      const GrammarScreen(),
+      const VocabScreen(),
+      const SpeakingScreen(),
+      const ListeningScreen(),
     ];
 
     return Scaffold(
@@ -191,7 +202,17 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                                 ),
                             itemBuilder: (BuildContext context, int index) {
                               final item = myGridItems[index];
-                              return item;
+                              return GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (builder) => screens[index],
+                                    ),
+                                  );
+                                },
+                                child: item,
+                              );
                             },
                           ),
                         ),

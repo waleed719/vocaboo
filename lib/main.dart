@@ -4,18 +4,19 @@ import 'package:vocaboo/provider/language_provider.dart';
 import 'package:vocaboo/routes/routes.dart';
 import 'package:vocaboo/screens/account_process/confirmation_screen.dart';
 import 'package:vocaboo/screens/account_process/language_selection_screen.dart';
-import 'package:vocaboo/screens/delete_account_screen.dart';
-import 'package:vocaboo/screens/faqs.dart';
+import 'package:vocaboo/screens/profile_screens/delete_account_screen.dart';
+import 'package:vocaboo/screens/profile_screens/faqs.dart';
 import 'package:vocaboo/screens/home_screen.dart';
 import 'package:vocaboo/screens/account_process/login_screen.dart';
 import 'package:vocaboo/screens/language_progress_screen.dart';
 import 'package:vocaboo/screens/onboarding_screen.dart';
-import 'package:vocaboo/screens/personal_info_screen.dart';
-import 'package:vocaboo/screens/setting_screen.dart';
+import 'package:vocaboo/screens/profile_screens/personal_info_screen.dart';
+import 'package:vocaboo/screens/profile_screens/setting_screen.dart';
 import 'package:vocaboo/screens/account_process/signup_screen.dart';
-import 'package:vocaboo/screens/support_center_screen.dart';
+import 'package:vocaboo/screens/profile_screens/support_center_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => LanguageProvider())],
