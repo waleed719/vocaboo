@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vocaboo/screens/listening_screens/listening_detail_screen.dart';
 
 class ListeningScreen extends StatefulWidget {
   const ListeningScreen({super.key});
@@ -132,16 +133,16 @@ class _ListeningScreenState extends State<ListeningScreen> {
                               totalStars: (10 + levelNum) * 3,
                               isLocked: isLocked,
                               onTap: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder:
-                                //         (context) => VocabularyDetailScreen(
-                                //           level: levelNum,
-                                //           theme: 'greetings',
-                                //         ),
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder:
+                                        (context) => ListeningDetailScreen(
+                                          level: levelNum,
+                                          theme: 'greetings',
+                                        ),
+                                  ),
+                                );
                               },
                             );
                           },

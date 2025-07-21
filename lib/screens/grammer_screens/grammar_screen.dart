@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vocaboo/screens/grammer_screens/grammar_detail_screen.dart';
 
 class GrammarScreen extends StatefulWidget {
   const GrammarScreen({super.key});
@@ -132,16 +133,16 @@ class _GrammarScreenState extends State<GrammarScreen> {
                               totalStars: (10 + levelNum) * 3,
                               isLocked: isLocked,
                               onTap: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder:
-                                //         (context) => VocabularyDetailScreen(
-                                //           level: levelNum,
-                                //           theme: 'greetings',
-                                //         ),
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder:
+                                        (context) => GrammarDetailScreen(
+                                          level: levelNum,
+                                          theme: 'greetings',
+                                        ),
+                                  ),
+                                );
                               },
                             );
                           },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vocaboo/screens/speaking_screens/speaking_detial_screen.dart';
 
 class SpeakingScreen extends StatefulWidget {
   const SpeakingScreen({super.key});
@@ -132,16 +133,16 @@ class _SpeakingScreenState extends State<SpeakingScreen> {
                               totalStars: (10 + levelNum) * 3,
                               isLocked: isLocked,
                               onTap: () {
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder:
-                                //         (context) => VocabularyDetailScreen(
-                                //           level: levelNum,
-                                //           theme: 'greetings',
-                                //         ),
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder:
+                                        (context) => SpeakingDetailScreen(
+                                          level: levelNum,
+                                          theme: 'greetings',
+                                        ),
+                                  ),
+                                );
                               },
                             );
                           },
