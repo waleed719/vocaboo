@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:vocaboo/widgets/customtextfield.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -16,6 +17,37 @@ class _SignupScreenState extends State<SignupScreen> {
     TextEditingController nameController = TextEditingController();
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+
+    Future<String?> signInUser({
+      required String name,
+      required String email,
+      required String password,
+    }) async {
+      final supabase = Supabase.instance.client;
+      try {
+        final response = await supabase.auth.signUp(
+          email: email,
+          password: password,
+        );
+        final userId = response.user?.id;
+        if (userId == null) return "Failed to SignIn";
+        await supabase.from('users').insert({
+          'id': userId,
+          'email': email,
+          'username': name,
+          'learning_language': 'English', // default or dynamic
+          'stars': 0,
+          'hours': 0,
+          'weekly_progress': 0,
+          'all_time_progress': 0,
+          'profile_picture': null,
+        });
+        return null;
+      } catch (e) {
+        return e.toString();
+      }
+    }
+
     return Scaffold(
       resizeToAvoidBottomInset: true, // Important for keyboard
       body: SafeArea(
@@ -105,7 +137,28 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                     const SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed: () {
+                      onPressed: () async {
+                        final error = await signInUser(
+                          name: nameController.text.trim(),
+                          email: emailController.text.trim(),
+                          password: passwordController.text.trim(),
+                        );
+
+                        if (error != null) {
+                          if (context.mounted) {
+                            ScaffoldMessenger.of(
+                              context,
+                            ).showSnackBar(SnackBar(content: Text(error)));
+                          }
+                        } else {
+                          if (context.mounted) {
+                            Navigator.pushReplacementNamed(
+                              context,
+                              '/languageSelection',
+                            );
+                          }
+                        }
+
                         // Your sign-up logic here
                       },
                       style: ElevatedButton.styleFrom(

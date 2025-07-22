@@ -1,6 +1,9 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 import 'package:vocaboo/widgets/customtextfield.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +13,20 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  Future<String?> login({
+    required String email,
+    required String password,
+  }) async {
+    final supabase = Supabase.instance.client;
+
+    try {
+      await supabase.auth.signInWithPassword(email: email, password: password);
+      return null;
+    } catch (e) {
+      return e.toString();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final formKey = GlobalKey<FormState>();
@@ -97,11 +114,30 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     const SizedBox(height: 20),
                     ElevatedButton(
-                      onPressed:
-                          () => Navigator.pushReplacementNamed(
-                            context,
-                            '/languageSelection',
-                          ),
+                      onPressed: () async {
+                        final error = await login(
+                          email: emailController.text.trim(),
+                          password: passwordController.text.trim(),
+                        );
+                        if (error != null) {
+                          if (context.mounted) {
+                            ScaffoldMessenger.of(
+                              context,
+                            ).showSnackBar(SnackBar(content: Text(error)));
+                          }
+                        } else {
+                          if (context.mounted) {
+                            await Provider.of<UserProvider>(
+                              context,
+                              listen: false,
+                            ).fetchUserData();
+
+                            if (context.mounted) {
+                              Navigator.pushReplacementNamed(context, '/home');
+                            }
+                          }
+                        }
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Theme.of(context).colorScheme.primary,
                         foregroundColor:

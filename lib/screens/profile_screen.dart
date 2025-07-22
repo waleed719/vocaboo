@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -51,6 +53,7 @@ class ProfileScreen extends StatelessWidget {
         },
       ),
     ];
+    final user = Provider.of<UserProvider>(context);
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -64,13 +67,13 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             children: [
               ListTile(
-                title: Text("Emma Watson"),
+                title: Text(user.username),
                 titleTextStyle: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
-                subtitle: Text('emmawatson@gmail.com'),
+                subtitle: Text(user.email),
                 subtitleTextStyle: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w300,
@@ -81,12 +84,15 @@ class ProfileScreen extends StatelessWidget {
                   width: 60,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                      'https://celebmafia.com/wp-content/uploads/2017/02/emma-watson-photoshoot-february-2017-1.jpg',
+                      user.profilePicture,
+                      // 'https://celebmafia.com/wp-content/uploads/2017/02/emma-watson-photoshoot-february-2017-1.jpg',
                     ),
                   ),
                 ),
                 trailing: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/personalInfo');
+                  },
                   icon: Icon(Icons.edit, color: Colors.white),
                 ),
               ),
@@ -125,7 +131,9 @@ class ProfileScreen extends StatelessWidget {
                           foregroundColor: Colors.red,
                           elevation: 0,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          user.logoutUser(context);
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

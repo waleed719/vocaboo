@@ -1,8 +1,9 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
-import 'dart:convert';
-import '../../models/vocab_model.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
+import '../../models/speaking_model.dart';
 
 class SpeakingDetailScreen extends StatefulWidget {
   final int level;
@@ -19,39 +20,45 @@ class SpeakingDetailScreen extends StatefulWidget {
 }
 
 class _SpeakingDetailScreenState extends State<SpeakingDetailScreen> {
-  List<VocabItem> _vocabList = [];
   bool _isLoading = true;
   String? _error;
-
+  SpeakingResponse? _data;
   final AudioPlayer _player = AudioPlayer();
+  final stt.SpeechToText _speech = stt.SpeechToText();
+  String _spokenText = "";
+  String _feedback = "";
+  int _currentIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    _fetchVocabData();
+    _fetchSpeakingData();
   }
 
-  Future<void> audioPlayer(String url) async {
-    try {
-      await _player.setUrl(url);
-      await _player.play();
-    } catch (e) {
-      ScaffoldMessenger(child: Text("Audio Playback Error: $e"));
-    }
-  }
-
-  Future<void> _fetchVocabData() async {
+  Future<void> _fetchSpeakingData() async {
     setState(() {
       _isLoading = true;
       _error = null;
     });
 
+    final url = Uri.parse(
+      'http://13.60.208.182:8000/speaking/?t=${DateTime.now().millisecondsSinceEpoch}',
+    );
+    final headers = {'Content-Type': 'application/json'};
+    final body = jsonEncode({'language': 'Japanese', 'level': widget.level});
+
     try {
-      final vocabItems = await fetchVocabData(widget.level);
-      setState(() {
-        _vocabList = vocabItems;
-        _isLoading = false;
-      });
+      final response = await http.post(url, headers: headers, body: body);
+      if (response.statusCode == 200) {
+        final jsonResponse = jsonDecode(response.body);
+        final parsed = SpeakingResponse.fromJson(jsonResponse);
+        setState(() {
+          _data = parsed;
+          _isLoading = false;
+        });
+      } else {
+        throw Exception("Failed: ${response.statusCode}");
+      }
     } catch (e) {
       setState(() {
         _error = e.toString();
@@ -60,264 +67,152 @@ class _SpeakingDetailScreenState extends State<SpeakingDetailScreen> {
     }
   }
 
-  Future<List<VocabItem>> fetchVocabData(int level) async {
-    final url = Uri.parse(
-      'http://13.60.208.182:8000/speaking/?t=${DateTime.now().millisecondsSinceEpoch}',
-    );
-    final headers = {'Content-Type': 'application/json'};
-    final body = jsonEncode({'language': 'Japanese', 'level': level});
-
+  Future<void> _playAudio(String url) async {
     try {
-      final response = await http
-          .post(url, headers: headers, body: body)
-          .timeout(
-            Duration(seconds: 30),
-            onTimeout: () => throw Exception('Request timed out'),
-          );
-
-      if (response.statusCode == 200) {
-        final jsonResponse = jsonDecode(response.body);
-        final vocabResponse = VocabularyResponse.fromJson(jsonResponse);
-        final rawContent = VocabularyContent.fromJson(
-          jsonDecode(vocabResponse.raw),
-        );
-
-        final vocabItems =
-            rawContent.vocabulary.map((vocabItem) {
-              final audioItem = vocabResponse.audio.firstWhere(
-                (audio) => audio.text == vocabItem.word,
-                orElse: () => AudioItem(text: vocabItem.word, audio: ''),
-              );
-              return vocabItem.copyWith(
-                audioUrl: audioItem.audio.isNotEmpty ? audioItem.audio : null,
-              );
-            }).toList();
-
-        return vocabItems;
-      } else {
-        throw Exception('Failed to load vocabulary: ${response.statusCode}');
-      }
+      await _player.setUrl(url);
+      await _player.play();
     } catch (e) {
-      throw Exception('Failed to load vocabulary: $e');
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Audio error: $e")));
     }
   }
 
-  void markAsCompleted(int index) {
-    setState(() {
-      _vocabList[index].isCompleted = !_vocabList[index].isCompleted;
-      _vocabList[index].lastReviewed = DateTime.now();
-    });
+  Future<void> _startListening(String expectedText) async {
+    bool available = await _speech.initialize();
+    if (available) {
+      _speech.listen(
+        onResult: (result) {
+          setState(() {
+            _spokenText = result.recognizedWords;
+            _evaluateSpeech(expectedText, _spokenText);
+          });
+        },
+      );
+    }
+  }
+
+  void _evaluateSpeech(String expected, String spoken) {
+    double score = _calculateSimilarity(expected, spoken);
+    if (score > 0.9) {
+      _feedback = "✅ Excellent!";
+    } else if (score > 0.7) {
+      _feedback = "⚠️ Good, but try again.";
+    } else {
+      _feedback =
+          "❌ Incorrect. Tips:\n• Speak slowly\n• Break into syllables\n• Re-listen the audio";
+    }
+  }
+
+  double _calculateSimilarity(String a, String b) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    int matches = 0;
+    int minLen = a.length < b.length ? a.length : b.length;
+    for (int i = 0; i < minLen; i++) {
+      if (a[i] == b[i]) matches++;
+    }
+    return matches / a.length;
   }
 
   @override
   Widget build(BuildContext context) {
+    final currentItem = _data?.audioList[_currentIndex];
+
     return Scaffold(
       appBar: AppBar(
         title: Text('${widget.theme} - Level ${widget.level}'),
         backgroundColor: Colors.blue.shade700,
         foregroundColor: Colors.white,
-        elevation: 0,
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue.shade700, Colors.blue.shade50],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
-        child:
-            _isLoading
-                ? const Center(
-                  child: CircularProgressIndicator(color: Colors.white),
-                )
-                : _error != null
-                ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.error_outline, size: 64, color: Colors.red),
-                      SizedBox(height: 16),
-                      Text(
-                        'Error: $_error',
-                        style: TextStyle(color: Colors.red, fontSize: 16),
-                        textAlign: TextAlign.center,
-                      ),
-                      SizedBox(height: 16),
-                      ElevatedButton(
-                        onPressed: _fetchVocabData,
-                        child: Text('Retry'),
-                      ),
-                    ],
-                  ),
-                )
-                : _vocabList.isEmpty
-                ? const Center(
-                  child: Text(
-                    'No vocabulary items found',
-                    style: TextStyle(fontSize: 18, color: Colors.grey),
-                  ),
-                )
-                : Column(
+      body:
+          _isLoading
+              ? Center(child: CircularProgressIndicator(color: Colors.blue))
+              : _error != null
+              ? Center(child: Text("Error: $_error"))
+              : _data == null || _data!.audioList.isEmpty
+              ? Center(child: Text("No data found"))
+              : Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
                   children: [
-                    // Fixed-height header
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            '${_vocabList.length} Words',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Progress: ${_vocabList.where((item) => item.isCompleted).length}/${_vocabList.length}',
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                        ],
+                    Text(
+                      currentItem!.text,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue.shade800,
                       ),
+                      textAlign: TextAlign.center,
                     ),
-                    // Expanded section for the list
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
-                          ),
-                        ),
-                        child: ListView.builder(
-                          padding: EdgeInsets.all(16),
-                          itemCount: _vocabList.length,
-                          itemBuilder: (context, index) {
-                            final item = _vocabList[index];
-                            return Card(
-                              margin: const EdgeInsets.only(bottom: 12),
-                              elevation: 2,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: ListTile(
-                                contentPadding: EdgeInsets.all(16),
-                                title: Text(
-                                  item.word,
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blue.shade700,
-                                  ),
-                                ),
-                                subtitle: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(height: 8),
-                                    Text(
-                                      item.translation,
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                    if (item.pronunciation.isNotEmpty) ...[
-                                      SizedBox(height: 4),
-                                      Text(
-                                        'Pronunciation: ${item.pronunciation}',
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          fontStyle: FontStyle.italic,
-                                          color: Colors.grey.shade600,
-                                        ),
-                                      ),
-                                    ],
-                                    if (item.example.isNotEmpty) ...[
-                                      SizedBox(height: 8),
-                                      Container(
-                                        padding: EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue.shade50,
-                                          borderRadius: BorderRadius.circular(
-                                            8,
-                                          ),
-                                        ),
-                                        child: Text(
-                                          item.example,
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            color: Colors.blue.shade800,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                    if (item.lastReviewed != null) ...[
-                                      SizedBox(height: 8),
-                                      Text(
-                                        'Last reviewed: ${item.lastReviewed!.toLocal().toString().split('.')[0]}',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                    ],
-                                  ],
-                                ),
-                                trailing: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    if (item.audioUrl != null)
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 4),
-                                        child: IconButton(
-                                          onPressed: () {
-                                            // print(item.audioUrl);
-                                            audioPlayer(item.audioUrl!);
-                                          },
-                                          icon: Icon(
-                                            Icons.volume_up,
-                                            color: Colors.blue.shade300,
-                                            size: 20,
-                                          ),
-                                        ),
-                                      ),
-                                    IconButton(
-                                      icon: Icon(
-                                        item.isCompleted
-                                            ? Icons.check_circle
-                                            : Icons.circle_outlined,
-                                        color:
-                                            item.isCompleted
-                                                ? Colors.green
-                                                : Colors.grey,
-                                        size: 16,
-                                      ),
-                                      onPressed: () => markAsCompleted(index),
-                                      padding: EdgeInsets.zero,
-                                      constraints: BoxConstraints(
-                                        minWidth: 24,
-                                        minHeight: 24,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
+                    const SizedBox(height: 16),
+                    ElevatedButton.icon(
+                      icon: Icon(Icons.volume_up),
+                      label: Text("Play Audio"),
+                      onPressed: () => _playAudio(currentItem.audio),
+                    ),
+                    const SizedBox(height: 16),
+                    ElevatedButton.icon(
+                      icon: Icon(Icons.mic),
+                      label: Text("Speak Now"),
+                      onPressed: () => _startListening(currentItem.text),
+                    ),
+                    const SizedBox(height: 12),
+                    if (_spokenText.isNotEmpty)
+                      Text(
+                        "You said: $_spokenText",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    const SizedBox(height: 8),
+                    if (_feedback.isNotEmpty)
+                      Text(
+                        _feedback,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color:
+                              _feedback.contains("✅")
+                                  ? Colors.green
+                                  : _feedback.contains("⚠️")
+                                  ? Colors.orange
+                                  : Colors.red,
                         ),
                       ),
+                    const Spacer(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ElevatedButton(
+                          onPressed:
+                              _currentIndex > 0
+                                  ? () {
+                                    setState(() {
+                                      _currentIndex--;
+                                      _spokenText = "";
+                                      _feedback = "";
+                                    });
+                                  }
+                                  : null,
+                          child: Text("Prev"),
+                        ),
+                        ElevatedButton(
+                          onPressed:
+                              _currentIndex < _data!.audioList.length - 1
+                                  ? () {
+                                    setState(() {
+                                      _currentIndex++;
+                                      _spokenText = "";
+                                      _feedback = "";
+                                    });
+                                  }
+                                  : null,
+                          child: Text("Next"),
+                        ),
+                      ],
                     ),
                   ],
                 ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _fetchVocabData,
-        backgroundColor: Colors.blue.shade700,
-        child: const Icon(Icons.refresh, color: Colors.white),
-      ),
+              ),
     );
   }
 }

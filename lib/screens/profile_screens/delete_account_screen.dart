@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 
 class DeleteAccountScreen extends StatelessWidget {
   const DeleteAccountScreen({super.key});
@@ -37,13 +40,16 @@ class DeleteAccountScreen extends StatelessWidget {
     );
   }
 
-  void _performAccountDeletion(BuildContext context) {
+  void _performAccountDeletion(BuildContext context) async {
     // In a real app, this would involve:
     // 1. Calling your backend API to initiate deletion.
     // 2. Handling success/failure (e.g., showing a SnackBar or AlertDialog).
     // 3. Logging out the user and navigating to the login/onboarding screen.
+    final user = Provider.of<UserProvider>(context);
+    final supabase = Supabase.instance.client;
 
-    print('Attempting to delete account...');
+    // Example: delete from your custom 'users' table
+    await supabase.from('users').delete().eq('id', user.userId!);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('Deleting account... (This is a mock action)'),
@@ -60,7 +66,11 @@ class DeleteAccountScreen extends StatelessWidget {
       //   MaterialPageRoute(builder: (context) => LoginScreen()), // Replace with your LoginScreen
       //   (Route<dynamic> route) => false,
       // );
-      Navigator.of(context).pop(); // For now, just pop back
+      Navigator.pushNamedAndRemoveUntil(
+        context,
+        '/login',
+        (route) => false,
+      ); // For now, just pop back
     });
   }
 

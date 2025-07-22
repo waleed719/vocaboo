@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:vocaboo/provider/language_provider.dart';
 import 'package:vocaboo/routes/routes.dart';
 import 'package:vocaboo/screens/account_process/confirmation_screen.dart';
 import 'package:vocaboo/screens/account_process/language_selection_screen.dart';
+import 'package:vocaboo/screens/leader_board_screen.dart';
 import 'package:vocaboo/screens/profile_screens/delete_account_screen.dart';
 import 'package:vocaboo/screens/profile_screens/faqs.dart';
 import 'package:vocaboo/screens/home_screen.dart';
@@ -15,8 +18,13 @@ import 'package:vocaboo/screens/profile_screens/setting_screen.dart';
 import 'package:vocaboo/screens/account_process/signup_screen.dart';
 import 'package:vocaboo/screens/profile_screens/support_center_screen.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
+  const supabaseUrl = 'https://vcbegogbwwodiswschtc.supabase.co';
+  final supabaseKey = dotenv.env['SUPABASE_KEY'] ?? 'No Key';
   WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(url: supabaseUrl, anonKey: supabaseKey);
+
   runApp(
     MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => LanguageProvider())],
@@ -36,7 +44,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.onboarding,
       routes: {
         AppRoutes.onboarding: (context) => const OnboardingScreen(),
         AppRoutes.home: (context) => const HomeScreen(),
@@ -52,6 +60,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.personaInfo: (context) => const PersonalInfoScreen(),
         AppRoutes.deleteAccount: (context) => const DeleteAccountScreen(),
         AppRoutes.supportCenter: (context) => const SupportCenterScreen(),
+        AppRoutes.leaderboard: (context) => const LeaderBoardScreen(),
       },
       // home: const OnboardingScreen(),
     );

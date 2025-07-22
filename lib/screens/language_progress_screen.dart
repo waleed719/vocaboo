@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 import 'package:vocaboo/screens/grammer_screens/grammar_screen.dart';
 import 'package:vocaboo/screens/listening_screens/listening_screen.dart';
 import 'package:vocaboo/screens/speaking_screens/speaking_screen.dart';
@@ -38,6 +40,7 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final user = Provider.of<UserProvider>(context);
     final List<Widget> myGridItems = [
       _buildProgressCircle('Grammers', 45, 1, Colors.blue, Icons.layers),
       _buildProgressCircle(
@@ -91,7 +94,8 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                     children: [
                       CircleAvatar(
                         backgroundImage: NetworkImage(
-                          'https://images.unsplash.com/photo-1652715256284-6cba3e829a70?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                          user.profilePicture,
+                          // 'https://images.unsplash.com/photo-1652715256284-6cba3e829a70?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                         ), // Replace with flag image
                         radius: 20,
                       ),
@@ -101,7 +105,7 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            'Ghazalli Syaqih',
+                            user.username,
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -113,9 +117,6 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                     ],
                   ),
                 ),
-                // background: SafeArea(
-                //   child:
-                // ),
               ),
             ),
             // Daily Streak Section
@@ -229,7 +230,12 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                               ),
                             ),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(
+                                  context,
+                                  '/languageProgress',
+                                );
+                              },
                               child: Text('More Detail'),
                             ),
                           ],
@@ -252,7 +258,7 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Spacer(),
-                                Text('18 Hours'),
+                                Text('${user.totalTime} Hours'),
                               ],
                             ),
                             LinearProgressIndicator(
@@ -271,7 +277,7 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Spacer(),
-                                Text('1402 Stars'),
+                                Text('${user.totalStars} Stars'),
                               ],
                             ),
                             LinearProgressIndicator(
@@ -295,7 +301,9 @@ class _LanguageProgressScreenState extends State<LanguageProgressScreen> {
                             ),
                             Spacer(),
                             IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed(context, 'leaderboard');
+                              },
                               icon: Icon(Icons.leaderboard),
                             ),
                           ],

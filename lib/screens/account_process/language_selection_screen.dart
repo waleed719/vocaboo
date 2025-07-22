@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 import 'package:vocaboo/provider/language_provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   const LanguageSelectionScreen({super.key});
@@ -68,9 +69,12 @@ class LanguageSelectionScreen extends StatelessWidget {
                                   color: Theme.of(context).colorScheme.primary,
                                 )
                                 : null,
-                        onTap: () {
+                        onTap: () async {
                           languageProvider.setSelectedLanguage(
                             language['code']!,
+                          );
+                          Provider.of<UserProvider>(context).updateLanguage(
+                            languageProvider.selectedLanguageName!,
                           );
                         },
                       ),
@@ -85,7 +89,7 @@ class LanguageSelectionScreen extends StatelessWidget {
                   foregroundColor: Theme.of(context).colorScheme.onPrimary,
                 ),
                 onPressed:
-                    selectedCode != null
+                    Provider.of<UserProvider>(context).languageName != null
                         ? () => Navigator.pushNamed(context, '/confirmation')
                         : null,
                 child: Text('Confirm'),
