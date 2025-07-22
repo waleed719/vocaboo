@@ -1,8 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
-import 'dart:convert';
-import '../../models/vocab_model.dart';
+import 'package:vocaboo/models/listening_model.dart';
 
 class ListeningDetailScreen extends StatefulWidget {
   final int level;
@@ -19,37 +19,56 @@ class ListeningDetailScreen extends StatefulWidget {
 }
 
 class _ListeningDetailScreenState extends State<ListeningDetailScreen> {
-  List<VocabItem> _vocabList = [];
+  final AudioPlayer _player = AudioPlayer();
+  ListeningContent? _content;
+  List<AudioParser> _audioList = [];
   bool _isLoading = true;
   String? _error;
+  Map<int, String> selectedAnswers = {};
 
-  final AudioPlayer _player = AudioPlayer();
+  bool _isPlaying = false;
+  double _currentSpeed = 1.0;
+  Duration _currentPosition = Duration.zero;
+  Duration _totalDuration = Duration.zero;
+  final List<double> _speedOptions = [0.5, 0.75, 1.0, 1.25, 1.5, 2.0];
 
   @override
   void initState() {
     super.initState();
-    _fetchVocabData();
+    _fetchListeningData();
+
+    // Add these listeners
+    _player.positionStream.listen((position) {
+      setState(() {
+        _currentPosition = position;
+      });
+    });
+
+    _player.durationStream.listen((duration) {
+      setState(() {
+        _totalDuration = duration ?? Duration.zero;
+      });
+    });
+
+    _player.playerStateStream.listen((state) {
+      setState(() {
+        _isPlaying = state.playing;
+      });
+    });
   }
 
-  Future<void> audioPlayer(String url) async {
-    try {
-      await _player.setUrl(url);
-      await _player.play();
-    } catch (e) {
-      ScaffoldMessenger(child: Text("Audio Playback Error: $e"));
-    }
-  }
-
-  Future<void> _fetchVocabData() async {
+  Future<void> _fetchListeningData() async {
     setState(() {
       _isLoading = true;
       _error = null;
     });
 
     try {
-      final vocabItems = await fetchVocabData(widget.level);
+      final response = await fetchListeningData(widget.level);
+      final content = ListeningContent.fromJson(jsonDecode(response.raw));
       setState(() {
-        _vocabList = vocabItems;
+        _audioList = response.audio;
+        _content = content;
         _isLoading = false;
       });
     } catch (e) {
@@ -60,261 +79,329 @@ class _ListeningDetailScreenState extends State<ListeningDetailScreen> {
     }
   }
 
-  Future<List<VocabItem>> fetchVocabData(int level) async {
+  Future<ListeningResponse> fetchListeningData(int level) async {
     final url = Uri.parse(
       'http://13.60.208.182:8000/listening/?t=${DateTime.now().millisecondsSinceEpoch}',
     );
     final headers = {'Content-Type': 'application/json'};
     final body = jsonEncode({'language': 'Japanese', 'level': level});
 
-    try {
-      final response = await http
-          .post(url, headers: headers, body: body)
-          .timeout(
-            Duration(seconds: 30),
-            onTimeout: () => throw Exception('Request timed out'),
-          );
+    final response = await http
+        .post(url, headers: headers, body: body)
+        .timeout(const Duration(seconds: 30));
 
-      if (response.statusCode == 200) {
-        final jsonResponse = jsonDecode(response.body);
-        final vocabResponse = VocabularyResponse.fromJson(jsonResponse);
-        final rawContent = VocabularyContent.fromJson(
-          jsonDecode(vocabResponse.raw),
-        );
-
-        final vocabItems =
-            rawContent.vocabulary.map((vocabItem) {
-              final audioItem = vocabResponse.audio.firstWhere(
-                (audio) => audio.text == vocabItem.word,
-                orElse: () => AudioItem(text: vocabItem.word, audio: ''),
-              );
-              return vocabItem.copyWith(
-                audioUrl: audioItem.audio.isNotEmpty ? audioItem.audio : null,
-              );
-            }).toList();
-
-        return vocabItems;
-      } else {
-        throw Exception('Failed to load vocabulary: ${response.statusCode}');
-      }
-    } catch (e) {
-      throw Exception('Failed to load vocabulary: $e');
+    if (response.statusCode == 200) {
+      final jsonResponse = jsonDecode(response.body) as Map<String, dynamic>;
+      return ListeningResponse.fromJson(jsonResponse);
+    } else {
+      throw Exception('Failed to load listening: ${response.statusCode}');
     }
   }
 
-  void markAsCompleted(int index) {
+  Future<void> _playAudio(String url) async {
+    try {
+      if (_player.audioSource == null) {
+        await _player.setUrl(url);
+        await _player.setSpeed(_currentSpeed);
+      }
+      await _player.play();
+    } catch (e) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Audio error: $e")));
+    }
+  }
+
+  Future<void> _pauseAudio() async {
+    await _player.pause();
+  }
+
+  Future<void> _resumeAudio() async {
+    await _player.play();
+  }
+
+  Future<void> _changeSpeed(double speed) async {
     setState(() {
-      _vocabList[index].isCompleted = !_vocabList[index].isCompleted;
-      _vocabList[index].lastReviewed = DateTime.now();
+      _currentSpeed = speed;
     });
+    await _player.setSpeed(speed);
+  }
+
+  String _formatDuration(Duration duration) {
+    String twoDigits(int n) => n.toString().padLeft(2, '0');
+    String minutes = twoDigits(duration.inMinutes.remainder(60));
+    String seconds = twoDigits(duration.inSeconds.remainder(60));
+    return "$minutes:$seconds";
+  }
+
+  Widget buildScriptTile() {
+    return ExpansionTile(
+      title: const Text(
+        "View Audio Script",
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Text(
+            _content!.audioScript,
+            style: const TextStyle(fontSize: 16),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget buildAudioPlayer() {
+    if (_audioList.isEmpty) return const SizedBox();
+
+    return Column(
+      children: [
+        const Text(
+          "Listen to Audio",
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+
+        const SizedBox(height: 8),
+
+        // Progress slider
+        if (_totalDuration.inSeconds > 0)
+          Slider(
+            value: _currentPosition.inSeconds.toDouble(),
+            max: _totalDuration.inSeconds.toDouble(),
+            onChanged: (value) async {
+              final position = Duration(seconds: value.toInt());
+              await _player.seek(position);
+            },
+            activeColor: Colors.blue.shade700,
+          ),
+
+        // Time display
+        if (_totalDuration.inSeconds > 0)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(_formatDuration(_currentPosition)),
+                Text(_formatDuration(_totalDuration)),
+              ],
+            ),
+          ),
+
+        const SizedBox(height: 8),
+
+        // Control buttons row
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            // Play/Pause button
+            ElevatedButton.icon(
+              onPressed: () {
+                if (_isPlaying) {
+                  _pauseAudio();
+                } else {
+                  if (_player.audioSource == null) {
+                    _playAudio(_audioList.first.audio);
+                  } else {
+                    _resumeAudio();
+                  }
+                }
+              },
+              icon: Icon(_isPlaying ? Icons.pause : Icons.play_arrow),
+              label: Text(_isPlaying ? "Pause" : "Play"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue.shade700,
+                foregroundColor: Colors.white,
+              ),
+            ),
+
+            // Speed control button
+            PopupMenuButton<double>(
+              onSelected: _changeSpeed,
+              itemBuilder:
+                  (context) =>
+                      _speedOptions
+                          .map(
+                            (speed) => PopupMenuItem<double>(
+                              value: speed,
+                              child: Row(
+                                children: [
+                                  Text("${speed}x"),
+                                  if (speed == _currentSpeed)
+                                    const Padding(
+                                      padding: EdgeInsets.only(left: 8),
+                                      child: Icon(Icons.check, size: 16),
+                                    ),
+                                ],
+                              ),
+                            ),
+                          )
+                          .toList(),
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade700,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.speed, color: Colors.white, size: 16),
+                    const SizedBox(width: 4),
+                    Text(
+                      "${_currentSpeed}x",
+                      style: const TextStyle(color: Colors.white, fontSize: 12),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  Widget buildQuestions() {
+    if (_content == null) return const SizedBox();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: List.generate(_content!.questions.length, (index) {
+        final q = _content!.questions[index];
+        final selected = selectedAnswers[index];
+        final correctLetter = q.correctOption;
+        final selectedLetter =
+            selected != null
+                ? String.fromCharCode(65 + q.options.indexOf(selected))
+                : null;
+
+        return Card(
+          margin: const EdgeInsets.symmetric(vertical: 8),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  q.question,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: List.generate(q.options.length, (i) {
+                    final option = q.options[i];
+                    // final label = String.fromCharCode(65 + i);
+
+                    return RadioListTile<String>(
+                      value: option,
+                      groupValue: selected,
+                      onChanged: (value) {
+                        setState(() {
+                          selectedAnswers[index] = value!;
+                        });
+                      },
+                      title: Text(
+                        option.replaceFirst(RegExp(r'^[A-Z]\.\s*'), ''),
+                      ),
+                      activeColor: Colors.blue,
+                    );
+                  }),
+                ),
+                if (selected != null)
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    margin: const EdgeInsets.only(top: 8),
+                    decoration: BoxDecoration(
+                      color:
+                          selectedLetter == correctLetter
+                              ? Colors.green.shade100
+                              : Colors.red.shade100,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          selectedLetter == correctLetter
+                              ? "✅ Correct!"
+                              : "❌ Incorrect",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color:
+                                selectedLetter == correctLetter
+                                    ? Colors.green
+                                    : Colors.red,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text("Explanation: ${q.explanation}"),
+                      ],
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        );
+      }),
+    );
+  }
+
+  @override
+  void dispose() {
+    _player.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('${widget.theme} - Level ${widget.level}'),
-        backgroundColor: Colors.blue.shade700,
-        foregroundColor: Colors.white,
-        elevation: 0,
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue.shade700, Colors.blue.shade50],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
+      body: SafeArea(
         child:
             _isLoading
-                ? const Center(
-                  child: CircularProgressIndicator(color: Colors.white),
-                )
+                ? const Center(child: CircularProgressIndicator())
                 : _error != null
-                ? Center(
+                ? Center(child: Text("Error: $_error"))
+                : SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Icon(Icons.error_outline, size: 64, color: Colors.red),
-                      SizedBox(height: 16),
                       Text(
-                        'Error: $_error',
-                        style: TextStyle(color: Colors.red, fontSize: 16),
-                        textAlign: TextAlign.center,
+                        '${widget.theme} - Level ${widget.level}',
+                        style: const TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                      SizedBox(height: 16),
-                      ElevatedButton(
-                        onPressed: _fetchVocabData,
-                        child: Text('Retry'),
+                      const SizedBox(height: 16),
+                      buildScriptTile(),
+                      const SizedBox(height: 16),
+                      buildAudioPlayer(),
+                      const SizedBox(height: 24),
+                      const Text(
+                        "Questions",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
+                      const SizedBox(height: 12),
+                      buildQuestions(),
                     ],
                   ),
-                )
-                : _vocabList.isEmpty
-                ? const Center(
-                  child: Text(
-                    'No vocabulary items found',
-                    style: TextStyle(fontSize: 18, color: Colors.grey),
-                  ),
-                )
-                : Column(
-                  children: [
-                    // Fixed-height header
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            '${_vocabList.length} Words',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Progress: ${_vocabList.where((item) => item.isCompleted).length}/${_vocabList.length}',
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                        ],
-                      ),
-                    ),
-                    // Expanded section for the list
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
-                          ),
-                        ),
-                        child: ListView.builder(
-                          padding: EdgeInsets.all(16),
-                          itemCount: _vocabList.length,
-                          itemBuilder: (context, index) {
-                            final item = _vocabList[index];
-                            return Card(
-                              margin: const EdgeInsets.only(bottom: 12),
-                              elevation: 2,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: ListTile(
-                                contentPadding: EdgeInsets.all(16),
-                                title: Text(
-                                  item.word,
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blue.shade700,
-                                  ),
-                                ),
-                                subtitle: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(height: 8),
-                                    Text(
-                                      item.translation,
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                    if (item.pronunciation.isNotEmpty) ...[
-                                      SizedBox(height: 4),
-                                      Text(
-                                        'Pronunciation: ${item.pronunciation}',
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          fontStyle: FontStyle.italic,
-                                          color: Colors.grey.shade600,
-                                        ),
-                                      ),
-                                    ],
-                                    if (item.example.isNotEmpty) ...[
-                                      SizedBox(height: 8),
-                                      Container(
-                                        padding: EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue.shade50,
-                                          borderRadius: BorderRadius.circular(
-                                            8,
-                                          ),
-                                        ),
-                                        child: Text(
-                                          item.example,
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            color: Colors.blue.shade800,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                    if (item.lastReviewed != null) ...[
-                                      SizedBox(height: 8),
-                                      Text(
-                                        'Last reviewed: ${item.lastReviewed!.toLocal().toString().split('.')[0]}',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.grey,
-                                        ),
-                                      ),
-                                    ],
-                                  ],
-                                ),
-                                trailing: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    if (item.audioUrl != null)
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 4),
-                                        child: IconButton(
-                                          onPressed: () {
-                                            // print(item.audioUrl);
-                                            audioPlayer(item.audioUrl!);
-                                          },
-                                          icon: Icon(
-                                            Icons.volume_up,
-                                            color: Colors.blue.shade300,
-                                            size: 20,
-                                          ),
-                                        ),
-                                      ),
-                                    IconButton(
-                                      icon: Icon(
-                                        item.isCompleted
-                                            ? Icons.check_circle
-                                            : Icons.circle_outlined,
-                                        color:
-                                            item.isCompleted
-                                                ? Colors.green
-                                                : Colors.grey,
-                                        size: 16,
-                                      ),
-                                      onPressed: () => markAsCompleted(index),
-                                      padding: EdgeInsets.zero,
-                                      constraints: BoxConstraints(
-                                        minWidth: 24,
-                                        minHeight: 24,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    ),
-                  ],
                 ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _fetchVocabData,
+        onPressed: _fetchListeningData,
         backgroundColor: Colors.blue.shade700,
         child: const Icon(Icons.refresh, color: Colors.white),
       ),
