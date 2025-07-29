@@ -8,11 +8,14 @@ class UserProvider with ChangeNotifier {
   String? _email;
   String? _language;
   int _stars = 0;
-  double _hoursspent = 0;
+  int _hoursspent = 0;
   String? _profilepicture;
-  int _weeklyProgress = 0;
-  int _overallProgress = 0;
+  int _grammarLevel = 0;
+  int _vocabularyLevel = 0;
+  int _listeningLevel = 0;
+  int _speakingLevel = 0;
 
+  final supabase = Supabase.instance.client;
   Future<void> fetchUserData() async {
     final user = Supabase.instance.client.auth.currentUser;
     if (user == null) {
@@ -25,31 +28,43 @@ class UserProvider with ChangeNotifier {
             .eq('id', user.id)
             .single();
 
-    if (response != null) {
-      _id = user.id;
-      _email = user.email;
-      _username = response['username'];
-      _language = response['learning_language'];
-      _stars = response['stars'];
-      _hoursspent = response['hours_spent'];
-      _profilepicture = response['profile_picture'];
+    _id = user.id;
+    _email = user.email;
+    _username = response['username'];
+    _language = response['learning_language'];
+    _stars = response['stars'];
+    _hoursspent = response['hours_spent'];
+    _profilepicture = response['profile_picture'];
+    _grammarLevel = response['grammar_level'];
+    _vocabularyLevel = response['vocabulary_level'];
+    _listeningLevel = response['listening_level'];
+    _speakingLevel = response['speaking_level'];
 
-      // weeklyProgress = response['weekly']
+    // weeklyProgress = response['weekly']
 
-      notifyListeners();
-    }
+    notifyListeners();
   }
 
   String? get languageName => _language;
   String get profilePicture => _profilepicture ?? '';
   String get username => _username ?? 'Guest';
-  double get totalTime => _hoursspent;
+  int get totalTime => _hoursspent;
   int get totalStars => _stars;
   String get email => _email ?? 'noone@email.com';
   String? get userId => _id;
+  int get grammarLevel => _grammarLevel;
+  int get vocabualryLevel => _vocabularyLevel;
+  int get listeningLevel => _listeningLevel;
+  int get speakingLesson => _speakingLevel;
+
+  Future<void> updateGrammarLevel(int level) async {
+    await supabase
+        .from('users')
+        .update({'grammar_level': level})
+        .eq('id', _id!);
+  }
 
   Future<void> updateLanguage(String language) async {
-    final supabase = Supabase.instance.client;
     await supabase
         .from('users')
         .update({'learning_language': language})
@@ -60,8 +75,6 @@ class UserProvider with ChangeNotifier {
   }
 
   Future<void> logoutUser(BuildContext context) async {
-    final supabase = Supabase.instance.client;
-
     await supabase.auth.signOut();
 
     // Clear local user state

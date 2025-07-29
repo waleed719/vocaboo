@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 import 'package:vocaboo/screens/grammer_screens/grammar_detail_screen.dart';
 
 class GrammarScreen extends StatefulWidget {
@@ -35,7 +37,7 @@ class _GrammarScreenState extends State<GrammarScreen> {
   @override
   Widget build(BuildContext context) {
     // int currentLevel = 2;
-    int levelcompleted = 5;
+    int levelcompleted = Provider.of<UserProvider>(context).grammarLevel;
 
     return Scaffold(
       body: Container(
@@ -123,26 +125,35 @@ class _GrammarScreenState extends State<GrammarScreen> {
                           itemCount: 20,
 
                           itemBuilder: (context, index) {
-                            int levelNum = index + 1;
-                            bool isLocked = levelNum > levelcompleted;
+                            int levelNum = index;
+                            // bool isLocked = levelNum > levelcompleted;
 
                             return LevelCard(
-                              level: levelNum,
+                              level: levelNum + 1,
                               questions: 10 + levelNum,
                               stars: 2,
                               totalStars: (10 + levelNum) * 3,
-                              isLocked: isLocked,
+                              isLocked: false,
                               onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder:
-                                        (context) => GrammarDetailScreen(
-                                          level: levelNum,
-                                          theme: 'greetings',
-                                        ),
-                                  ),
-                                );
+                                if (levelNum + 1 > 5) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    const SnackBar(
+                                      content: Text('Coming Soon'),
+                                      duration: Duration(seconds: 2),
+                                    ),
+                                  );
+                                } else {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder:
+                                          (context) => GrammarDetailScreen(
+                                            level: levelNum,
+                                            // theme: 'greetings',
+                                          ),
+                                    ),
+                                  );
+                                }
                               },
                             );
                           },

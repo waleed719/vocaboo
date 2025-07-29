@@ -13,6 +13,10 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final formKey = GlobalKey<FormState>();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+
   Future<String?> login({
     required String email,
     required String password,
@@ -29,9 +33,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final formKey = GlobalKey<FormState>();
-    TextEditingController emailController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -132,8 +133,23 @@ class _LoginScreenState extends State<LoginScreen> {
                               listen: false,
                             ).fetchUserData();
 
+                            final userProvider = Provider.of<UserProvider>(
+                              context,
+                              listen: false,
+                            );
+
                             if (context.mounted) {
-                              Navigator.pushReplacementNamed(context, '/home');
+                              if (userProvider.languageName == null) {
+                                Navigator.pushReplacementNamed(
+                                  context,
+                                  '/language-selection',
+                                );
+                              } else {
+                                Navigator.pushReplacementNamed(
+                                  context,
+                                  '/home',
+                                );
+                              }
                             }
                           }
                         }

@@ -25,7 +25,7 @@ List<BarChartDataPoint> barChartData = [
 class MyBarChart extends StatelessWidget {
   final List<BarChartDataPoint> data;
 
-  MyBarChart({required this.data});
+  const MyBarChart({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {

@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:just_audio/just_audio.dart';
-import 'package:vocaboo/models/grammar_model.dart';
+// import 'package:provider/provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'dart:convert';
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:vocaboo/models/grammar_model.dart';
+// import 'package:vocaboo/provider/user_provider.dart';
 
 class GrammarDetailScreen extends StatefulWidget {
   final int level;
-  final String theme;
 
-  const GrammarDetailScreen({
-    super.key,
-    required this.level,
-    required this.theme,
-  });
+  const GrammarDetailScreen({super.key, required this.level});
 
   @override
   State<GrammarDetailScreen> createState() => _GrammarDetailScreenState();
@@ -22,19 +19,17 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
   late GrammarContent grammarContent;
   bool _isLoading = true;
   String? _error;
+  final SupabaseClient _supabase = Supabase.instance.client;
+  // static const String GRAMMAR_TABLE = 'grammar_content';
 
-  // Track completion status for different sections
   List<bool> _completedExamples = [];
   List<bool> _completedMistakes = [];
   List<bool> _completedExercises = [];
 
-  // Track expansion status for shrinkable tiles
   bool _explanationExpanded = false;
   List<bool> _expandedExamples = [];
   List<bool> _expandedMistakes = [];
   List<bool> _expandedExercises = [];
-
-  final AudioPlayer _player = AudioPlayer();
 
   @override
   void initState() {
@@ -44,7 +39,6 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
 
   @override
   void dispose() {
-    _player.dispose();
     super.dispose();
   }
 
@@ -55,10 +49,39 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
     });
 
     try {
-      final grammar = await fetchGrammarData(widget.level);
+      final language = "Japanese"; // Replace with provider if needed
+      final level = widget.level + 1; // Your app uses 1-based indexing
+
+      final csvString = await rootBundle.loadString(
+        'assets/content/grammer_data.csv',
+      );
+      final lines = const LineSplitter().convert(csvString);
+      final headers = lines.first.split(',');
+
+      GrammarContent? loadedContent;
+
+      for (var i = 1; i < lines.length; i++) {
+        final values = _splitCsvLine(lines[i]);
+        final row = Map<String, String>.fromIterables(headers, values);
+
+        if (row['language']?.trim() == language &&
+            row['level'] == level.toString()) {
+          final raw = row['raw'];
+          if (raw != null && raw.isNotEmpty) {
+            final json = jsonDecode(raw);
+            loadedContent = GrammarContent.fromJson(json);
+            break;
+          }
+        }
+      }
+
+      if (loadedContent == null) {
+        throw Exception('No grammar content found for this level.');
+      }
+
+      grammarContent = loadedContent;
+
       setState(() {
-        grammarContent = grammar;
-        // Initialize completion and expansion states
         _completedExamples = List.filled(grammarContent.examples.length, false);
         _completedMistakes = List.filled(
           grammarContent.commonMistakes.length,
@@ -89,53 +112,193 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
     }
   }
 
-  Future<GrammarContent> fetchGrammarData(int level) async {
-    final url = Uri.parse(
-      'http://13.60.208.182:8000/grammar/?t=${DateTime.now().millisecondsSinceEpoch}',
-    );
-    final headers = {'Content-Type': 'application/json'};
-    final body = jsonEncode({'language': 'Japanese', 'level': level});
+  List<String> _splitCsvLine(String line) {
+    final regExp = RegExp(r'''((?:[^,"']|"[^"]*"|'[^']*')+)''');
+    return regExp
+        .allMatches(line)
+        .map((m) => m.group(0)!.replaceAll(RegExp(r'^"|"$'), ''))
+        .toList();
+  }
 
-    try {
-      final response = await http
-          .post(url, headers: headers, body: body)
-          .timeout(
-            Duration(seconds: 30),
-            onTimeout: () => throw Exception('Request timed out'),
-          );
+  Future<void> _updateGrammarStars(int starsEarned) async {
+    final user = _supabase.auth.currentUser;
+    if (user == null) return;
 
-      if (response.statusCode == 200) {
-        final jsonResponse = jsonDecode(response.body);
-        final grammarResponse = GrammarResponse.fromJson(jsonResponse);
-        final grammarContent = GrammarContent.fromJson(
-          jsonDecode(grammarResponse.raw),
-        );
+    final levelIndex = widget.level;
+    final response =
+        await _supabase
+            .from('users')
+            .select('grammar_stars, grammar_level')
+            .eq('id', user.id)
+            .maybeSingle();
 
-        return grammarContent;
-      } else {
-        throw Exception('Failed to load grammar: ${response.statusCode}');
+    if (response != null) {
+      List<dynamic> stars = List.from(response['grammar_stars'] ?? []);
+      int currentLevel = response['grammar_level'] ?? 0;
+
+      while (stars.length <= levelIndex) {
+        stars.add(0);
       }
-    } catch (e) {
-      throw Exception('Failed to load grammar: $e');
+
+      bool starsUpdated = false;
+      if (stars[levelIndex] < starsEarned) {
+        stars[levelIndex] = starsEarned;
+        starsUpdated = true;
+      }
+
+      bool levelUpdated = false;
+      if (currentLevel < levelIndex + 1) {
+        currentLevel = levelIndex + 1;
+        levelUpdated = true;
+      }
+
+      if (starsUpdated || levelUpdated) {
+        final updateData = {
+          if (starsUpdated) 'grammar_stars': stars,
+          if (levelUpdated) 'grammar_level': currentLevel,
+        };
+
+        await _supabase.from('users').update(updateData).eq('id', user.id);
+      }
+    }
+  }
+
+  void _checkCompletionAndUpdateStars() {
+    if (completedItems == totalItems) {
+      _updateGrammarStars(3);
     }
   }
 
   void markExampleAsCompleted(int index) {
     setState(() {
       _completedExamples[index] = !_completedExamples[index];
+      _checkCompletionAndUpdateStars();
     });
   }
 
   void markMistakeAsCompleted(int index) {
     setState(() {
       _completedMistakes[index] = !_completedMistakes[index];
+      _checkCompletionAndUpdateStars();
     });
   }
 
   void markExerciseAsCompleted(int index) {
     setState(() {
       _completedExercises[index] = !_completedExercises[index];
+      _checkCompletionAndUpdateStars();
     });
+  }
+
+  int get totalItems {
+    return grammarContent.examples.length +
+        grammarContent.commonMistakes.length +
+        grammarContent.practiceExercise.length;
+  }
+
+  int get completedItems {
+    return _completedExamples.where((e) => e).length +
+        _completedMistakes.where((e) => e).length +
+        _completedExercises.where((e) => e).length;
+  }
+
+  // ... your _buildTopicSection, _buildExamplesSection, etc. can be pasted here unchanged ...
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Grammars - Level ${widget.level + 1}'),
+        backgroundColor: Colors.blue.shade700,
+        foregroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.blue.shade700, Colors.blue.shade50],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child:
+            _isLoading
+                ? const Center(
+                  child: CircularProgressIndicator(color: Colors.white),
+                )
+                : _error != null
+                ? Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.error_outline, size: 64, color: Colors.red),
+                      SizedBox(height: 16),
+                      Text(
+                        'Error: $_error',
+                        style: TextStyle(color: Colors.red, fontSize: 16),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: _fetchGrammarData,
+                        child: Text('Retry'),
+                      ),
+                    ],
+                  ),
+                )
+                : Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            '$totalItems Items',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            'Progress: $completedItems/$totalItems',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(30),
+                            topRight: Radius.circular(30),
+                          ),
+                        ),
+                        child: SingleChildScrollView(
+                          padding: EdgeInsets.all(16),
+                          child: Column(
+                            children: [
+                              _buildTopicSection(),
+                              _buildExamplesSection(),
+                              _buildCommonMistakesSection(),
+                              _buildPracticeExercisesSection(),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _fetchGrammarData,
+        backgroundColor: Colors.blue.shade700,
+        child: const Icon(Icons.refresh, color: Colors.white),
+      ),
+    );
   }
 
   Widget _buildTopicSection() {
@@ -311,7 +474,7 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
                   },
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),
@@ -440,7 +603,7 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
                   },
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),
@@ -562,120 +725,9 @@ class _GrammarDetailScreenState extends State<GrammarDetailScreen> {
                   },
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
-      ),
-    );
-  }
-
-  int get totalItems {
-    return grammarContent.examples.length +
-        grammarContent.commonMistakes.length +
-        grammarContent.practiceExercise.length;
-  }
-
-  int get completedItems {
-    return _completedExamples.where((e) => e).length +
-        _completedMistakes.where((e) => e).length +
-        _completedExercises.where((e) => e).length;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('${widget.theme} - Level ${widget.level}'),
-        backgroundColor: Colors.blue.shade700,
-        foregroundColor: Colors.white,
-        elevation: 0,
-      ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue.shade700, Colors.blue.shade50],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
-        child:
-            _isLoading
-                ? const Center(
-                  child: CircularProgressIndicator(color: Colors.white),
-                )
-                : _error != null
-                ? Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(Icons.error_outline, size: 64, color: Colors.red),
-                      SizedBox(height: 16),
-                      Text(
-                        'Error: $_error',
-                        style: TextStyle(color: Colors.red, fontSize: 16),
-                        textAlign: TextAlign.center,
-                      ),
-                      SizedBox(height: 16),
-                      ElevatedButton(
-                        onPressed: _fetchGrammarData,
-                        child: Text('Retry'),
-                      ),
-                    ],
-                  ),
-                )
-                : Column(
-                  children: [
-                    // Fixed-height header
-                    Container(
-                      padding: EdgeInsets.all(16),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            '$totalItems Items',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Progress: $completedItems/$totalItems',
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                        ],
-                      ),
-                    ),
-                    // Expanded section for the content
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
-                          ),
-                        ),
-                        child: SingleChildScrollView(
-                          padding: EdgeInsets.all(16),
-                          child: Column(
-                            children: [
-                              _buildTopicSection(),
-                              _buildExamplesSection(),
-                              _buildCommonMistakesSection(),
-                              _buildPracticeExercisesSection(),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _fetchGrammarData,
-        backgroundColor: Colors.blue.shade700,
-        child: const Icon(Icons.refresh, color: Colors.white),
       ),
     );
   }

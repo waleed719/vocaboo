@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'dart:convert';
 import '../../models/vocab_model.dart';
 
@@ -36,7 +36,9 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
       await _player.setUrl(url);
       await _player.play();
     } catch (e) {
-      ScaffoldMessenger(child: Text("Audio Playback Error: $e"));
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text("Audio Playback Error: $e")));
     }
   }
 
@@ -47,7 +49,40 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
     });
 
     try {
-      final vocabItems = await fetchVocabData(widget.level);
+      final client = Supabase.instance.client;
+
+      final response =
+          await client
+              .from('vocabulary_content')
+              .select()
+              .eq('language', 'Spanish') // You can make this dynamic later
+              .eq('level', widget.level)
+              .maybeSingle();
+
+      if (response == null) {
+        throw Exception('No data found for this language and level');
+      }
+
+      final raw = response['raw'] as String;
+      final audioJson = response['audio'] as String;
+
+      final rawContent = VocabularyContent.fromJson(jsonDecode(raw));
+      final audioList =
+          (jsonDecode(audioJson) as List)
+              .map((e) => AudioItem.fromJson(e))
+              .toList();
+
+      final vocabItems =
+          rawContent.vocabulary.map((vocabItem) {
+            final audioItem = audioList.firstWhere(
+              (audio) => audio.text == vocabItem.word,
+              orElse: () => AudioItem(text: vocabItem.word, audio: ''),
+            );
+            return vocabItem.copyWith(
+              audioUrl: audioItem.audio.isNotEmpty ? audioItem.audio : null,
+            );
+          }).toList();
+
       setState(() {
         _vocabList = vocabItems;
         _isLoading = false;
@@ -57,48 +92,6 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
         _error = e.toString();
         _isLoading = false;
       });
-    }
-  }
-
-  Future<List<VocabItem>> fetchVocabData(int level) async {
-    final url = Uri.parse(
-      'http://13.60.208.182:8000/vocabulary/?t=${DateTime.now().millisecondsSinceEpoch}',
-    );
-    final headers = {'Content-Type': 'application/json'};
-    final body = jsonEncode({'language': 'Spanish', 'level': level});
-
-    try {
-      final response = await http
-          .post(url, headers: headers, body: body)
-          .timeout(
-            Duration(seconds: 30),
-            onTimeout: () => throw Exception('Request timed out'),
-          );
-
-      if (response.statusCode == 200) {
-        final jsonResponse = jsonDecode(response.body);
-        final vocabResponse = VocabularyResponse.fromJson(jsonResponse);
-        final rawContent = VocabularyContent.fromJson(
-          jsonDecode(vocabResponse.raw),
-        );
-
-        final vocabItems =
-            rawContent.vocabulary.map((vocabItem) {
-              final audioItem = vocabResponse.audio.firstWhere(
-                (audio) => audio.text == vocabItem.word,
-                orElse: () => AudioItem(text: vocabItem.word, audio: ''),
-              );
-              return vocabItem.copyWith(
-                audioUrl: audioItem.audio.isNotEmpty ? audioItem.audio : null,
-              );
-            }).toList();
-
-        return vocabItems;
-      } else {
-        throw Exception('Failed to load vocabulary: ${response.statusCode}');
-      }
-    } catch (e) {
-      throw Exception('Failed to load vocabulary: $e');
     }
   }
 
@@ -160,7 +153,6 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                 )
                 : Column(
                   children: [
-                    // Fixed-height header
                     Container(
                       padding: EdgeInsets.all(16),
                       child: Row(
@@ -181,7 +173,6 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                         ],
                       ),
                     ),
-                    // Expanded section for the list
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
@@ -213,7 +204,6 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                                   ),
                                 ),
                                 subtitle: Column(
-                                  mainAxisSize: MainAxisSize.min,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     SizedBox(height: 8),
@@ -224,64 +214,63 @@ class _VocabularyDetailScreenState extends State<VocabularyDetailScreen> {
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
-                                    if (item.pronunciation.isNotEmpty) ...[
-                                      SizedBox(height: 4),
-                                      Text(
-                                        'Pronunciation: ${item.pronunciation}',
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          fontStyle: FontStyle.italic,
-                                          color: Colors.grey.shade600,
-                                        ),
-                                      ),
-                                    ],
-                                    if (item.example.isNotEmpty) ...[
-                                      SizedBox(height: 8),
-                                      Container(
-                                        padding: EdgeInsets.all(8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.blue.shade50,
-                                          borderRadius: BorderRadius.circular(
-                                            8,
-                                          ),
-                                        ),
+                                    if (item.pronunciation.isNotEmpty)
+                                      Padding(
+                                        padding: EdgeInsets.only(top: 4),
                                         child: Text(
-                                          item.example,
+                                          'Pronunciation: ${item.pronunciation}',
                                           style: TextStyle(
                                             fontSize: 14,
-                                            color: Colors.blue.shade800,
+                                            fontStyle: FontStyle.italic,
+                                            color: Colors.grey.shade600,
                                           ),
                                         ),
                                       ),
-                                    ],
-                                    if (item.lastReviewed != null) ...[
-                                      SizedBox(height: 8),
-                                      Text(
-                                        'Last reviewed: ${item.lastReviewed!.toLocal().toString().split('.')[0]}',
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.grey,
+                                    if (item.example.isNotEmpty)
+                                      Padding(
+                                        padding: EdgeInsets.only(top: 8),
+                                        child: Container(
+                                          padding: EdgeInsets.all(8),
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue.shade50,
+                                            borderRadius: BorderRadius.circular(
+                                              8,
+                                            ),
+                                          ),
+                                          child: Text(
+                                            item.example,
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.blue.shade800,
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                    ],
+                                    if (item.lastReviewed != null)
+                                      Padding(
+                                        padding: EdgeInsets.only(top: 8),
+                                        child: Text(
+                                          'Last reviewed: ${item.lastReviewed!.toLocal().toString().split('.')[0]}',
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ),
                                   ],
                                 ),
                                 trailing: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     if (item.audioUrl != null)
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 4),
-                                        child: IconButton(
-                                          onPressed: () {
-                                            print(item.audioUrl);
-                                            audioPlayer(item.audioUrl!);
-                                          },
-                                          icon: Icon(
-                                            Icons.volume_up,
-                                            color: Colors.blue.shade300,
-                                            size: 20,
-                                          ),
+                                      IconButton(
+                                        onPressed: () {
+                                          audioPlayer(item.audioUrl!);
+                                        },
+                                        icon: Icon(
+                                          Icons.volume_up,
+                                          color: Colors.blue.shade300,
+                                          size: 20,
                                         ),
                                       ),
                                     IconButton(

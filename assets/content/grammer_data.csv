@@ -1,0 +1,1896 @@
+category,language,level,raw,audio
+grammar,Japanese,1,"{
+  ""topic"": ""Noun1 \u306f Noun2 \u3067\u3059 (N1 is N2) - Basic Polite Affirmative Sentence"",
+  ""explanation"": ""This lesson introduces the most fundamental sentence structure in polite Japanese: [Noun1] \u306f [Noun2] \u3067\u3059. This structure means 'Noun1 is Noun2' or 'As for Noun1, it is Noun2.'\n\n-   **\u3067\u3059 (desu)**: This is a polite ending that functions like 'is,' 'am,' or 'are' in English. It makes your sentence polite and complete. You will use it very often!\n-   **\u306f (wa)**: This is a particle (a small word that follows another word to show its grammatical function). When written with the hiragana character \u306f, it is *pronounced* 'wa' when used as a topic marker. It marks the topic of your sentence, telling the listener 'as for [Noun1], it is [Noun2]'.\n\n**Sentence Structure**: [Noun1] \u306f [Noun2] \u3067\u3059.\n    -   [Noun1] is the topic of the sentence (what you're talking about).\n    -   [Noun2] is the information you are giving about the topic."",
+  ""examples"": [
+    {
+      ""correct"": ""\u79c1(\u308f\u305f\u3057)\u306f\u30b8\u30e7\u30f3\u3067\u3059\u3002(Watashi wa Jon desu.)"",
+      ""translation"": ""I am John."",
+      ""explanation"": ""Here, '\u79c1 (watashi - I)' is the topic. \u306f (wa) marks '\u79c1' as the topic. '\u30b8\u30e7\u30f3 (Jon - John)' is the information about the topic. \u3067\u3059 (desu) makes the sentence polite and complete, acting as 'am'.""
+    },
+    {
+      ""correct"": ""\u3053\u308c(\u3053\u308c)\u306f\u672c(\u307b\u3093)\u3067\u3059\u3002(Kore wa hon desu.)"",
+      ""translation"": ""This is a book."",
+      ""explanation"": ""'\u3053\u308c (kore - this)' is the topic. \u306f (wa) marks '\u3053\u308c' as the topic. '\u672c (hon - book)' is the information. \u3067\u3059 (desu) acts as 'is'.""
+    },
+    {
+      ""correct"": ""\u79c1(\u308f\u305f\u3057)\u306f\u5b66\u751f(\u304c\u304f\u305b\u3044)\u3067\u3059\u3002(Watashi wa gakusei desu.)"",
+      ""translation"": ""I am a student."",
+      ""explanation"": ""'\u79c1 (watashi - I)' is the topic, marked by \u306f (wa). '\u5b66\u751f (gakusei - student)' is the information. \u3067\u3059 (desu) functions as 'am'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""\u79c1\u306f\u5b66\u751f\u3002(Watashi wa gakusei.)"",
+      ""correct"": ""\u79c1(\u308f\u305f\u3057)\u306f\u5b66\u751f(\u304c\u304f\u305b\u3044)\u3067\u3059\u3002(Watashi wa gakusei desu.)"",
+      ""explanation"": ""Japanese sentences, especially in polite speech, usually end with a verb or a copula like \u3067\u3059. Omitting \u3067\u3059 makes the sentence sound incomplete, overly casual, or even impolite depending on the context.""
+    },
+    {
+      ""incorrect"": ""\u79c1\u5b66\u751f\u3067\u3059\u3002(Watashi gakusei desu.)"",
+      ""correct"": ""\u79c1(\u308f\u305f\u3057)\u306f\u5b66\u751f(\u304c\u304f\u305b\u3044)\u3067\u3059\u3002(Watashi wa gakusei desu.)"",
+      ""explanation"": ""The particle \u306f (wa) is essential to clearly mark the topic of the sentence. Without it, the sentence sounds grammatically incorrect and unclear about what is being discussed.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Translate 'I am Maria.' into Japanese. (Use \u79c1(\u308f\u305f\u3057) for 'I' and \u30de\u30ea\u30a2 for 'Maria')"",
+      ""answer"": ""\u79c1(\u308f\u305f\u3057)\u306f\u30de\u30ea\u30a2\u3067\u3059\u3002(Watashi wa Maria desu.)"",
+      ""explanation"": ""'\u79c1 (watashi)' is 'I', \u306f (wa) is the topic particle, '\u30de\u30ea\u30a2 (Maria)' is 'Maria', and \u3067\u3059 (desu) is the polite copula 'am'.""
+    },
+    {
+      ""question"": ""Translate 'This is a pen.' into Japanese. (Use \u3053\u308c(\u3053\u308c) for 'this' and \u30da\u30f3 for 'pen')"",
+      ""answer"": ""\u3053\u308c(\u3053\u308c)\u306f\u30da\u30f3\u3067\u3059\u3002(Kore wa pen desu.)"",
+      ""explanation"": ""'\u3053\u308c (kore)' is 'this', \u306f (wa) is the topic particle, '\u30da\u30f3 (pen)' is 'pen', and \u3067\u3059 (desu) is the polite copula 'is'.""
+    },
+    {
+      ""question"": ""Fill in the blank to complete the sentence: \u3042\u306a\u305f\uff3f\uff3f\u5148\u751f(\u305b\u3093\u305b\u3044)\u3067\u3059\u3002(You are a teacher.)"",
+      ""answer"": ""\u3042\u306a\u305f\u306f\u5148\u751f(\u305b\u3093\u305b\u3044)\u3067\u3059\u3002(Anata wa sensei desu.)"",
+      ""explanation"": ""The particle \u306f (wa) is needed to mark '\u3042\u306a\u305f (anata - you)' as the topic of the sentence.""
+    }
+  ]
+}",
+grammar,Japanese,2,"{
+  ""topic"": ""Using \u3067\u3059 (desu) with Nouns and \u3044-Adjectives"",
+  ""explanation"": ""The word \u3067\u3059 (desu) is one of the most fundamental particles in Japanese. It acts as a polite copula, meaning 'is', 'am', or 'are'. It's used at the end of a sentence to link a subject to a predicate (what is being said about the subject), making statements about identity, existence, or qualities.\n\nThere are two primary uses for \u3067\u3059 at this level:\n\n1.  **With Nouns:** To state what something is, who someone is, or what day it is.\n    *   **Structure:** [Noun] \u3067\u3059\n    *   **Example:** \u3053\u308c\u306f \u307a\u3093\u3067\u3059\u3002 (Kore wa pen desu.) - This is a pen.\n    *   **Explanation:** Here, \u3067\u3059 links '\u3053\u308c' (this) to '\u307a\u3093' (pen), stating its identity.\n\n2.  **With \u3044-Adjectives:** To describe a quality or characteristic of something.\n    *   **Structure:** [\u3044-Adjective] \u3067\u3059\n    *   **Example:** \u3053\u306e \u308a\u3093\u3054\u306f \u3042\u304b\u3044\u3067\u3059\u3002 (Kono ringo wa akai desu.) - This apple is red.\n    *   **Explanation:** Here, \u3067\u3059 follows the \u3044-adjective '\u3042\u304b\u3044' (red), completing the sentence and politeness."",
+  ""examples"": [
+    {
+      ""correct"": ""\u3053\u308c\u306f \u307b\u3093 \u3067\u3059\u3002"",
+      ""translation"": ""This is a book."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used with a noun ('\u307b\u3093' - book) to state what something is.""
+    },
+    {
+      ""correct"": ""\u304d\u3087\u3046\u306f \u3052\u3064\u3088\u3046\u3073 \u3067\u3059\u3002"",
+      ""translation"": ""Today is Monday."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used with a noun ('\u3052\u3064\u3088\u3046\u3073' - Monday) to state the day.""
+    },
+    {
+      ""correct"": ""\u3053\u308c\u306f \u308f\u305f\u3057\u306e\u304a\u304b\u3042\u3055\u3093 \u3067\u3059\u3002"",
+      ""translation"": ""This is my mother."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used with a noun phrase ('\u308f\u305f\u3057\u306e\u304a\u304b\u3042\u3055\u3093' - my mother) to identify someone.""
+    },
+    {
+      ""correct"": ""\u3053\u306e \u304f\u308b\u307e\u306f \u3057\u308d\u3044 \u3067\u3059\u3002"",
+      ""translation"": ""This car is white."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used directly after an \u3044-adjective ('\u3057\u308d\u3044' - white) to describe a quality.""
+    },
+    {
+      ""correct"": ""\u305d\u306e \u3044\u308d\u306f \u3042\u304a\u3044 \u3067\u3059\u3002"",
+      ""translation"": ""That color is blue."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used directly after an \u3044-adjective ('\u3042\u304a\u3044' - blue) to describe a color.""
+    },
+    {
+      ""correct"": ""\u3042\u306e \u3048\u3044\u304c\u306f \u304a\u3082\u3057\u308d\u3044 \u3067\u3059\u3002"",
+      ""translation"": ""That movie is interesting."",
+      ""explanation"": ""Demonstrates \u3067\u3059 used directly after an \u3044-adjective ('\u304a\u3082\u3057\u308d\u3044' - interesting) to describe a characteristic.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""\u3053\u308c\u306f \u307b\u3093\u3002"",
+      ""correct"": ""\u3053\u308c\u306f \u307b\u3093 \u3067\u3059\u3002"",
+      ""explanation"": ""Omitting \u3067\u3059 is a common mistake for beginners. While sometimes understandable in very casual speech, it makes the sentence sound incomplete or informal. Always use \u3067\u3059 at the end of declarative sentences for politeness and completeness at this level.""
+    },
+    {
+      ""incorrect"": ""\u308f\u305f\u3057\u306f \u305f\u3079\u307e\u3059 \u3067\u3059\u3002"",
+      ""correct"": ""\u308f\u305f\u3057\u306f \u305f\u3079\u307e\u3059\u3002"",
+      ""explanation"": ""Do not use \u3067\u3059 directly after a verb (like '\u305f\u3079\u307e\u3059' - eat). \u3067\u3059 is a copula for nouns and adjectives, not for verbs. Verbs already contain the 'is/am/are' meaning and politeness (if using ~masu form).""
+    },
+    {
+      ""incorrect"": ""\u3053\u306e \u3044\u308d\u306f \u3042\u304b \u3067\u3059\u3002"",
+      ""correct"": ""\u3053\u306e \u3044\u308d\u306f \u3042\u304b\u3044 \u3067\u3059\u3002"",
+      ""explanation"": ""When using \u3044-adjectives, the entire adjective (including the '\u3044') comes before \u3067\u3059. Do not drop the final '\u3044' of an \u3044-adjective before adding \u3067\u3059. '\u3042\u304b' is a noun for 'red color', not the adjective 'red'.""
+    },
+    {
+      ""incorrect"": ""\u3053\u306e \u3044\u308d\u306f \u3042\u304b\u3044 \u306f \u3067\u3059\u3002"",
+      ""correct"": ""\u3053\u306e \u3044\u308d\u306f \u3042\u304b\u3044 \u3067\u3059\u3002"",
+      ""explanation"": ""Do not insert particles like \u306f or \u304c between an \u3044-adjective and \u3067\u3059. The \u3044-adjective directly precedes \u3067\u3059.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with the correct form: \u3053\u308c\u306f (book)."",
+      ""answer"": ""\u3053\u308c\u306f \u307b\u3093 \u3067\u3059\u3002"",
+      ""explanation"": ""To state 'This is a book', you use the noun '\u307b\u3093' followed by \u3067\u3059.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form: \u304d\u3087\u3046\u306f (Tuesday)."",
+      ""answer"": ""\u304d\u3087\u3046\u306f \u304b\u3088\u3046\u3073 \u3067\u3059\u3002"",
+      ""explanation"": ""To state 'Today is Tuesday', you use the noun '\u304b\u3088\u3046\u3073' followed by \u3067\u3059.""
+    },
+    {
+      ""question"": ""Translate: This bag is black."",
+      ""answer"": ""\u3053\u306e \u304b\u3070\u3093\u306f \u304f\u308d\u3044 \u3067\u3059\u3002"",
+      ""explanation"": ""'This bag' is '\u3053\u306e \u304b\u3070\u3093'. 'Black' (adjective) is '\u304f\u308d\u3044'. For adjectives, \u3067\u3059 follows directly after the adjective.""
+    },
+    {
+      ""question"": ""Translate: That person is my father."",
+      ""answer"": ""\u3042\u306e \u3072\u3068\u306f \u308f\u305f\u3057\u306e\u304a\u3068\u3046\u3055\u3093 \u3067\u3059\u3002"",
+      ""explanation"": ""'That person' is '\u3042\u306e \u3072\u3068'. 'My father' is '\u308f\u305f\u3057\u306e\u304a\u3068\u3046\u3055\u3093'. For nouns, \u3067\u3059 follows directly after the noun.""
+    },
+    {
+      ""question"": ""Is this sentence correct? \u300c\u305d\u306e \u304f\u308b\u307e\u306f \u304a\u304a\u304d\u3044\u3002\u300d (That car is big.) If not, correct it."",
+      ""answer"": ""Incorrect. Correct: \u305d\u306e \u304f\u308b\u307e\u306f \u304a\u304a\u304d\u3044 \u3067\u3059\u3002"",
+      ""explanation"": ""The sentence is missing \u3067\u3059 at the end. While '\u304a\u304a\u304d\u3044' is an \u3044-adjective, for politeness and completeness at this level, \u3067\u3059 should be added.""
+    }
+  ]
+}",
+grammar,Japanese,3,"{
+  ""topic"": ""\u52d5\u8a5e\u306e\u6d3b\u7528\uff1a\u307e\u3059\u30fb\u307e\u305b\u3093\u30fb\u307e\u3057\u305f\u30fb\u307e\u305b\u3093\u3067\u3057\u305f (Verb Conjugation: \u307e\u3059/\u307e\u305b\u3093/\u307e\u3057\u305f/\u307e\u305b\u3093\u3067\u3057\u305f - Present/Past, Affirmative/Negative)"",
+  ""explanation"": ""In Japanese, verbs change their endings to indicate tense (present/future or past) and polarity (affirmative or negative). At Level 3, you'll primarily use the polite forms ending in -\u307e\u3059 (-masu). These forms are essential for polite daily conversations.\n\nHere are the four key forms you need to know:\n\n1.  **-\u307e\u3059 (masu):** Polite Present/Future Affirmative\n    *   Used for actions happening now, regularly, or in the future.\n    *   **Formation:** Verb Stem + \u307e\u3059\n    *   *Example:* \u98df\u3079\u307e\u3059 (tabemasu) - 'eat' or 'will eat'\n\n2.  **-\u307e\u305b\u3093 (masen):** Polite Present/Future Negative\n    *   Used for actions not happening now, not regularly, or not in the future.\n    *   **Formation:** Verb Stem + \u307e\u305b\u3093\n    *   *Example:* \u98df\u3079\u307e\u305b\u3093 (tabemasen) - 'don't eat' or 'won't eat'\n\n3.  **-\u307e\u3057\u305f (mashita):** Polite Past Affirmative\n    *   Used for actions that were completed in the past.\n    *   **Formation:** Verb Stem + \u307e\u3057\u305f\n    *   *Example:* \u98df\u3079\u307e\u3057\u305f (tabemashita) - 'ate'\n\n4.  **-\u307e\u305b\u3093\u3067\u3057\u305f (masen deshita):** Polite Past Negative\n    *   Used for actions that did not happen in the past.\n    *   **Formation:** Verb Stem + \u307e\u305b\u3093\u3067\u3057\u305f\n    *   *Example:* \u98df\u3079\u307e\u305b\u3093\u3067\u3057\u305f (tabemasen deshita) - 'didn't eat'\n\n**How to find the Verb Stem:**\n*   **Ru-verbs (Ichidan Verbs):** Drop the \u308b (ru) from the dictionary form.\n    *   \u4f8b (Example): \u98df\u3079\u308b (taberu - to eat) -> \u98df\u3079 (tabe) Stem\n    *   \u898b\u308b (miru - to see/watch) -> \u898b (mi) Stem\n*   **U-verbs (Godan Verbs):** Change the final U-sound to an I-sound.\n    *   \u4f8b (Example): \u98f2\u3080 (nomu - to drink) -> \u98f2\u307f (nomi) Stem\n    *   \u884c\u304f (iku - to go) -> \u884c\u304d (iki) Stem\n*   **Irregular Verbs (Exceptions):**\n    *   \u3059\u308b (suru - to do) -> \u3057 (shi) Stem\n    *   \u6765\u308b (kuru - to come) -> \u6765 (ki) Stem\n\nRemember, these forms are used for polite speech. For casual speech, different conjugations apply, but for Level 3, focus on the -\u307e\u3059 forms!"",
+  ""examples"": [
+    {
+      ""correct"": ""\u79c1\u306f\u6bce\u65e5\u30b3\u30fc\u30d2\u30fc\u3092\u98f2\u307f\u307e\u3059\u3002"",
+      ""translation"": ""I drink coffee every day."",
+      ""explanation"": ""\u300c\u98f2\u307f\u307e\u3059\u300dis the polite present affirmative of \u98f2\u3080 (nomu - to drink), indicating a regular action.""
+    },
+    {
+      ""correct"": ""\u5f7c\u306f\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3057\u307e\u305b\u3093\u3002"",
+      ""translation"": ""He does not study Japanese."",
+      ""explanation"": ""\u300c\u52c9\u5f37\u3057\u307e\u305b\u3093\u300dis the polite present negative of \u52c9\u5f37\u3059\u308b (benkyousuru - to study), indicating a present/future non-action.""
+    },
+    {
+      ""correct"": ""\u6628\u65e5\u3001\u6620\u753b\u3092\u898b\u307e\u3057\u305f\u3002"",
+      ""translation"": ""Yesterday, I watched a movie."",
+      ""explanation"": ""\u300c\u898b\u307e\u3057\u305f\u300dis the polite past affirmative of \u898b\u308b (miru - to see/watch), indicating a completed action in the past.""
+    },
+    {
+      ""correct"": ""\u5148\u9031\u3001\u672c\u3092\u8cb7\u3044\u307e\u305b\u3093\u3067\u3057\u305f\u3002"",
+      ""translation"": ""Last week, I didn't buy a book."",
+      ""explanation"": ""\u300c\u8cb7\u3044\u307e\u305b\u3093\u3067\u3057\u305f\u300dis the polite past negative of \u8cb7\u3046 (kau - to buy), indicating an action that did not happen in the past.""
+    },
+    {
+      ""correct"": ""\u4eca\u65e5\u3001\u4f1a\u793e\u306b\u884c\u304d\u307e\u305b\u3093\u3002"",
+      ""translation"": ""Today, I will not go to the office."",
+      ""explanation"": ""\u300c\u884c\u304d\u307e\u305b\u3093\u300dis the polite present/future negative of \u884c\u304f (iku - to go), indicating a non-action in the near future.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""\u79c1\u306f\u6628\u65e5\u3001\u30d1\u30f3\u3092\u98df\u3079\u307e\u3059\u3002"",
+      ""correct"": ""\u79c1\u306f\u6628\u65e5\u3001\u30d1\u30f3\u3092\u98df\u3079\u307e\u3057\u305f\u3002"",
+      ""explanation"": ""Using \u300c\u98df\u3079\u307e\u3059\u300d (present tense) with \u300c\u6628\u65e5\u300d (yesterday) is incorrect. The past tense \u300c\u98df\u3079\u307e\u3057\u305f\u300d should be used for actions completed in the past.""
+    },
+    {
+      ""incorrect"": ""\u30c6\u30ec\u30d3\u3092\u898b\u307e\u305b\u3093\u3067\u3059\u3002"",
+      ""correct"": ""\u30c6\u30ec\u30d3\u3092\u898b\u307e\u305b\u3093\u3067\u3057\u305f\u3002"",
+      ""explanation"": ""The past negative form is \u300c\u301c\u307e\u305b\u3093\u3067\u3057\u305f\u300d, not \u300c\u301c\u307e\u305b\u3093\u3067\u3059\u300d. Adding \u300c\u3067\u3059\u300d after \u300c\u307e\u305b\u3093\u300d for past tense is a common, but incorrect, combination.""
+    },
+    {
+      ""incorrect"": ""\u6bce\u65e5\u3001\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3059\u308b\u307e\u3059\u3002"",
+      ""correct"": ""\u6bce\u65e5\u3001\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3057\u307e\u3059\u3002"",
+      ""explanation"": ""When conjugating to the -\u307e\u3059 form, you must use the verb stem (\u52c9\u5f37\u3057), not the full dictionary form (\u52c9\u5f37\u3059\u308b).""
+    },
+    {
+      ""incorrect"": ""\u79c1\u306f\u304a\u8336\u3092\u98f2\u307f\u307e\u3059\u3067\u3059\u3002"",
+      ""correct"": ""\u79c1\u306f\u304a\u8336\u3092\u98f2\u307f\u307e\u3059\u3002"",
+      ""explanation"": ""The polite verb endings like \u300c\u307e\u3059\u300d\u300c\u307e\u305b\u3093\u300d\u300c\u307e\u3057\u305f\u300d\u300c\u307e\u305b\u3093\u3067\u3057\u305f\u300d already convey politeness and complete the sentence. Adding \u300c\u3067\u3059\u300d after them is redundant and grammatically incorrect.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with the correct polite verb form (\u307e\u3059/\u307e\u305b\u3093/\u307e\u3057\u305f/\u307e\u305b\u3093\u3067\u3057\u305f): \u6bce\u65e5\u3001\u6c34\u3092\uff08\u98f2\u3080\uff09\u3002[Present Affirmative]"",
+      ""answer"": ""\u98f2\u307f\u307e\u3059"",
+      ""explanation"": ""The verb is \u98f2\u3080 (nomu), and the stem is \u98f2\u307f (nomi). For present affirmative, add -\u307e\u3059.""
+    },
+    {
+      ""question"": ""Fill in the blank: \u79c1\u306f\u6628\u65e5\u3001\u672c\u3092\uff08\u8aad\u3080\uff09\u3002[Past Negative]"",
+      ""answer"": ""\u8aad\u307f\u307e\u305b\u3093\u3067\u3057\u305f"",
+      ""explanation"": ""The verb is \u8aad\u3080 (yomu), and the stem is \u8aad\u307f (yomi). For past negative, add -\u307e\u305b\u3093\u3067\u3057\u305f.""
+    },
+    {
+      ""question"": ""Change the sentence to polite past affirmative: \u79c1\u306f\u97f3\u697d\u3092\u8074\u304d\u307e\u3059\u3002"",
+      ""answer"": ""\u79c1\u306f\u97f3\u697d\u3092\u8074\u304d\u307e\u3057\u305f\u3002"",
+      ""explanation"": ""\u300c\u8074\u304d\u307e\u3059\u300dis the present form. To make it past affirmative, change -\u307e\u3059 to -\u307e\u3057\u305f.""
+    },
+    {
+      ""question"": ""Change the sentence to polite present negative: \u5f7c\u306f\u30c6\u30ec\u30d3\u3092\u898b\u307e\u3057\u305f\u3002"",
+      ""answer"": ""\u5f7c\u306f\u30c6\u30ec\u30d3\u3092\u898b\u307e\u305b\u3093\u3002"",
+      ""explanation"": ""\u300c\u898b\u307e\u3057\u305f\u300dis the past affirmative form. To make it present negative, change -\u307e\u3057\u305f to -\u307e\u305b\u3093.""
+    },
+    {
+      ""question"": ""Translate into Japanese: 'I did not eat breakfast this morning.'"",
+      ""answer"": ""\u4eca\u671d\u3001\u671d\u3054\u306f\u3093\u3092\u98df\u3079\u307e\u305b\u3093\u3067\u3057\u305f\u3002"",
+      ""explanation"": ""\u4eca\u671d (this morning) indicates past tense. 'Did not eat' requires the past negative form of \u98df\u3079\u308b (taberu), which is \u98df\u3079\u307e\u305b\u3093\u3067\u3057\u305f.""
+    },
+    {
+      ""question"": ""Translate into Japanese: 'My friend comes to my house on weekends.'"",
+      ""answer"": ""\u53cb\u9054\u306f\u9031\u672b\u3001\u79c1\u306e\u5bb6\u306b\u6765\u307e\u3059\u3002"",
+      ""explanation"": ""\u9031\u672b (shuumatsu - weekends) indicates a regular action, so use the present affirmative form of \u6765\u308b (kuru), which is \u6765\u307e\u3059.""
+    }
+  ]
+}",
+grammar,Japanese,4,"{
+  ""topic"": ""Plain Past Tense (\u305f\u5f62 - ta-form) of Verbs, i-Adjectives, and na-Adjectives/Nouns"",
+  ""explanation"": ""In Japanese, the plain past tense, often referred to as the 'ta-form' (\u305f\u5f62), is essential for informal conversations and for forming more complex grammatical structures. While you might be familiar with the polite past tense (\uff5e\u307e\u3057\u305f / \uff5e\u3067\u3057\u305f), the plain past tense is its casual equivalent and is crucial for everyday speech among friends and family.\n\n**1. Forming the Plain Past Tense (\u305f\u5f62) for Verbs:**\nJust like the te-form, the ta-form rules for verbs depend on their group (Ichidan, Godan, Irregular). The good news is, the conjugation rules are very similar to the te-form \u2013 you just replace 'te' with 'ta', 'de' with 'da', etc.\n\n*   **Ichidan Verbs (\u4e00\u6bb5\u52d5\u8a5e):**\n    Remove \uff5e\u307e\u3059 and add \uff5e\u305f (ta).\n    Examples: \u98df\u3079\u307e\u3059 (tabemasu - to eat) \u2192 \u98df\u3079\u305f (tabeta) - ate\n              \u898b\u307e\u3059 (mimasu - to see) \u2192 \u898b\u305f (mita) - saw\n\n*   **Godan Verbs (\u4e94\u6bb5\u52d5\u8a5e):**\n    These have various endings, and the sound changes are crucial:\n    *   Verbs ending in \u3046 (u), \u3064 (tsu), \u308b (ru) (in their dictionary form): Replace these sounds with \u3063\u305f (tta).\n        Examples: \u8cb7\u3044\u307e\u3059 (kaimasu - to buy) \u2192 \u8cb7\u3063\u305f (katta) - bought\n                  \u5f85\u3061\u307e\u3059 (machimasu - to wait) \u2192 \u5f85\u3063\u305f (matta) - waited\n                  \u5e30\u308a\u307e\u3059 (kaerimasu - to return) \u2192 \u5e30\u3063\u305f (kaetta) - returned\n    *   Verbs ending in \u3080 (mu), \u3076 (bu), \u306c (nu) (in their dictionary form): Replace these sounds with \u3093\u3060 (nda).\n        Examples: \u8aad\u307f\u307e\u3059 (yomimasu - to read) \u2192 \u8aad\u3093\u3060 (yonda) - read\n                  \u904a\u3073\u307e\u3059 (asobimasu - to play) \u2192 \u904a\u3093\u3060 (asonda) - played\n                  \u6b7b\u306b\u307e\u3059 (shinimasu - to die) \u2192 \u6b7b\u3093\u3060 (shinda) - died\n    *   Verbs ending in \u304f (ku) (in their dictionary form): Replace \u304f with \u3044\u305f (ita).\n        Examples: \u66f8\u304d\u307e\u3059 (kakimasu - to write) \u2192 \u66f8\u3044\u305f (kaita) - wrote\n    *   Verbs ending in \u3050 (gu) (in their dictionary form): Replace \u3050 with \u3044\u3060 (ida).\n        Examples: \u6cf3\u304e\u307e\u3059 (oyogimasu - to swim) \u2192 \u6cf3\u3044\u3060 (oyoida) - swam\n    *   Verbs ending in \u3059 (su) (in their dictionary form): Replace \u3059 with \u3057\u305f (shita).\n        Examples: \u8a71\u3057\u307e\u3059 (hanashimasu - to speak) \u2192 \u8a71\u3057\u305f (hanashita) - spoke\n\n*   **Irregular Verbs (\u4e0d\u898f\u5247\u52d5\u8a5e):**\n    These must be memorized.\n    *   \u3057\u307e\u3059 (shimasu - to do) \u2192 \u3057\u305f (shita) - did\n    *   \u6765\u307e\u3059 (kimasu - to come) \u2192 \u6765\u305f (kita) - came\n\n**2. Forming the Plain Past Tense for i-Adjectives (\u3044\u5f62\u5bb9\u8a5e):**\nFor i-adjectives, remove the final \u3044 and add \u304b\u3063\u305f (katta).\nExamples: \u6691\u3044 (atsui - hot) \u2192 \u6691\u304b\u3063\u305f (atsukatta) - was hot\n          \u9ad8\u3044 (takai - expensive/tall) \u2192 \u9ad8\u304b\u3063\u305f (takakatta) - was expensive / was tall\n\n*   **Exception:** \u826f\u3044 (ii - good) is irregular. Its plain past is \u826f\u304b\u3063\u305f (yokatta) - was good.\n\n**3. Forming the Plain Past Tense for na-Adjectives (\u306a\u5f62\u5bb9\u8a5e) and Nouns:**\nFor na-adjectives and nouns, replace \u3067\u3059 (desu) with \u3060\u3063\u305f (datta).\nExamples: \u9759\u304b\u3067\u3059 (shizuka desu - to be quiet) \u2192 \u9759\u304b\u3060\u3063\u305f (shizuka datta) - was quiet\n          \u5143\u6c17\u3067\u3059 (genki desu - to be energetic/healthy) \u2192 \u5143\u6c17\u3060\u3063\u305f (genki datta) - was energetic/healthy\n          \u5b66\u751f\u3067\u3059 (gakusei desu - to be a student) \u2192 \u5b66\u751f\u3060\u3063\u305f (gakusei datta) - was a student\n\n**Usage Note:** The plain past tense is typically used in informal contexts (with friends, family) or as part of larger grammatical structures. For formal or polite situations, you would use \uff5e\u307e\u3057\u305f or \uff5e\u3067\u3057\u305f."",
+  ""examples"": [
+    {
+      ""correct"": ""\u6628\u65e5\u3001\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3057\u305f\u3002"",
+      ""translation"": ""Yesterday, I studied Japanese."",
+      ""explanation"": ""The verb \u52c9\u5f37\u3057\u307e\u3059 (benkyoushimasu - to study) is an irregular verb (like \u3057\u307e\u3059) that transforms into \u52c9\u5f37\u3057\u305f (benkyoushita) in the plain past tense.""
+    },
+    {
+      ""correct"": ""\u3042\u306e\u6620\u753b\u306f\u9762\u767d\u304b\u3063\u305f\u3002"",
+      ""translation"": ""That movie was interesting."",
+      ""explanation"": ""\u9762\u767d\u3044 (omoshiroi - interesting) is an i-adjective. To form its plain past tense, the final \u3044 is removed and \u304b\u3063\u305f is added, resulting in \u9762\u767d\u304b\u3063\u305f.""
+    },
+    {
+      ""correct"": ""\u53bb\u5e74\u3001\u5f7c\u306f\u5b66\u751f\u3060\u3063\u305f\u3002"",
+      ""translation"": ""Last year, he was a student."",
+      ""explanation"": ""\u5b66\u751f\u3067\u3059 (gakusei desu - is a student) is a noun followed by \u3067\u3059. To change this to plain past tense, \u3067\u3059 is replaced by \u3060\u3063\u305f, resulting in \u5b66\u751f\u3060\u3063\u305f.""
+    },
+    {
+      ""correct"": ""\u6628\u65e5\u306f\u5bd2\u304b\u3063\u305f\uff1f"",
+      ""translation"": ""Was it cold yesterday?"",
+      ""explanation"": ""\u5bd2\u3044 (samui - cold) is an i-adjective. Its plain past is \u5bd2\u304b\u3063\u305f. This example shows that plain past can also be used in informal questions.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""\u3053\u306e\u30ec\u30b9\u30c8\u30e9\u30f3\u306f\u9759\u304b\u304b\u3063\u305f\u3002"",
+      ""correct"": ""\u3053\u306e\u30ec\u30b9\u30c8\u30e9\u30f3\u306f\u9759\u304b\u3060\u3063\u305f\u3002"",
+      ""explanation"": ""\u9759\u304b (shizuka - quiet) is a na-adjective. Na-adjectives and nouns use \u3060\u3063\u305f for the plain past tense, not \u304b\u3063\u305f. \u304b\u3063\u305f is exclusively for i-adjectives.""
+    },
+    {
+      ""incorrect"": ""\u53cb\u9054\u3068\u4f1a\u3044\u307e\u3057\u305f\u3002"",
+      ""correct"": ""\u53cb\u9054\u3068\u4f1a\u3063\u305f\u3002"",
+      ""explanation"": ""The incorrect example uses the polite past tense (\uff5e\u307e\u3057\u305f). The task is to use the plain past tense (\u305f\u5f62). \u4f1a\u3044\u307e\u3059 (aimasu - Godan verb) correctly conjugates to \u4f1a\u3063\u305f (atta) in the plain past tense.""
+    },
+    {
+      ""incorrect"": ""\u6628\u65e5\u3001\u826f\u3044\u5929\u6c17\u3067\u3057\u305f\u3002"",
+      ""correct"": ""\u6628\u65e5\u3001\u826f\u3044\u5929\u6c17\u3060\u3063\u305f\u3002"",
+      ""explanation"": ""\u5929\u6c17 (tenki - weather) is a noun. When combined with \u3067\u3059 (desu) to form a descriptive phrase, the plain past tense for \u3067\u3059 is \u3060\u3063\u305f. Therefore, 'was good weather' becomes \u826f\u3044\u5929\u6c17\u3060\u3063\u305f. (Note: The adjective \u826f\u3044 itself has an irregular past form: \u826f\u304b\u3063\u305f).""
+    },
+    {
+      ""incorrect"": ""\u3042\u306e\u672c\u306f\u3088\u304b\u3063\u305f\u3067\u3059\u3002"",
+      ""correct"": ""\u3042\u306e\u672c\u306f\u826f\u304b\u3063\u305f\u3002"",
+      ""explanation"": ""\u826f\u3044 (ii - good) is an irregular i-adjective. Its plain past tense is \u826f\u304b\u3063\u305f (yokatta). Adding \u3067\u3059 after a plain form (like \u3088\u304b\u3063\u305f\u3067\u3059) is a common mistake when trying to mix plain and polite forms.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Change the following verbs/adjectives/nouns to their plain past tense (\u305f\u5f62) forms:"",
+      ""answer"": ""Answers below each item."",
+      ""explanation"": ""N/A""
+    },
+    {
+      ""question"": ""1. \u98df\u3079\u307e\u3059 (tabemasu - to eat)"",
+      ""answer"": ""\u98df\u3079\u305f (tabeta)"",
+      ""explanation"": ""Ichidan verb: remove \uff5e\u307e\u3059, add \uff5e\u305f.""
+    },
+    {
+      ""question"": ""2. \u884c\u304d\u307e\u3059 (ikimasu - to go)"",
+      ""answer"": ""\u884c\u3063\u305f (itta)"",
+      ""explanation"": ""Godan verb ending in \u304f becomes \u3063\u305f after the sound change.""
+    },
+    {
+      ""question"": ""3. \u8aad\u307f\u307e\u3059 (yomimasu - to read)"",
+      ""answer"": ""\u8aad\u3093\u3060 (yonda)"",
+      ""explanation"": ""Godan verb ending in \u3080 becomes \u3093\u3060.""
+    },
+    {
+      ""question"": ""4. \u9759\u304b\u3067\u3059 (shizuka desu - to be quiet)"",
+      ""answer"": ""\u9759\u304b\u3060\u3063\u305f (shizuka datta)"",
+      ""explanation"": ""Na-adjective: remove \uff5e\u3067\u3059, add \uff5e\u3060\u3063\u305f.""
+    },
+    {
+      ""question"": ""5. \u5fd9\u3057\u3044 (isogashii - busy)"",
+      ""answer"": ""\u5fd9\u3057\u304b\u3063\u305f (isogashikatta)"",
+      ""explanation"": ""i-adjective: remove final \u3044, add \u304b\u3063\u305f.""
+    },
+    {
+      ""question"": ""6. \u5b66\u751f\u3067\u3059 (gakusei desu - to be a student)"",
+      ""answer"": ""\u5b66\u751f\u3060\u3063\u305f (gakusei datta)"",
+      ""explanation"": ""Noun + \u3067\u3059: remove \uff5e\u3067\u3059, add \uff5e\u3060\u3063\u305f.""
+    },
+    {
+      ""question"": ""7. \u6765\u307e\u3059 (kimasu - to come)"",
+      ""answer"": ""\u6765\u305f (kita)"",
+      ""explanation"": ""Irregular verb.""
+    }
+  ]
+}",
+grammar,Japanese,5,"{
+  ""topic"": ""Plain Form for Future Actions and States"",
+  ""explanation"": ""Japanese does not have a distinct 'future tense' like English. Instead, the plain form (also known as the dictionary form for verbs) is used to express actions and states that will happen in the future, as well as present habitual actions or general truths. The specific meaning (future, present habitual, or general truth) is usually determined by the context, often with the help of time adverbs like \u660e\u65e5 (tomorrow), \u6765\u9031 (next week), etc.\n\nWhile polite \u3067\u3059/\u307e\u3059 forms are used in formal or polite situations, the plain form is essential for casual speech, when quoting someone, or in certain grammatical structures (like clauses modifying nouns). This lesson focuses on its use to convey future meaning.\n\n**Forming the Plain Form (Present Affirmative/Negative):**\n\n*   **Verbs:** Use the Dictionary Form (e.g., \u98df\u3079\u308b 'to eat', \u884c\u304f 'to go', \u52c9\u5f37\u3059\u308b 'to study'). For negative, use the -\u306a\u3044 form (e.g., \u98df\u3079\u306a\u3044 'won't eat', \u884c\u304b\u306a\u3044 'won't go', \u52c9\u5f37\u3057\u306a\u3044 'won't study').\n*   **I-adjectives:** Use the adjective as is (e.g., \u6691\u3044 'hot', \u5bd2\u3044 'cold', \u5fd9\u3057\u3044 'busy'). For negative, replace -\u3044 with -\u304f\u306a\u3044 (e.g., \u6691\u304f\u306a\u3044 'not hot', \u5bd2\u304f\u306a\u3044 'not cold', \u5fd9\u3057\u304f\u306a\u3044 'not busy').\n*   **Na-adjectives:** Add \u3060 (e.g., \u304d\u308c\u3044\u3060 'is pretty/clean', \u5143\u6c17\u3060 'is well', \u9759\u304b\u3060 'is quiet'). For negative, add \u3058\u3083\u306a\u3044 (e.g., \u304d\u308c\u3044\u3058\u3083\u306a\u3044 'is not pretty/clean', \u5143\u6c17\u3058\u3083\u306a\u3044 'is not well', \u9759\u304b\u3058\u3083\u306a\u3044 'is not quiet').\n*   **Nouns:** Add \u3060 (e.g., \u5b66\u751f\u3060 'is a student', \u533b\u8005\u3060 'is a doctor', \u96e8\u3060 'is rain'). For negative, add \u3058\u3083\u306a\u3044 (e.g., \u5b66\u751f\u3058\u3083\u306a\u3044 'is not a student', \u533b\u8005\u3058\u3083\u306a\u3044 'is not a doctor', \u96e8\u3058\u3083\u306a\u3044 'is not rain')."",
+  ""examples"": [
+    {
+      ""correct"": ""\u660e\u65e5\u3001\u6771\u4eac\u306b\u884c\u304f\u3002"",
+      ""translation"": ""I will go to Tokyo tomorrow."",
+      ""explanation"": ""The time adverb '\u660e\u65e5' (tomorrow) indicates a future action. '\u884c\u304f' is the plain (dictionary) form of the verb '\u884c\u304d\u307e\u3059'.""
+    },
+    {
+      ""correct"": ""\u6765\u9031\u3001\u7530\u4e2d\u3055\u3093\u306f\u5fd9\u3057\u3044\u3002"",
+      ""translation"": ""Mr. Tanaka will be busy next week."",
+      ""explanation"": ""'\u6765\u9031' (next week) indicates a future state. '\u5fd9\u3057\u3044' is an i-adjective, used as is in its plain form. No '\u3067\u3059' is needed for plain speech.""
+    },
+    {
+      ""correct"": ""\u5f7c\u306f\u5c06\u6765\u3001\u533b\u8005\u3060\u3002"",
+      ""translation"": ""He will be a doctor in the future."",
+      ""explanation"": ""'\u5c06\u6765' (in the future) indicates a future state/identity. '\u533b\u8005\u3060' is the plain form for a noun ('\u533b\u8005' + '\u3060').""
+    },
+    {
+      ""correct"": ""\u4eca\u6669\u3001\u30c6\u30ec\u30d3\u3092\u898b\u306a\u3044\u3002"",
+      ""translation"": ""I won't watch TV tonight."",
+      ""explanation"": ""'\u4eca\u6669' (tonight) indicates a future action. '\u898b\u306a\u3044' is the plain negative form of the verb '\u898b\u307e\u3059'.""
+    },
+    {
+      ""correct"": ""\u660e\u65e5\u306f\u96e8\u3058\u3083\u306a\u3044\u3002"",
+      ""translation"": ""It won't be rainy tomorrow."",
+      ""explanation"": ""'\u660e\u65e5' (tomorrow) indicates a future state. '\u96e8\u3058\u3083\u306a\u3044' is the plain negative form for the noun '\u96e8'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""\u660e\u65e5\u3001\u6771\u4eac\u306b\u884c\u304d\u307e\u3059\u3002"",
+      ""correct"": ""\u660e\u65e5\u3001\u6771\u4eac\u306b\u884c\u304f\u3002"",
+      ""explanation"": ""While '\u660e\u65e5\u3001\u6771\u4eac\u306b\u884c\u304d\u307e\u3059' is grammatically correct and polite, it uses the \u3067\u3059/\u307e\u3059 form. For casual conversation or when embedding sentences (which you'll learn later), the plain form ('\u884c\u304f') is necessary. The meaning of future comes from '\u660e\u65e5'.""
+    },
+    {
+      ""incorrect"": ""\u5f7c\u5973\u306f\u660e\u65e5\u3001\u5143\u6c17\u3067\u3059\u3002"",
+      ""correct"": ""\u5f7c\u5973\u306f\u660e\u65e5\u3001\u5143\u6c17\u3060\u3002"",
+      ""explanation"": ""For na-adjectives and nouns in the plain affirmative form, you use '\u3060' (\u5143\u6c17\u3060, \u533b\u8005\u3060), not '\u3067\u3059'. '\u5143\u6c17\u3067\u3059' is the polite form.""
+    },
+    {
+      ""incorrect"": ""\u5f7c\u306f\u5fd9\u3057\u3044\u3002"",
+      ""correct"": ""\u6765\u9031\u3001\u5f7c\u306f\u5fd9\u3057\u3044\u3002"",
+      ""explanation"": ""Without a specific time adverb like '\u6765\u9031' (next week), '\u5f7c\u306f\u5fd9\u3057\u3044' typically implies a current or general state ('He is busy'), not necessarily a future one, which is the focus here. Context is key for future meaning with plain forms.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Change the following polite sentence to its plain form, expressing a future action: \u300c\u6765\u5e74\u3001\u65b0\u3057\u3044\u5bb6\u3092\u8cb7\u3044\u307e\u3059\u3002\u300d"",
+      ""answer"": ""\u6765\u5e74\u3001\u65b0\u3057\u3044\u5bb6\u3092\u8cb7\u3046\u3002"",
+      ""explanation"": ""The polite verb '\u8cb7\u3044\u307e\u3059' changes to its plain (dictionary) form '\u8cb7\u3046'. '\u6765\u5e74' (next year) sets the future context.""
+    },
+    {
+      ""question"": ""Complete the sentence with the plain form of the i-adjective in parentheses, expressing a future state: \u300c\u9031\u672b\u306f\uff08\u5fd9\u3057\u3044\uff09\u3002\u300d"",
+      ""answer"": ""\u9031\u672b\u306f\u5fd9\u3057\u3044\u3002"",
+      ""explanation"": ""'\u5fd9\u3057\u3044' is an i-adjective. Its plain form is the same as its dictionary form. '\u9031\u672b' (weekend) sets the future context.""
+    },
+    {
+      ""question"": ""Rephrase the following polite sentence into its plain form, expressing a future event: \u300c\u660e\u65e5\u306f\u6674\u308c\u3067\u3059\u3002\u300d"",
+      ""answer"": ""\u660e\u65e5\u306f\u6674\u308c\u3060\u3002"",
+      ""explanation"": ""'\u6674\u308c' is a noun. Its plain form for a positive present/future statement is '\u6674\u308c\u3060'.""
+    },
+    {
+      ""question"": ""Change the following sentence to its plain negative form, expressing a future action: \u300c\u79c1\u306f\u6765\u6708\u3001\u65c5\u884c\u306b\u884c\u304d\u307e\u305b\u3093\u3002\u300d"",
+      ""answer"": ""\u79c1\u306f\u6765\u6708\u3001\u65c5\u884c\u306b\u884c\u304b\u306a\u3044\u3002"",
+      ""explanation"": ""The polite negative verb '\u884c\u304d\u307e\u305b\u3093' changes to its plain negative form '\u884c\u304b\u306a\u3044'. '\u6765\u6708' (next month) sets the future context.""
+    },
+    {
+      ""question"": ""Complete the sentence with the plain form of the na-adjective in parentheses, expressing a future state: \u300c\u6b21\u306e\u4f1a\u8b70\u306f\uff08\u91cd\u8981\u3060\uff09\u3002\u300d"",
+      ""answer"": ""\u6b21\u306e\u4f1a\u8b70\u306f\u91cd\u8981\u3060\u3002"",
+      ""explanation"": ""'\u91cd\u8981\u3060' is a na-adjective. Its plain form for a positive present/future statement is '\u91cd\u8981\u3060'. '\u6b21\u306e\u4f1a\u8b70' (next meeting) implies a future event.""
+    }
+  ]
+}",
+grammar,English,1,"{
+  ""topic"": ""The Verb \""To Be\"" (Am, Is, Are) for Identity & Naming"",
+  ""explanation"": ""The verb \""to be\"" is one of the most important verbs in English. We use it to talk about who someone is, what something is, or to name things.\n\nIn English, \""to be\"" changes its form depending on the 'person' (the subject) doing the action. For Level 1, we focus on three main forms: **am**, **is**, and **are**.\n\n*   **I + am**: Used when you talk about yourself.\n    *   Example: I **am** Maria.\n*   **He / She / It + is**: Used when you talk about one person (a male, a female) or one thing/animal.\n    *   Example: He **is** Tom. She **is** Anna. It **is** a book.\n*   **You / We / They + are**: Used when you talk about \""you\"" (one person or many people), or about more than one person or thing.\n    *   Example: You **are** a student. We **are** friends. They **are** numbers."",
+  ""examples"": [
+    {
+      ""correct"": ""I am John."",
+      ""translation"": ""I am John."",
+      ""explanation"": ""\""I\"" (the speaker) always uses \""am.\"" This sentence tells us the person's name.""
+    },
+    {
+      ""correct"": ""She is happy."",
+      ""translation"": ""She is happy."",
+      ""explanation"": ""\""She\"" (one female person) always uses \""is.\"" This sentence describes her feeling.""
+    },
+    {
+      ""correct"": ""They are students."",
+      ""translation"": ""They are students."",
+      ""explanation"": ""\""They\"" (more than one person) always uses \""are.\"" This sentence tells us what they are.""
+    },
+    {
+      ""correct"": ""It is a cat."",
+      ""translation"": ""It is a cat."",
+      ""explanation"": ""\""It\"" (one thing or animal) always uses \""is.\"" This sentence names an animal.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""I is happy."",
+      ""correct"": ""I am happy."",
+      ""explanation"": ""\""I\"" always uses \""am,\"" not \""is.\""""
+    },
+    {
+      ""incorrect"": ""He are a boy."",
+      ""correct"": ""He is a boy."",
+      ""explanation"": ""\""He\"" (one male person) always uses \""is,\"" not \""are.\""""
+    },
+    {
+      ""incorrect"": ""They am friends."",
+      ""correct"": ""They are friends."",
+      ""explanation"": ""\""They\"" (more than one person) always uses \""are,\"" not \""am.\""""
+    },
+    {
+      ""incorrect"": ""You student."",
+      ""correct"": ""You are a student."",
+      ""explanation"": ""In English, we almost always need a verb in a sentence. \""Are\"" is the correct form of \""to be\"" needed here.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nI ____ a student."",
+      ""answer"": ""am"",
+      ""explanation"": ""\""I\"" always uses \""am.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nShe ____ my teacher."",
+      ""answer"": ""is"",
+      ""explanation"": ""\""She\"" (one person) always uses \""is.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nThey ____ happy."",
+      ""answer"": ""are"",
+      ""explanation"": ""\""They\"" (more than one person) always uses \""are.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nHe ____ 5 years old."",
+      ""answer"": ""is"",
+      ""explanation"": ""\""He\"" (one person) always uses \""is.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nWe ____ friends."",
+      ""answer"": ""are"",
+      ""explanation"": ""\""We\"" (more than one person, including \""I\"") always uses \""are.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nIt ____ a pen."",
+      ""answer"": ""is"",
+      ""explanation"": ""\""It\"" (one thing) always uses \""is.\""""
+    },
+    {
+      ""question"": ""Fill in the blank with **am**, **is**, or **are**:\nYou ____ a good person."",
+      ""answer"": ""are"",
+      ""explanation"": ""\""You\"" (singular or plural) always uses \""are.\""""
+    }
+  ]
+}",
+grammar,English,2,"{
+  ""topic"": ""The Verb 'To Be': Am, Is, Are"",
+  ""explanation"": ""The verb 'to be' is one of the most important verbs in English! We use 'am', 'is', and 'are' to talk about who someone is, what something is, colors, and days. It tells us about a state or condition.\n\nHere's how to use them with different people:\n\n*   **I + am**: Use 'am' only with 'I'.\n    *   Example: I am happy.\n\n*   **He / She / It + is**: Use 'is' with 'he' (for a boy/man), 'she' (for a girl/woman), and 'it' (for a thing or animal, or a day).\n    *   Example: He is tall. She is my sister. It is a dog. Today is Monday.\n\n*   **You / We / They + are**: Use 'are' with 'you' (one person or many people), 'we' (you and me), and 'they' (many people, animals, or things).\n    *   Example: You are kind. We are friends. They are doctors. The colors are bright."",
+  ""examples"": [
+    {
+      ""correct"": ""I am a student."",
+      ""translation"": ""I (person) student."",
+      ""explanation"": ""We use 'am' only when the subject is 'I'.""
+    },
+    {
+      ""correct"": ""She is my mother."",
+      ""translation"": ""She (woman) my mother."",
+      ""explanation"": ""We use 'is' with 'she' because 'she' is a singular person.""
+    },
+    {
+      ""correct"": ""He is happy."",
+      ""translation"": ""He (man) happy."",
+      ""explanation"": ""We use 'is' with 'he' because 'he' is a singular person.""
+    },
+    {
+      ""correct"": ""It is blue."",
+      ""translation"": ""It (thing) blue."",
+      ""explanation"": ""We use 'is' with 'it' because 'it' refers to a singular thing or color.""
+    },
+    {
+      ""correct"": ""Today is Tuesday."",
+      ""translation"": ""This day Tuesday."",
+      ""explanation"": ""We use 'is' with 'today' (which acts like 'it' for a day).""
+    },
+    {
+      ""correct"": ""We are friends."",
+      ""translation"": ""We (many people) friends."",
+      ""explanation"": ""We use 'are' with 'we' because 'we' means more than one person.""
+    },
+    {
+      ""correct"": ""They are yellow."",
+      ""translation"": ""They (many things) yellow."",
+      ""explanation"": ""We use 'are' with 'they' because 'they' means more than one thing or person.""
+    },
+    {
+      ""correct"": ""You are my brother."",
+      ""translation"": ""You (one person) my brother."",
+      ""explanation"": ""We use 'are' with 'you', whether 'you' means one person or many people.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""I is happy."",
+      ""correct"": ""I am happy."",
+      ""explanation"": ""Remember, 'is' is never used with 'I'. Only 'am' goes with 'I'.""
+    },
+    {
+      ""incorrect"": ""She are my sister."",
+      ""correct"": ""She is my sister."",
+      ""explanation"": ""'She' is singular (one person), so we use 'is', not 'are'.""
+    },
+    {
+      ""incorrect"": ""They is sad."",
+      ""correct"": ""They are sad."",
+      ""explanation"": ""'They' is plural (more than one person/thing), so we use 'are', not 'is'.""
+    },
+    {
+      ""incorrect"": ""He a boy."",
+      ""correct"": ""He is a boy."",
+      ""explanation"": ""In English, most sentences need a verb. You cannot remove 'is' or 'am' or 'are'.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n1. I ____ a student."",
+      ""answer"": ""am"",
+      ""explanation"": ""Use 'am' with 'I'.""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n2. She ____ my mother."",
+      ""answer"": ""is"",
+      ""explanation"": ""Use 'is' with 'she'.""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n3. The sky ____ blue."",
+      ""answer"": ""is"",
+      ""explanation"": ""The sky is one thing, so use 'is' (like 'it is').""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n4. We ____ friends."",
+      ""answer"": ""are"",
+      ""explanation"": ""Use 'are' with 'we'.""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n5. Today ____ Friday."",
+      ""answer"": ""is"",
+      ""explanation"": ""Use 'is' with 'today' (like 'it is').""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n6. They ____ my family."",
+      ""answer"": ""are"",
+      ""explanation"": ""Use 'are' with 'they'.""
+    },
+    {
+      ""question"": ""Fill in the blank with **am, is, or are**:\n7. My brother ____ tall."",
+      ""answer"": ""is"",
+      ""explanation"": ""My brother is one person (like 'he'), so use 'is'.""
+    }
+  ]
+}",
+grammar,English,3,"{
+  ""topic"": ""The Simple Present Tense: Talking About Daily Activities & Habits"",
+  ""explanation"": ""The Simple Present Tense is used to talk about:\n1.  Things you do regularly or as a habit (daily activities, routines).\n    *   Example: I *eat* breakfast every morning.\n2.  Facts or things that are always true.\n    *   Example: The sun *rises* in the east.\n\n**How to form the Simple Present Tense:**\n\n*   **For I, You, We, They:** The verb stays in its basic form (the base verb).\n    *   Example: I *walk* to school. We *live* in a city.\n\n*   **For He, She, It (and singular nouns like 'my friend', 'the dog'):** Add '-s' or '-es' to the end of the verb.\n    *   Most verbs: Just add '-s'. (e.g., sleep -> sleeps, work -> works)\n    *   Verbs ending in -ss, -sh, -ch, -x, -o: Add '-es'. (e.g., wash -> washes, teach -> teaches, go -> goes)\n    *   Verbs ending in a consonant + 'y': Change 'y' to 'i' and add '-es'. (e.g., study -> studies, cry -> cries)\n\nRemember: The verb changes only when the subject is 'he', 'she', 'it', or a singular noun that can be replaced by 'he', 'she', or 'it'."",
+  ""examples"": [
+    {
+      ""correct"": ""I drink coffee every morning."",
+      ""translation"": ""Eu bebo caf\u00e9 toda manh\u00e3."",
+      ""explanation"": ""For the subject 'I', the verb 'drink' stays in its basic form.""
+    },
+    {
+      ""correct"": ""She drinks coffee every morning."",
+      ""translation"": ""Ela bebe caf\u00e9 toda manh\u00e3."",
+      ""explanation"": ""For the subject 'She', we add '-s' to the verb 'drink'.""
+    },
+    {
+      ""correct"": ""We watch TV in the evening."",
+      ""translation"": ""N\u00f3s assistimos TV \u00e0 noite."",
+      ""explanation"": ""For the subject 'We', the verb 'watch' stays in its basic form.""
+    },
+    {
+      ""correct"": ""He watches TV in the evening."",
+      ""translation"": ""Ele assiste TV \u00e0 noite."",
+      ""explanation"": ""For the subject 'He', the verb 'watch' ends in -ch, so we add '-es'.""
+    },
+    {
+      ""correct"": ""They go to school by bus."",
+      ""translation"": ""Eles v\u00e3o para a escola de \u00f4nibus."",
+      ""explanation"": ""For the subject 'They', the verb 'go' stays in its basic form.""
+    },
+    {
+      ""correct"": ""It goes very fast."",
+      ""translation"": ""Ele/Ela vai muito r\u00e1pido."",
+      ""explanation"": ""For the subject 'It', the verb 'go' ends in -o, so we add '-es'.""
+    },
+    {
+      ""correct"": ""You study English every day."",
+      ""translation"": ""Voc\u00ea estuda ingl\u00eas todos os dias."",
+      ""explanation"": ""For the subject 'You', the verb 'study' stays in its basic form.""
+    },
+    {
+      ""correct"": ""My brother studies English every day."",
+      ""translation"": ""Meu irm\u00e3o estuda ingl\u00eas todos os dias."",
+      ""explanation"": ""'My brother' is like 'He'. The verb 'study' ends in a consonant + 'y', so we change 'y' to 'i' and add '-es'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""He go to school."",
+      ""correct"": ""He goes to school."",
+      ""explanation"": ""Mistake: Forgetting to add '-s' or '-es' for 'he', 'she', 'it'. 'Go' with 'he' becomes 'goes'.""
+    },
+    {
+      ""incorrect"": ""I eats breakfast."",
+      ""correct"": ""I eat breakfast."",
+      ""explanation"": ""Mistake: Adding '-s' unnecessarily for 'I', 'you', 'we', 'they'. For these subjects, the verb is in its basic form.""
+    },
+    {
+      ""incorrect"": ""She is walk to work."",
+      ""correct"": ""She walks to work."",
+      ""explanation"": ""Mistake: Mixing the 'be' verb ('is') with a simple present tense main verb ('walk'). 'Is' is used for descriptions (e.g., 'She is happy') or with '-ing' verbs for actions happening now (e.g., 'She is walking now'). For daily habits, just use the simple present verb.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with the correct form of the verb in parentheses:\n1. I ____ (wake up) at 7 AM."",
+      ""answer"": ""wake up"",
+      ""explanation"": ""Subject 'I' takes the basic form of the verb.""
+    },
+    {
+      ""question"": ""2. My sister ____ (brush) her teeth."",
+      ""answer"": ""brushes"",
+      ""explanation"": ""Subject 'My sister' is 'she'. Verb 'brush' ends in -sh, so add '-es'.""
+    },
+    {
+      ""question"": ""3. They ____ (eat) lunch at noon."",
+      ""answer"": ""eat"",
+      ""explanation"": ""Subject 'They' takes the basic form of the verb.""
+    },
+    {
+      ""question"": ""4. He ____ (play) soccer on Saturdays."",
+      ""answer"": ""plays"",
+      ""explanation"": ""Subject 'He' requires adding '-s' to the verb.""
+    },
+    {
+      ""question"": ""5. We ____ (study) English in the evening."",
+      ""answer"": ""study"",
+      ""explanation"": ""Subject 'We' takes the basic form of the verb.""
+    },
+    {
+      ""question"": ""6. The sun ____ (rise) in the east."",
+      ""answer"": "" rises"",
+      ""explanation"": ""Subject 'The sun' is 'it'. Add '-s' to the verb.""
+    },
+    {
+      ""question"": ""7. She ____ (go) to work by bus."",
+      ""answer"": ""goes"",
+      ""explanation"": ""Subject 'She' requires the verb 'go' to become 'goes' (ends in -o, add '-es').""
+    },
+    {
+      ""question"": ""8. My cat ____ (sleep) a lot."",
+      ""answer"": ""sleeps"",
+      ""explanation"": ""Subject 'My cat' is 'it'. Add '-s' to the verb.""
+    },
+    {
+      ""question"": ""9. You ____ (finish) work late."",
+      ""answer"": ""finish"",
+      ""explanation"": ""Subject 'You' takes the basic form of the verb.""
+    },
+    {
+      ""question"": ""10. He ____ (wash) his car every week."",
+      ""answer"": ""washes"",
+      ""explanation"": ""Subject 'He' requires the verb 'wash' to become 'washes' (ends in -sh, add '-es').""
+    },
+    {
+      ""question"": ""Rewrite the sentence, changing the subject as indicated:\n1. I watch TV. (Change to: She)"",
+      ""answer"": ""She watches TV."",
+      ""explanation"": ""For 'She', 'watch' becomes 'watches' (ends in -ch, add '-es').""
+    },
+    {
+      ""question"": ""2. They drink water. (Change to: He)"",
+      ""answer"": ""He drinks water."",
+      ""explanation"": ""For 'He', 'drink' becomes 'drinks' (add '-s').""
+    },
+    {
+      ""question"": ""3. We like pizza. (Change to: My friend)"",
+      ""answer"": ""My friend likes pizza."",
+      ""explanation"": ""'My friend' is like 'He' or 'She'. So 'like' becomes 'likes' (add '-s').""
+    },
+    {
+      ""question"": ""4. You read books. (Change to: My mom)"",
+      ""answer"": ""My mom reads books."",
+      ""explanation"": ""'My mom' is like 'She'. So 'read' becomes 'reads' (add '-s').""
+    },
+    {
+      ""question"": ""5. I study hard. (Change to: My brother)"",
+      ""answer"": ""My brother studies hard."",
+      ""explanation"": ""'My brother' is like 'He'. 'Study' ends in consonant + 'y', so it becomes 'studies'.""
+    }
+  ]
+}",
+grammar,English,4,"{
+  ""topic"": ""Simple Past Tense: Regular Verbs (Affirmative)"",
+  ""explanation"": ""The Simple Past Tense tells us about actions that started and finished in the past. We use it to talk about things that happened at a specific time, like 'yesterday,' 'last week,' or 'two years ago.'\n\nFor most regular verbs, we form the simple past tense by adding '-ed' to the base form of the verb.\n\n**Spelling Rules for Adding -ed:**\n1.  **Most Verbs:** Add '-ed'.\n    *   Example: `walk` -> `walked`\n2.  **Verbs ending in 'e':** Just add '-d'.\n    *   Example: `live` -> `lived`, `dance` -> `danced`\n3.  **Verbs ending in a consonant + 'y':** Change the 'y' to 'i', then add '-ed'.\n    *   Example: `study` -> `studied`, `cry` -> `cried`\n4.  **Verbs ending in a vowel + 'y':** Just add '-ed' (the 'y' does NOT change).\n    *   Example: `play` -> `played`, `enjoy` -> `enjoyed`\n5.  **One-syllable verbs ending in CVC (Consonant-Vowel-Consonant) where the vowel is short:** Double the last consonant, then add '-ed'.\n    *   Example: `stop` -> `stopped`, `plan` -> `planned`\n    *   (Note: This rule applies to many common verbs but can be tricky. Focus on common examples.)"",
+  ""examples"": [
+    {
+      ""correct"": ""I walked to school yesterday."",
+      ""translation"": ""Yo camin\u00e9 a la escuela ayer."",
+      ""explanation"": ""The verb 'walk' is regular, so we add '-ed' to form the past tense.""
+    },
+    {
+      ""correct"": ""She lived in New York for five years."",
+      ""translation"": ""Ella vivi\u00f3 en Nueva York por cinco a\u00f1os."",
+      ""explanation"": ""The verb 'live' ends in 'e', so we only add '-d'.""
+    },
+    {
+      ""correct"": ""They studied English last night."",
+      ""translation"": ""Ellos estudiaron ingl\u00e9s anoche."",
+      ""explanation"": ""The verb 'study' ends in a consonant ('d') + 'y', so we change 'y' to 'i' before adding '-ed'.""
+    },
+    {
+      ""correct"": ""He played football on Saturday."",
+      ""translation"": ""\u00c9l jug\u00f3 al f\u00fatbol el s\u00e1bado."",
+      ""explanation"": ""The verb 'play' ends in a vowel ('a') + 'y', so we just add '-ed'.""
+    },
+    {
+      ""correct"": ""We stopped at the shop."",
+      ""translation"": ""Nosotros nos detuvimos en la tienda."",
+      ""explanation"": ""The verb 'stop' is a CVC verb, so we double the 'p' before adding '-ed'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""I walk to school yesterday."",
+      ""correct"": ""I walked to school yesterday."",
+      ""explanation"": ""Mistake: Forgetting to put the verb in the past tense. The action happened 'yesterday', so 'walk' must become 'walked'.""
+    },
+    {
+      ""incorrect"": ""She studed for the test."",
+      ""correct"": ""She studied for the test."",
+      ""explanation"": ""Mistake: Incorrect spelling for verbs ending in 'y'. When 'y' follows a consonant, it changes to 'i' before '-ed'.""
+    },
+    {
+      ""incorrect"": ""We liveed in that house."",
+      ""correct"": ""We lived in that house."",
+      ""explanation"": ""Mistake: Adding '-ed' to verbs already ending in 'e'. If a verb ends in 'e', you only add '-d'.""
+    },
+    {
+      ""incorrect"": ""He stoped the car."",
+      ""correct"": ""He stopped the car."",
+      ""explanation"": ""Mistake: Not doubling the final consonant for CVC verbs. For 'stop', the 'p' must be doubled before adding '-ed'.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Change the verb in parentheses to the Simple Past Tense (Affirmative):\n1. My sister (clean) her room last Sunday."",
+      ""answer"": ""cleaned"",
+      ""explanation"": ""The verb 'clean' is regular, so we add '-ed'.""
+    },
+    {
+      ""question"": ""2. They (watch) a funny movie last night."",
+      ""answer"": ""watched"",
+      ""explanation"": ""The verb 'watch' is regular, so we add '-ed'.""
+    },
+    {
+      ""question"": ""3. I (live) in a small town when I was a child."",
+      ""answer"": ""lived"",
+      ""explanation"": ""The verb 'live' ends in 'e', so we only add '-d'.""
+    },
+    {
+      ""question"": ""4. He (study) for his English exam yesterday."",
+      ""answer"": ""studied"",
+      ""explanation"": ""The verb 'study' ends in a consonant + 'y', so we change 'y' to 'i' and add '-ed'.""
+    },
+    {
+      ""question"": ""5. We (enjoy) the party a lot."",
+      ""answer"": ""enjoyed"",
+      ""explanation"": ""The verb 'enjoy' ends in a vowel + 'y', so we just add '-ed'.""
+    },
+    {
+      ""question"": ""6. The rain (stop) an hour ago."",
+      ""answer"": ""stopped"",
+      ""explanation"": ""The verb 'stop' is a CVC verb, so we double the 'p' and add '-ed'.""
+    },
+    {
+      ""question"": ""7. My dog (bark) loudly all night."",
+      ""answer"": ""barked"",
+      ""explanation"": ""The verb 'bark' is regular, so we add '-ed'.""
+    },
+    {
+      ""question"": ""8. Sarah (dance) at the disco."",
+      ""answer"": ""danced"",
+      ""explanation"": ""The verb 'dance' ends in 'e', so we only add '-d'.""
+    },
+    {
+      ""question"": ""9. They (travel) to Italy last year."",
+      ""answer"": ""traveled"",
+      ""explanation"": ""The verb 'travel' is regular, add '-ed'. (Note: In British English, 'travelled' with double 'l' is common, but 'traveled' is common in American English).""
+    },
+    {
+      ""question"": ""10. I (plan) my holiday carefully."",
+      ""answer"": ""planned"",
+      ""explanation"": ""The verb 'plan' is a CVC verb, so we double the 'n' and add '-ed'.""
+    }
+  ]
+}",
+grammar,English,5,"{
+  ""topic"": ""Talking About Future Events, People, and Places: Using 'Will' and 'Be Going To'"",
+  ""explanation"": ""We often want to talk about things that haven't happened yet \u2013 future events, plans, or even how people and places will be. In English, we mostly use two main forms for the future: 'will' and 'be going to'. They are similar but used for slightly different situations.\n\n**1. 'Will' (for Predictions & Spontaneous Decisions)**\n\n   Use 'will' when you:\n   *   **Make a prediction:** You think something will happen, but it's often an opinion or a guess, not a definite plan or based on strong evidence. (Example: 'I think it will be sunny tomorrow.')\n   *   **Make a spontaneous decision:** You decide to do something right at the moment you are speaking. (Example: 'The phone is ringing! I will answer it.')\n\n   **Structure for 'Will':**\n   Subject + will + base form of the verb\n   *   Positive: I will go. / She will be happy.\n   *   Negative: I will not (won't) go. / They won't be late.\n   *   Question: Will you go? / Will he like it?\n\n**2. 'Be Going To' (for Plans & Evidence-Based Predictions)**\n\n   Use 'be going to' when you:\n   *   **Talk about a plan or intention:** You have already decided to do something, and it's a fixed plan. (Example: 'We are going to visit our grandparents next month.')\n   *   **Make a prediction based on present evidence:** You see something now that makes you believe something will definitely happen. (Example: 'Look at those dark clouds! It's going to rain.')\n\n   **Structure for 'Be Going To':**\n   Subject + am/is/are + going to + base form of the verb\n   *   Positive: I am going to study. / He is going to be tired.\n   *   Negative: I am not going to study. / She isn't going to buy it.\n   *   Question: Are you going to study? / Is he going to buy a new car?\n\n**Describing People and Places in the Future:**\n\nYou can use both 'will be' and 'is/are going to be' to describe how people or places will be or look in the future. Just add an adjective or a descriptive phrase after 'be'.\n*   'The new park **will be** beautiful.' (Prediction about how it will look)\n*   'My sister **is going to be** a doctor.' (A future plan/profession for a person)\n*   'Their new house **is going to be** big and modern.' (Description of a planned future place)\n*   'I think he **will be** a kind person.' (Prediction about a person's future characteristic)"",
+  ""examples"": [
+    {
+      ""correct"": ""I think it will be sunny tomorrow."",
+      ""translation"": ""I think it will be sunny tomorrow."",
+      ""explanation"": ""Using 'will' for a prediction about the weather, based on opinion.""
+    },
+    {
+      ""correct"": ""Oh, the doorbell is ringing! I will answer it."",
+      ""translation"": ""Oh, the doorbell is ringing! I will answer it."",
+      ""explanation"": ""Using 'will' for a decision made at the moment of speaking (spontaneous).""
+    },
+    {
+      ""correct"": ""She is going to study for her exam tonight."",
+      ""translation"": ""She is going to study for her exam tonight."",
+      ""explanation"": ""Using 'be going to' for a pre-planned action or intention.""
+    },
+    {
+      ""correct"": ""Look at those dark clouds! It's going to rain."",
+      ""translation"": ""Look at those dark clouds! It's going to rain."",
+      ""explanation"": ""Using 'be going to' for a prediction based on present evidence (dark clouds).""
+    },
+    {
+      ""correct"": ""Our new school building will be very modern."",
+      ""translation"": ""Our new school building will be very modern."",
+      ""explanation"": ""Using 'will be' to describe a future characteristic of a place (a prediction or general future fact).""
+    },
+    {
+      ""correct"": ""My brother is going to be a tall man."",
+      ""translation"": ""My brother is going to be a tall man."",
+      ""explanation"": ""Using 'is going to be' to describe a future characteristic of a person, based on natural development.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""I am going to buy a coffee. (said spontaneously at the counter)"",
+      ""correct"": ""I will buy a coffee. (said spontaneously at the counter)"",
+      ""explanation"": ""'Going to' implies a prior plan. For a decision made on the spot, 'will' is more natural.""
+    },
+    {
+      ""incorrect"": ""They going to play soccer."",
+      ""correct"": ""They are going to play soccer."",
+      ""explanation"": ""You must include the correct form of the verb 'to be' (am/is/are) before 'going to'.""
+    },
+    {
+      ""incorrect"": ""He will goes to the park."",
+      ""correct"": ""He will go to the park."",
+      ""explanation"": ""After 'will' and 'going to', the main verb must always be in its base form (no -s, -ed, or -ing).""
+    },
+    {
+      ""incorrect"": ""The new car will be fast very."",
+      ""correct"": ""The new car will be very fast."",
+      ""explanation"": ""Adverbs like 'very' usually come before the adjective they modify, not after it.""
+    },
+    {
+      ""incorrect"": ""We will going to watch a movie."",
+      ""correct"": ""We are going to watch a movie."",
+      ""explanation"": ""Do not mix 'will' and 'going to'. Choose one based on your meaning.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Choose the best option (will / am/is/are going to):\n1. Look at those big waves! The surfer ____ fall."",
+      ""answer"": ""is going to"",
+      ""explanation"": ""This is a prediction based on strong present evidence (the big waves).""
+    },
+    {
+      ""question"": ""Choose the best option (will / am/is/are going to):\n2. My sister just called. She ____ visit us next weekend. (It's a plan)"",
+      ""answer"": ""is going to"",
+      ""explanation"": ""This is a pre-arranged plan, so 'be going to' is the correct choice.""
+    },
+    {
+      ""question"": ""Choose the best option (will / am/is/are going to):\n3. I think the new movie ____ be very popular. (My opinion)"",
+      ""answer"": ""will"",
+      ""explanation"": ""This is a personal opinion or general prediction, so 'will' is best.""
+    },
+    {
+      ""question"": ""Choose the best option (will / am/is/are going to):\n4. My friend ____ wear a beautiful blue dress to the party. (She already told me her plan)"",
+      ""answer"": ""is going to"",
+      ""explanation"": ""This refers to a stated plan, so 'be going to' is used.""
+    },
+    {
+      ""question"": ""Complete the sentence with 'will' or 'be going to' and the verb in parentheses. Add descriptive words if possible:\n5. Next year, I (be) ____ a student at university. (It's my definite plan)"",
+      ""answer"": ""am going to be"",
+      ""explanation"": ""This is a definite plan for the future, so 'am going to be' is correct.""
+    },
+    {
+      ""question"": ""Complete the sentence with 'will' or 'be going to' and the verb in parentheses. Add descriptive words if possible:\n6. Look at that tiny puppy! It (grow) ____ big and strong. (Prediction based on observation)"",
+      ""answer"": ""is going to grow"",
+      ""explanation"": ""This is a prediction based on current observation (a puppy's natural development), so 'is going to grow' is appropriate.""
+    },
+    {
+      ""question"": ""Complete the sentence with 'will' or 'be going to' and the verb in parentheses. Add descriptive words if possible:\n7. Don't worry, everything (be) ____ fine. (General reassurance/prediction)"",
+      ""answer"": ""will be"",
+      ""explanation"": ""This is a general prediction or reassurance, fitting 'will be'.""
+    },
+    {
+      ""question"": ""Complete the sentence with 'will' or 'be going to' and the verb in parentheses. Add descriptive words if possible:\n8. My family (move) ____ to a new house next month. It (be) ____ spacious and modern. (Plan and description)"",
+      ""answer"": ""is going to move / will be"",
+      ""explanation"": ""'Is going to move' indicates a plan. 'Will be spacious and modern' is a prediction about the new house's characteristics.""
+    }
+  ]
+}",
+grammar,Spanish,1,"{
+  ""topic"": ""Noun Gender and Number with Definite Articles (el, la, los, las)"",
+  ""explanation"": ""In Spanish, every noun (a person, place, thing, or idea) has a **gender**: it's either **masculine** or **feminine**. This is a big difference from English!\n\nAlso, nouns can be **singular** (meaning one) or **plural** (meaning more than one).\n\nWhen you want to say 'the' in Spanish, it's not just one word like in English. 'The' changes depending on the gender and number of the noun it goes with. There are four ways to say 'the' in Spanish:\n\n1.  **el**: Used before a **masculine singular** noun.\n    *   *Tip:* Nouns ending in '-o' are usually masculine (e.g., *libro* - book, *chico* - boy).\n2.  **la**: Used before a **feminine singular** noun.\n    *   *Tip:* Nouns ending in '-a' are usually feminine (e.g., *mesa* - table, *chica* - girl).\n3.  **los**: Used before a **masculine plural** noun.\n    *   To make most masculine nouns plural, you usually add an '-s' (e.g., *libro* -> *libros*, *chico* -> *chicos*).\n4.  **las**: Used before a **feminine plural** noun.\n    *   To make most feminine nouns plural, you usually add an '-s' (e.g., *mesa* -> *mesas*, *chica* -> *chicas*).\n\n**Key takeaway:** The article (*el, la, los, las*) **must always match** the noun's gender and number. This is called 'agreement'."",
+  ""examples"": [
+    {
+      ""correct"": ""el libro"",
+      ""translation"": ""the book"",
+      ""explanation"": ""'Libro' ends in -o, which makes it a masculine singular noun. So, we use 'el' for 'the'.""
+    },
+    {
+      ""correct"": ""la mesa"",
+      ""translation"": ""the table"",
+      ""explanation"": ""'Mesa' ends in -a, which makes it a feminine singular noun. So, we use 'la' for 'the'.""
+    },
+    {
+      ""correct"": ""los libros"",
+      ""translation"": ""the books"",
+      ""explanation"": ""'Libros' is the plural form of 'libro'. It's masculine plural, so we use 'los' for 'the'.""
+    },
+    {
+      ""correct"": ""las mesas"",
+      ""translation"": ""the tables"",
+      ""explanation"": ""'Mesas' is the plural form of 'mesa'. It's feminine plural, so we use 'las' for 'the'.""
+    },
+    {
+      ""correct"": ""el chico"",
+      ""translation"": ""the boy"",
+      ""explanation"": ""'Chico' ends in -o, making it masculine singular. We use 'el'.""
+    },
+    {
+      ""correct"": ""las chicas"",
+      ""translation"": ""the girls"",
+      ""explanation"": ""'Chicas' is the plural of 'chica' (which ends in -a). It's feminine plural, so we use 'las'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""la libro"",
+      ""correct"": ""el libro"",
+      ""explanation"": ""Mistake: Using a feminine article ('la') with a masculine noun ('libro'). Remember 'libro' ends in -o, so it's masculine.""
+    },
+    {
+      ""incorrect"": ""el mesas"",
+      ""correct"": ""las mesas"",
+      ""explanation"": ""Mistake: Using a singular masculine article ('el') with a plural feminine noun ('mesas'). 'Mesas' is plural and feminine, so it needs 'las'.""
+    },
+    {
+      ""incorrect"": ""los chica"",
+      ""correct"": ""la chica"",
+      ""explanation"": ""Mistake: Using a plural masculine article ('los') with a singular feminine noun ('chica'). 'Chica' is singular and feminine, so it needs 'la'.""
+    },
+    {
+      ""incorrect"": ""las chicos"",
+      ""correct"": ""los chicos"",
+      ""explanation"": ""Mistake: Using a feminine plural article ('las') with a masculine plural noun ('chicos'). Remember 'chicos' ends in -os, so it's masculine plural.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Choose the correct definite article (el, la, los, las) for: ______ cuaderno (notebook)"",
+      ""answer"": ""el"",
+      ""explanation"": ""'Cuaderno' is masculine singular (ends in -o), so we use 'el'.""
+    },
+    {
+      ""question"": ""Choose the correct definite article (el, la, los, las) for: ______ puertas (doors)"",
+      ""answer"": ""las"",
+      ""explanation"": ""'Puertas' is feminine plural (ends in -as, from 'puerta'), so we use 'las'.""
+    },
+    {
+      ""question"": ""Choose the correct definite article (el, la, los, las) for: ______ estudiante (student - could be male or female, but usually masculine singular form is taught first for gender neutral nouns)"",
+      ""answer"": ""el"",
+      ""explanation"": ""For 'estudiante' when singular and gender is not specified, 'el' is often used as a default, or 'la' if the person is known to be female. For a basic level, assume 'el' unless 'chica' or 'mujer' is present.""
+    },
+    {
+      ""question"": ""Choose the correct definite article (el, la, los, las) for: ______ carros (cars)"",
+      ""answer"": ""los"",
+      ""explanation"": ""'Carros' is masculine plural (ends in -os, from 'carro'), so we use 'los'.""
+    },
+    {
+      ""question"": ""Translate 'the girl':"",
+      ""answer"": ""la chica"",
+      ""explanation"": ""'Girl' is 'chica' (feminine singular), so 'the' is 'la'.""
+    },
+    {
+      ""question"": ""Translate 'the books':"",
+      ""answer"": ""los libros"",
+      ""explanation"": ""'Books' is 'libros' (masculine plural), so 'the' is 'los'.""
+    }
+  ]
+}",
+grammar,Spanish,2,"{
+  ""topic"": ""Adjetivos: Concordancia de G\u00e9nero y N\u00famero (Adjectives: Gender and Number Agreement)"",
+  ""explanation"": ""In Spanish, adjectives (words that describe nouns like people, places, or things) are not fixed. They *must* change their ending to match the noun they are describing in both **gender** (masculine or feminine) and **number** (singular or plural).\n\n**1. Gender Agreement (G\u00e9nero):**\n    *   **Adjectives ending in -o:** If the noun is masculine singular, the adjective ends in -o. If the noun is feminine singular, the adjective changes its -o to -a.\n        *   Example: roj**o** (masculine) -> roj**a** (feminine)\n        *   Example: alt**o** (masculine) -> alt**a** (feminine)\n    *   **Adjectives ending in -e or a consonant:** These adjectives usually have the *same form* for both masculine and feminine singular nouns.\n        *   Example: verd**e** (masculine or feminine)\n        *   Example: azu**l** (masculine or feminine)\n\n**2. Number Agreement (N\u00famero):**\n    *   **To make an adjective plural:**\n        *   If the adjective ends in a **vowel** (a, e, i, o, u), add **-s**.\n            *   Example: rojo -> rojo**s**; roja -> roja**s**; verde -> verde**s**\n        *   If the adjective ends in a **consonant**, add **-es**.\n            *   Example: azul -> azul**es**\n\n**Summary:**\n| Noun Gender & Number | Adjective ending in -o | Adjective ending in -e or consonant |\n|----------------------|------------------------|-------------------------------------|\n| Masculine Singular   | -o                     | -e / (consonant)                    |\n| Feminine Singular    | -a                     | -e / (consonant)                    |\n| Masculine Plural     | -os                    | -es                                 |\n| Feminine Plural      | -as                    | -es                                 |\n\n**Important Note on Placement:** In Spanish, adjectives typically come *after* the noun they describe."",
+  ""examples"": [
+    {
+      ""correct"": ""El coche rojo."",
+      ""translation"": ""The red car."",
+      ""explanation"": ""'Coche' is masculine and singular. 'Rojo' (red) ends in -o and matches the noun's gender and number.""
+    },
+    {
+      ""correct"": ""La casa roja."",
+      ""translation"": ""The red house."",
+      ""explanation"": ""'Casa' is feminine and singular. 'Rojo' changes to 'roja' to match the feminine noun.""
+    },
+    {
+      ""correct"": ""Los coches rojos."",
+      ""translation"": ""The red cars."",
+      ""explanation"": ""'Coches' is masculine and plural. 'Rojo' changes to 'rojos' (masculine + plural -s) to match the noun.""
+    },
+    {
+      ""correct"": ""Las casas rojas."",
+      ""translation"": ""The red houses."",
+      ""explanation"": ""'Casas' is feminine and plural. 'Rojo' changes to 'rojas' (feminine + plural -s) to match the noun.""
+    },
+    {
+      ""correct"": ""Mi padre es alto."",
+      ""translation"": ""My father is tall."",
+      ""explanation"": ""'Padre' is masculine and singular. 'Alto' matches.""
+    },
+    {
+      ""correct"": ""Mi madre es alta."",
+      ""translation"": ""My mother is tall."",
+      ""explanation"": ""'Madre' is feminine and singular. 'Alto' changes to 'alta' to match.""
+    },
+    {
+      ""correct"": ""Los d\u00edas son largos."",
+      ""translation"": ""The days are long."",
+      ""explanation"": ""'D\u00edas' is masculine and plural. 'Largo' changes to 'largos'.""
+    },
+    {
+      ""correct"": ""La puerta es verde."",
+      ""translation"": ""The door is green."",
+      ""explanation"": ""'Puerta' is feminine and singular. 'Verde' (ending in -e) does not change for gender, so it stays 'verde'.""
+    },
+    {
+      ""correct"": ""Las ventanas son verdes."",
+      ""translation"": ""The windows are green."",
+      ""explanation"": ""'Ventanas' is feminine and plural. 'Verde' adds -s to become 'verdes' for plural.""
+    },
+    {
+      ""correct"": ""El cielo es azul."",
+      ""translation"": ""The sky is blue."",
+      ""explanation"": ""'Cielo' is masculine and singular. 'Azul' (ending in a consonant) does not change for gender, so it stays 'azul'.""
+    },
+    {
+      ""correct"": ""Los oc\u00e9anos son azules."",
+      ""translation"": ""The oceans are blue."",
+      ""explanation"": ""'Oc\u00e9anos' is masculine and plural. 'Azul' adds -es to become 'azules' for plural.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""La mesa blanco."",
+      ""correct"": ""La mesa blanca."",
+      ""explanation"": ""The noun 'mesa' (table) is feminine, so the adjective 'blanco' (white) must also be feminine ('blanca').""
+    },
+    {
+      ""incorrect"": ""Los perros negro."",
+      ""correct"": ""Los perros negros."",
+      ""explanation"": ""The noun 'perros' (dogs) is plural, so the adjective 'negro' (black) must also be plural ('negros').""
+    },
+    {
+      ""incorrect"": ""Mi t\u00eda es inteligentos."",
+      ""correct"": ""Mi t\u00eda es inteligente."",
+      ""explanation"": ""The noun 't\u00eda' (aunt) is singular. Adjectives ending in -e or a consonant do not change for gender, only for number. 'Inteligente' is correct for both singular masculine and feminine. The '-os' ending is for masculine plural adjectives ending in -o.""
+    },
+    {
+      ""incorrect"": ""Mi hermano es grandes."",
+      ""correct"": ""Mi hermano es grande."",
+      ""explanation"": ""The noun 'hermano' (brother) is singular. 'Grande' (big) ends in -e and only adds -s for plural nouns. Since 'hermano' is singular, 'grande' remains singular.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nEl coche es (rojo)."",
+      ""answer"": ""rojo"",
+      ""explanation"": ""'Coche' is masculine singular, so 'rojo' stays as 'rojo'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nLa casa es (blanco)."",
+      ""answer"": ""blanca"",
+      ""explanation"": ""'Casa' is feminine singular, so 'blanco' changes to 'blanca'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nLos ni\u00f1os son (peque\u00f1o)."",
+      ""answer"": ""peque\u00f1os"",
+      ""explanation"": ""'Ni\u00f1os' is masculine plural, so 'peque\u00f1o' changes to 'peque\u00f1os'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nLas flores son (amarillo)."",
+      ""answer"": ""amarillas"",
+      ""explanation"": ""'Flores' is feminine plural, so 'amarillo' changes to 'amarillas'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nMi padre es (alto)."",
+      ""answer"": ""alto"",
+      ""explanation"": ""'Padre' is masculine singular, so 'alto' stays as 'alto'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nMi madre es (alto)."",
+      ""answer"": ""alta"",
+      ""explanation"": ""'Madre' is feminine singular, so 'alto' changes to 'alta'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nLa puerta es (verde)."",
+      ""answer"": ""verde"",
+      ""explanation"": ""'Puerta' is feminine singular. Adjectives ending in -e do not change for gender, so 'verde' stays 'verde'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct form of the adjective in parentheses:\nLos ojos son (azul)."",
+      ""answer"": ""azules"",
+      ""explanation"": ""'Ojos' is masculine plural. Adjectives ending in a consonant add -es for plural, so 'azul' changes to 'azules'.""
+    },
+    {
+      ""question"": ""Translate the phrase into Spanish:\nThe big house."",
+      ""answer"": ""La casa grande."",
+      ""explanation"": ""'House' is 'casa' (feminine singular). 'Big' is 'grande' (ends in -e, so it does not change for gender in singular). Adjective comes after the noun.""
+    },
+    {
+      ""question"": ""Translate the phrase into Spanish:\nMy red book."",
+      ""answer"": ""Mi libro rojo."",
+      ""explanation"": ""'Book' is 'libro' (masculine singular). 'Red' is 'rojo' (masculine singular). Adjective comes after the noun.""
+    },
+    {
+      ""question"": ""Translate the phrase into Spanish:\nMy tall sister."",
+      ""answer"": ""Mi hermana alta."",
+      ""explanation"": ""'Sister' is 'hermana' (feminine singular). 'Tall' is 'alto', which changes to 'alta' for feminine singular. Adjective comes after the noun.""
+    }
+  ]
+}",
+grammar,Spanish,3,"{
+  ""topic"": ""Regular Verb Conjugations in the Present Tense (-AR, -ER, -IR Verbs)"",
+  ""explanation"": ""In Spanish, verbs change their ending depending on who is performing the action (the subject). This change is called conjugation. For regular verbs, you can predict their endings based on whether they end in -AR, -ER, or -IR in their infinitive form (the base form of the verb, like 'to speak', 'to eat', 'to live').\n\nTo conjugate a regular verb in the present tense, you first remove the infinitive ending (-ar, -er, or -ir) to find the 'stem' of the verb. Then, you add a new ending that matches the subject pronoun.\n\nHere are the endings for each type of regular verb:\n\n**1. -AR Verbs (e.g., HABLAR - to speak)**\n*   yo: -o (habl**o**)\n*   t\u00fa: -as (habl**as**)\n*   \u00e9l/ella/usted: -a (habl**a**)\n*   nosotros/nosotras: -amos (habl**amos**)\n*   vosotros/vosotras: -\u00e1is (habl**\u00e1is**)\n*   ellos/ellas/ustedes: -an (habl**an**)\n\n**2. -ER Verbs (e.g., COMER - to eat)**\n*   yo: -o (com**o**)\n*   t\u00fa: -es (com**es**)\n*   \u00e9l/ella/usted: -e (com**e**)\n*   nosotros/nosotras: -emos (com**emos**)\n*   vosotros/vosotras: -\u00e9is (com**\u00e9is**)\n*   ellos/ellas/ustedes: -en (com**en**)\n\n**3. -IR Verbs (e.g., VIVIR - to live)**\n*   yo: -o (viv**o**)\n*   t\u00fa: -es (viv**es**)\n*   \u00e9l/ella/usted: -e (viv**e**)\n*   nosotros/nosotras: -imos (viv**imos**)\n*   vosotros/vosotras: -\u00eds (viv**\u00eds**)\n*   ellos/ellas/ustedes: -en (viv**en**)\n\nNotice that the 'yo' form always ends in -o, and the 'nosotros' form for -ER and -IR verbs are similar (-emos vs. -imos). The 't\u00fa', '\u00e9l/ella/usted', and 'ellos/ellas/ustedes' forms are where -ER and -IR verbs differ from -AR verbs."",
+  ""examples"": [
+    {
+      ""correct"": ""Yo hablo espa\u00f1ol en casa."",
+      ""translation"": ""I speak Spanish at home."",
+      ""explanation"": ""The verb 'hablar' (to speak) is an -AR verb. For the subject 'yo' (I), the -AR ending changes to -o.""
+    },
+    {
+      ""correct"": ""Ella come frutas todos los d\u00edas."",
+      ""translation"": ""She eats fruits every day."",
+      ""explanation"": ""The verb 'comer' (to eat) is an -ER verb. For the subject 'ella' (she), the -ER ending changes to -e.""
+    },
+    {
+      ""correct"": ""Nosotros vivimos en un apartamento grande."",
+      ""translation"": ""We live in a big apartment."",
+      ""explanation"": ""The verb 'vivir' (to live) is an -IR verb. For the subject 'nosotros' (we), the -IR ending changes to -imos.""
+    },
+    {
+      ""correct"": ""T\u00fa trabajas mucho."",
+      ""translation"": ""You work a lot."",
+      ""explanation"": ""The verb 'trabajar' (to work) is an -AR verb. For the informal singular subject 't\u00fa' (you), the -AR ending changes to -as.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Yo estudiar espa\u00f1ol."",
+      ""correct"": ""Yo estudio espa\u00f1ol."",
+      ""explanation"": ""You must conjugate the verb. 'Estudiar' is the infinitive (to study), but for 'yo', it becomes 'estudio'.""
+    },
+    {
+      ""incorrect"": ""Ella escriben un correo."",
+      ""correct"": ""Ella escribe un correo."",
+      ""explanation"": ""The subject 'ella' (she) is singular, so the verb ending must be singular (-e for -IR verbs like 'escribir'). '-en' is for plural subjects (ellos/ellas/ustedes).""
+    },
+    {
+      ""incorrect"": ""Nosotros come en la cafeter\u00eda."",
+      ""correct"": ""Nosotros comemos en la cafeter\u00eda."",
+      ""explanation"": ""The verb 'comer' is an -ER verb. For 'nosotros' (we), the ending is -emos, not -e (which is for \u00e9l/ella/usted).""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Conjugate the verb in parentheses for the given subject:\n1. Yo ________ (hablar) con mis amigos."",
+      ""answer"": ""hablo"",
+      ""explanation"": ""'Hablar' is an -AR verb. For 'yo', the ending is -o.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parentheses for the given subject:\n2. Ustedes ________ (aprender) mucho en clase."",
+      ""answer"": ""aprenden"",
+      ""explanation"": ""'Aprender' is an -ER verb. For 'ustedes', the ending is -en.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parentheses for the given subject:\n3. Ella ________ (vivir) en Barcelona."",
+      ""answer"": ""vive"",
+      ""explanation"": ""'Vivir' is an -IR verb. For 'ella', the ending is -e.""
+    },
+    {
+      ""question"": ""Choose the correct form of the verb:\n4. Nosotros (lee / leemos / leen) un libro interesante."",
+      ""answer"": ""leemos"",
+      ""explanation"": ""'Leer' is an -ER verb. For 'nosotros', the ending is -emos.""
+    },
+    {
+      ""question"": ""Translate the sentence into Spanish (use the informal 't\u00fa'):\n5. You write an email."",
+      ""answer"": ""T\u00fa escribes un correo electr\u00f3nico."",
+      ""explanation"": ""'Escribir' is an -IR verb. For 't\u00fa', the ending is -es.""
+    }
+  ]
+}",
+grammar,Spanish,4,"{
+  ""topic"": ""El Pret\u00e9rito Indefinido: Acciones Completadas en el Pasado (The Preterite Tense: Completed Actions in the Past)"",
+  ""explanation"": ""The Preterite tense (El Pret\u00e9rito Indefinido) in Spanish is used to talk about actions that were completed at a specific point in the past. These actions have a definite beginning and end, and are seen as single, completed events.\n\n**1. Regular -AR verbs (e.g., 'hablar' - to speak):**\n    *   **yo** habl**\u00e9**\n    *   **t\u00fa** habl**aste**\n    *   **\u00e9l/ella/usted** habl**\u00f3**\n    *   **nosotros/as** habl**amos**\n    *   **vosotros/as** habl**asteis**\n    *   **ellos/as/ustedes** habl**aron**\n\n**2. Regular -ER verbs (e.g., 'comer' - to eat):**\n    *   **yo** com**\u00ed**\n    *   **t\u00fa** com**iste**\n    *   **\u00e9l/ella/usted** com**i\u00f3**\n    *   **nosotros/as** com**imos**\n    *   **vosotros/as** com**isteis**\n    *   **ellos/as/ustedes** com**ieron**\n\n**3. Regular -IR verbs (e.g., 'vivir' - to live):**\n    *   **yo** viv**\u00ed**\n    *   **t\u00fa** viv**iste**\n    *   **\u00e9l/ella/usted** viv**i\u00f3**\n    *   **nosotros/as** viv**imos**\n    *   **vosotros/as** viv**isteis**\n    *   **ellos/as/ustedes** viv**ieron**\n\n**Important Irregular Verbs (Common for this level):**\n\n*   **ser** (to be) / **ir** (to go): These two verbs have the *exact same* preterite conjugation, so context is key to understanding which one is meant.\n    *   **yo** fui\n    *   **t\u00fa** fuiste\n    *   **\u00e9l/ella/usted** fue\n    *   **nosotros/as** fuimos\n    *   **vosotros/as** fuisteis\n    *   **ellos/as/ustedes** fueron\n\n*   **hacer** (to do/make):\n    *   **yo** hice\n    *   **t\u00fa** hiciste\n    *   **\u00e9l/ella/usted** hizo\n    *   **nosotros/as** hicimos\n    *   **vosotros/as** hicisteis\n    *   **ellos/as/ustedes** hicieron"",
+  ""examples"": [
+    {
+      ""correct"": ""Yo compr\u00e9 un libro ayer."",
+      ""translation"": ""I bought a book yesterday."",
+      ""explanation"": ""This shows the regular -AR verb 'comprar' conjugated for 'yo' in the preterite, indicating a single, completed action.""
+    },
+    {
+      ""correct"": ""Ella aprendi\u00f3 espa\u00f1ol r\u00e1pidamente."",
+      ""translation"": ""She learned Spanish quickly."",
+      ""explanation"": ""This demonstrates a regular -ER verb 'aprender' conjugated for 'ella', showing a completed learning process.""
+    },
+    {
+      ""correct"": ""Nosotros escribimos una carta."",
+      ""translation"": ""We wrote a letter."",
+      ""explanation"": ""This is an example of a regular -IR verb 'escribir' conjugated for 'nosotros', highlighting a completed action of writing.""
+    },
+    {
+      ""correct"": ""Ellos fueron al supermercado."",
+      ""translation"": ""They went to the supermarket."",
+      ""explanation"": ""This uses the irregular verb 'ir' (to go) in the preterite for 'ellos', showing a completed trip. Note that 'ser' (to be) shares the same conjugation.""
+    },
+    {
+      ""correct"": ""T\u00fa hiciste la cena."",
+      ""translation"": ""You made dinner."",
+      ""explanation"": ""This illustrates the irregular verb 'hacer' (to do/make) conjugated for 't\u00fa', describing a completed task.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Yo compre un libro."",
+      ""correct"": ""Yo compr\u00e9 un libro."",
+      ""explanation"": ""Forgetting the accent mark on the 'yo' form of -AR verbs (and on '\u00e9l/ella/usted' forms of all regular verbs) is a common mistake. The accent is crucial to distinguish preterite from other tenses (e.g., 'yo compre' is present subjunctive).""
+    },
+    {
+      ""incorrect"": ""Ellos comeron pizza."",
+      ""correct"": ""Ellos comieron pizza."",
+      ""explanation"": ""Using incorrect endings, especially for -ER/-IR verbs. The correct ending for 'ellos/as/ustedes' for -ER/-IR verbs is '-ieron', not '-eron'.""
+    },
+    {
+      ""incorrect"": ""Nosotros eramos al parque."",
+      ""correct"": ""Nosotros fuimos al parque."",
+      ""explanation"": ""Confusing 'ser' (to be) and 'ir' (to go) with other past tenses (like the Imperfect '\u00e9ramos' for 'ser'). Both 'ser' and 'ir' use 'fui, fuiste, fue, fuimos, fuisteis, fueron' in the preterite, which can be tricky.""
+    },
+    {
+      ""incorrect"": ""Ella hace la tarea ayer."",
+      ""correct"": ""Ella hizo la tarea ayer."",
+      ""explanation"": ""Using the present tense form (hace) instead of the preterite form (hizo) for irregular verbs like 'hacer'. Always remember that preterite forms are often very different from their present tense counterparts for irregular verbs.""
+    },
+    {
+      ""incorrect"": ""Yo com\u00eda mi desayuno esta ma\u00f1ana."",
+      ""correct"": ""Yo com\u00ed mi desayuno esta ma\u00f1ana."",
+      ""explanation"": ""Using the Imperfect tense ('com\u00eda') for a single, completed action ('esta ma\u00f1ana' implies a specific completion). The Preterite ('com\u00ed') is for actions with a definite beginning and end, while the Imperfect describes ongoing, habitual, or descriptive actions in the past.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Conjugate the verb in parenthesis for the given pronoun in the Preterite tense:\n1. Comprar (yo)"",
+      ""answer"": ""compr\u00e9"",
+      ""explanation"": ""The verb 'comprar' is a regular -AR verb. The 'yo' form in the preterite is 'compr\u00e9' with an accent on the 'e'.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parenthesis for the given pronoun in the Preterite tense:\n2. Vender (nosotros)"",
+      ""answer"": ""vendimos"",
+      ""explanation"": ""The verb 'vender' is a regular -ER verb. The 'nosotros' form in the preterite is 'vendimos'.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parenthesis for the given pronoun in the Preterite tense:\n3. Vivir (t\u00fa)"",
+      ""answer"": ""viviste"",
+      ""explanation"": ""The verb 'vivir' is a regular -IR verb. The 't\u00fa' form in the preterite is 'viviste'.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parenthesis for the given pronoun in the Preterite tense:\n4. Ir (ellos)"",
+      ""answer"": ""fueron"",
+      ""explanation"": ""The verb 'ir' is an irregular verb. The 'ellos' form in the preterite is 'fueron'.""
+    },
+    {
+      ""question"": ""Conjugate the verb in parenthesis for the given pronoun in the Preterite tense:\n5. Hacer (usted)"",
+      ""answer"": ""hizo"",
+      ""explanation"": ""The verb 'hacer' is an irregular verb. The 'usted' form in the preterite is 'hizo'.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct Preterite form of the verb in parenthesis:\nAyer, Marta ____ (visitar) a su abuela."",
+      ""answer"": ""visit\u00f3"",
+      ""explanation"": ""'Marta' is 'ella', and 'visitar' is a regular -AR verb. The 'ella' form in the preterite is 'visit\u00f3'.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct Preterite form of the verb in parenthesis:\nNosotros ____ (comer) pizza el s\u00e1bado."",
+      ""answer"": ""comimos"",
+      ""explanation"": ""'Nosotros' is the subject, and 'comer' is a regular -ER verb. The 'nosotros' form in the preterite is 'comimos'.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct Preterite form of the verb in parenthesis:\n\u00bfQu\u00e9 ____ (hacer) t\u00fa el verano pasado?"",
+      ""answer"": ""hiciste"",
+      ""explanation"": ""'T\u00fa' is the subject, and 'hacer' is an irregular verb. The 't\u00fa' form in the preterite is 'hiciste'.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct Preterite form of the verb in parenthesis:\nMis amigos y yo ____ (ir) a la playa."",
+      ""answer"": ""fuimos"",
+      ""explanation"": ""'Mis amigos y yo' is equivalent to 'nosotros', and 'ir' is an irregular verb. The 'nosotros' form in the preterite is 'fuimos'.""
+    },
+    {
+      ""question"": ""Translate the following sentence into Spanish:\nI spoke with my teacher."",
+      ""answer"": ""Yo habl\u00e9 con mi profesor(a)."",
+      ""explanation"": ""'To speak' is 'hablar', a regular -AR verb. The 'yo' form in the preterite is 'habl\u00e9'.""
+    },
+    {
+      ""question"": ""Translate the following sentence into Spanish:\nShe lived in Mexico for a year."",
+      ""answer"": ""Ella vivi\u00f3 en M\u00e9xico por un a\u00f1o."",
+      ""explanation"": ""'To live' is 'vivir', a regular -IR verb. The 'ella' form in the preterite is 'vivi\u00f3'.""
+    },
+    {
+      ""question"": ""Translate the following sentence into Spanish:\nThey made a cake."",
+      ""answer"": ""Ellos hicieron un pastel."",
+      ""explanation"": ""'To make' is 'hacer', an irregular verb. The 'ellos' form in the preterite is 'hicieron'.""
+    }
+  ]
+}",
+grammar,Spanish,5,"{
+  ""topic"": ""El Futuro Simple: Describiendo Eventos, Personas y Lugares Futuros"",
+  ""explanation"": ""The simple future tense (El Futuro Simple) in Spanish is used to talk about actions or states that *will happen* in the future. It's often used for predictions, plans, or simply stating what will be true later on.\n\n**Formation of Regular Verbs:**\nFor most verbs, you form the future tense by adding specific endings directly to the *infinitive* form of the verb (the -ar, -er, or -ir form). The good news is that the endings are the same for all three verb types!\n\n| Subject  | Endings      | Example (Hablar) | Example (Comer) | Example (Vivir) |\n|----------|--------------|------------------|-----------------|-----------------|\n| Yo       | -\u00e9           | hablar\u00e9          | comer\u00e9          | vivir\u00e9          |\n| T\u00fa       | -\u00e1s          | hablar\u00e1s         | comer\u00e1s         | vivir\u00e1s         |\n| \u00c9l/Ella/Ud. | -\u00e1           | hablar\u00e1          | comer\u00e1          | vivir\u00e1          |\n| Nosotros | -emos        | hablaremos        | comeremos       | viviremos       |\n| Vosotros | -\u00e9is         | hablar\u00e9is        | comer\u00e9is        | vivir\u00e9is        |\n| Ellos/Ellas/Uds. | -\u00e1n          | hablar\u00e1n         | comer\u00e1n         | vivir\u00e1n         |\n\n**Irregular Verbs:**\nSome verbs have irregular stems in the future tense, but they still use the same endings. These stems often involve dropping a vowel or adding a 'd'. Here are some common irregular verbs and their future stems:\n\n*   **Decir** (to say) -> dir- (dir\u00e9, dir\u00e1s, etc.)\n*   **Hacer** (to do/make) -> har- (har\u00e9, har\u00e1s, etc.)\n*   **Poder** (to be able to) -> podr- (podr\u00e9, podr\u00e1s, etc.)\n*   **Poner** (to put) -> pondr- (pondr\u00e9, pondr\u00e1s, etc.)\n*   **Querer** (to want) -> querr- (querr\u00e9, querr\u00e1s, etc.)\n*   **Saber** (to know) -> sabr- (sabr\u00e9, sabr\u00e1s, etc.)\n*   **Salir** (to leave/go out) -> saldr- (saldr\u00e9, saldr\u00e1s, etc.)\n*   **Tener** (to have) -> tendr- (tendr\u00e9, tendr\u00e1s, etc.)\n*   **Venir** (to come) -> vendr- (vendr\u00e9, vendr\u00e1s, etc.)\n*   **Haber** (to have/there is) -> habr- (habr\u00e1 - only used in the impersonal 'there will be')\n\n**Describing People and Places in the Future:**\nTo describe what someone or something *will be like* or *will have* in the future, you use the future tense of verbs like *ser*, *estar*, or *tener* followed by an adjective or descriptive phrase. Remember the crucial difference between *ser* (for inherent qualities, permanent states, identity) and *estar* (for temporary states, location, condition)! Using the correct verb is key for accurate descriptions.\n\n*   **Ser\u00e1 / Ser\u00e1n**: Used for describing inherent characteristics, professions, what something/someone will permanently be like, or the nature of an event.\n*   **Estar\u00e1 / Estar\u00e1n**: Used for describing temporary conditions, emotions, or location in the future.\n*   **Tendr\u00e1 / Tendr\u00e1n**: Used for describing what someone/something will possess or experience in the future."",
+  ""examples"": [
+    {
+      ""correct"": ""Ma\u00f1ana, el clima *ser\u00e1* soleado y *har\u00e1* calor."",
+      ""translation"": ""Tomorrow, the weather will be sunny and it will be hot."",
+      ""explanation"": ""Uses *ser\u00e1* (future of *ser*) for a weather description (an inherent characteristic of the day) and *har\u00e1* (irregular future of *hacer*) for another weather condition. Both refer to future states.""
+    },
+    {
+      ""correct"": ""Mi hermana *ser\u00e1* una gran ingeniera cuando termine sus estudios."",
+      ""translation"": ""My sister will be a great engineer when she finishes her studies."",
+      ""explanation"": ""Uses *ser\u00e1* (future of *ser*) to describe a future profession or identity, which is considered a permanent characteristic.""
+    },
+    {
+      ""correct"": ""El parque *estar\u00e1* lleno de gente este fin de semana."",
+      ""translation"": ""The park will be full of people this weekend."",
+      ""explanation"": ""Uses *estar\u00e1* (future of *estar*) to describe a temporary state or condition (being full) of the park in the future, as it won't always be full.""
+    },
+    {
+      ""correct"": ""Ellos *tendr\u00e1n* unas vacaciones incre\u00edbles en la playa."",
+      ""translation"": ""They will have an incredible vacation at the beach."",
+      ""explanation"": ""Uses *tendr\u00e1n* (irregular future of *tener*) to describe what they will possess or experience in the future.""
+    },
+    {
+      ""correct"": ""La fiesta *comenzar\u00e1* a las ocho y *ser\u00e1* muy divertida."",
+      ""translation"": ""The party will start at eight and will be very fun."",
+      ""explanation"": ""Combines a regular verb (*comenzar\u00e1*, future of *comenzar*) for an event's start time and *ser\u00e1* (future of *ser*) to describe the party's inherent characteristic (being fun).""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Voy a visitar la ciudad el pr\u00f3ximo a\u00f1o."",
+      ""correct"": ""Visitar\u00e9 la ciudad el pr\u00f3ximo a\u00f1o."",
+      ""explanation"": ""While 'ir a + infinitive' (to be going to + verb) is grammatically correct and common for future actions, the simple future tense ('Visitar\u00e9') is generally used for more definite plans, predictions, or more formal statements about the future. It's important to learn to use both.""
+    },
+    {
+      ""incorrect"": ""Yo poner\u00e9 la mesa."",
+      ""correct"": ""Yo pondr\u00e9 la mesa."",
+      ""explanation"": ""Forgetting the irregular stem change. The verb *poner* has an irregular stem 'pondr-' in the future tense, not 'poner-'. Always remember the irregular stems!""
+    },
+    {
+      ""incorrect"": ""Mi casa es muy grande en el futuro."",
+      ""correct"": ""Mi casa *ser\u00e1* muy grande en el futuro."",
+      ""explanation"": ""Using the present tense verb (*es*) when the statement clearly refers to a future state or condition. The future tense verb (*ser\u00e1*) is required to correctly express the idea.""
+    },
+    {
+      ""incorrect"": ""La sopa ser\u00e1 caliente."",
+      ""correct"": ""La sopa *estar\u00e1* caliente."",
+      ""explanation"": ""Confusing *ser* and *estar* in the future tense. 'Caliente' (hot) describes a temporary state or condition of the soup, so *estar* (estar\u00e1) is the appropriate verb, not *ser* (ser\u00e1) which would imply it is inherently hot (like a hot pepper).""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Conjugate the following verbs in the simple future tense for the given subject:\n1.  (Yo) Hablar\n2.  (Nosotros) Comer\n3.  (Ellos) Vivir\n4.  (T\u00fa) Hacer\n5.  (Ella) Tener"",
+      ""answer"": ""1. Hablar\u00e9\n2. Comeremos\n3. Vivir\u00e1n\n4. Har\u00e1s\n5. Tendr\u00e1"",
+      ""explanation"": ""1. 'Hablar' is a regular -ar verb, so 'hablar' + '-\u00e9'.\n2. 'Comer' is a regular -er verb, so 'comer' + '-emos'.\n3. 'Vivir' is a regular -ir verb, so 'vivir' + '-\u00e1n'.\n4. 'Hacer' is an irregular verb with the stem 'har-', so 'har-' + '-\u00e1s'.\n5. 'Tener' is an irregular verb with the stem 'tendr-', so 'tendr-' + '-\u00e1'.""
+    },
+    {
+      ""question"": ""Complete the sentences using the simple future tense of the verb in parentheses and an appropriate adjective or description. Make sure to choose between *ser* and *estar* carefully!\n1.  El concierto ____ (ser) muy ____ (exciting).\n2.  Mis amigos ____ (estar) ____ (tired) despu\u00e9s de la caminata.\n3.  La nueva biblioteca ____ (tener) muchos ____ (books).\n4.  Yo ____ (hacer) una ____ (delicious) cena para ti.\n5.  Los estudiantes ____ (aprender) mucho en el futuro."",
+      ""answer"": ""1. El concierto *ser\u00e1* muy *emocionante*.\n2. Mis amigos *estar\u00e1n* *cansados* despu\u00e9s de la caminata.\n3. La nueva biblioteca *tendr\u00e1* muchos *libros*.\n4. Yo *har\u00e9* una *deliciosa* cena para ti.\n5. Los estudiantes *aprender\u00e1n* mucho en el futuro."",
+      ""explanation"": ""1. 'Ser\u00e1' (future of *ser*) for an inherent quality of the concert. 'Emocionante' is an appropriate adjective.\n2. 'Estar\u00e1n' (future of *estar*) for a temporary state (being tired). 'Cansados' (tired), plural to agree with 'amigos'.\n3. 'Tendr\u00e1' (future of *tener*) for possession (what the library will have). 'Libros' (books) as a descriptive noun.\n4. 'Har\u00e9' (irregular future of *hacer*) for an action. 'Deliciosa' (delicious) to describe the dinner.\n5. 'Aprender\u00e1n' (future of *aprender*) for a future action.""
+    },
+    {
+      ""question"": ""Translate the following sentences into Spanish using the simple future tense:\n1.  She will be a great artist.\n2.  The weather will be cold tomorrow.\n3.  We will have a big house.\n4.  The restaurant will be open at 7 PM.\n5.  You (t\u00fa) will travel a lot next year."",
+      ""answer"": ""1. Ella *ser\u00e1* una gran artista.\n2. El clima *ser\u00e1* fr\u00edo ma\u00f1ana. / *Har\u00e1* fr\u00edo ma\u00f1ana.\n3. *Tendremos* una casa grande.\n4. El restaurante *estar\u00e1* abierto a las 7 PM.\n5. (T\u00fa) *Viajar\u00e1s* mucho el pr\u00f3ximo a\u00f1o."",
+      ""explanation"": ""1. 'Ser\u00e1' (future of *ser*) for profession/identity.\n2. 'Ser\u00e1 fr\u00edo' for a general characteristic of the weather, or 'Har\u00e1 fr\u00edo' (impersonal *hacer* for weather conditions) are both correct.\n3. 'Tendremos' (future of *tener*) for possession.\n4. 'Estar\u00e1 abierto' (future of *estar*) because 'abierto' (open) describes a temporary state, requiring *estar*.\n5. 'Viajar\u00e1s' (regular future of *viajar*) for a future action.""
+    },
+    {
+      ""question"": ""Imagine you are planning your dream vacation. Describe the place and what you will do there, using at least three different verbs in the simple future tense and some adjectives.\nExample: *Mi destino ideal ser\u00e1 una isla tropical. El agua estar\u00e1 muy clara y yo nadar\u00e9 cada d\u00eda.*"",
+      ""answer"": ""*(Answers will vary, but should demonstrate correct use of the simple future tense and descriptive words.)*\nExample: *Mi viaje perfecto *ser\u00e1* a Jap\u00f3n. Las ciudades *tendr\u00e1n* luces brillantes y la comida *estar\u00e1* deliciosa. Yo *visitar\u00e9* templos antiguos y *aprender\u00e9* mucho sobre su cultura.*"",
+      ""explanation"": ""This exercise encourages creative application of the future tense and descriptive vocabulary, combining verbs like *ser\u00e1* (from *ser*), *tendr\u00e1n* (from *tener*), *estar\u00e1* (from *estar*), *visitar\u00e9* (from *visitar*), and *aprender\u00e9* (from *aprender*) with adjectives and descriptive phrases to talk about future experiences and characteristics.""
+    }
+  ]
+}",
+grammar,French,1,"{
+  ""topic"": ""Les Pronoms Sujets (Subject Pronouns)"",
+  ""explanation"": ""In French, just like in English, we use subject pronouns to talk about who or what is doing an action in a sentence. They replace the noun (the person, animal, or thing) that is the subject. Understanding subject pronouns is essential because almost every French sentence needs one, and they tell you how to change the verb!\n\nHere are the main French subject pronouns:\n\n*   **Je** (I): Used to talk about yourself. Always capitalized at the beginning of a sentence. Before a vowel, it becomes **j'** (e.g., j'aime).\n*   **Tu** (You - singular, informal): Used when talking to one person you know well (a friend, family member, child). This is called 'tutoyer'.\n*   **Il** (He / It - masculine singular): Used for a single masculine person (he) or a single masculine object/animal (it).\n*   **Elle** (She / It - feminine singular): Used for a single feminine person (she) or a single feminine object/animal (it).\n*   **On** (One / We - informal): This pronoun is very common in spoken French. It can mean 'one' (as in 'one does'), 'people in general', or informally 'we' (replacing 'nous' in casual conversation).\n*   **Nous** (We): Used to talk about yourself and others (we).\n*   **Vous** (You - plural OR singular, formal): Used when talking to more than one person (you all), or to one person formally (someone you don't know well, an elder, a teacher, a boss). This is called 'vouvoyer'.\n*   **Ils** (They - masculine plural OR mixed group plural): Used for multiple masculine people/objects/animals, or a mixed group of masculine and feminine people/objects/animals.\n*   **Elles** (They - feminine plural): Used for multiple feminine people/objects/animals."",
+  ""examples"": [
+    {
+      ""correct"": ""Je suis ici."",
+      ""translation"": ""I am here."",
+      ""explanation"": ""Uses 'Je' to indicate the speaker ('I').""
+    },
+    {
+      ""correct"": ""Tu es gentil."",
+      ""translation"": ""You are kind (to a friend)."",
+      ""explanation"": ""Uses 'Tu' for informal, singular 'you'.""
+    },
+    {
+      ""correct"": ""Il est grand."",
+      ""translation"": ""He is tall."",
+      ""explanation"": ""Uses 'Il' for a masculine person ('he').""
+    },
+    {
+      ""correct"": ""Elle est petite."",
+      ""translation"": ""She is small."",
+      ""explanation"": ""Uses 'Elle' for a feminine person ('she').""
+    },
+    {
+      ""correct"": ""Le livre est rouge. Il est sur la table."",
+      ""translation"": ""The book is red. It is on the table."",
+      ""explanation"": ""Uses 'Il' because 'livre' (book) is a masculine noun, so 'it' refers to 'il'.""
+    },
+    {
+      ""correct"": ""La fleur est belle. Elle est jaune."",
+      ""translation"": ""The flower is beautiful. It is yellow."",
+      ""explanation"": ""Uses 'Elle' because 'fleur' (flower) is a feminine noun, so 'it' refers to 'elle'.""
+    },
+    {
+      ""correct"": ""Nous parlons fran\u00e7ais."",
+      ""translation"": ""We speak French."",
+      ""explanation"": ""Uses 'Nous' to refer to 'we'.""
+    },
+    {
+      ""correct"": ""Vous \u00eates \u00e9tudiants."",
+      ""translation"": ""You are students (to a group)."",
+      ""explanation"": ""Uses 'Vous' for a plural 'you'.""
+    },
+    {
+      ""correct"": ""Ils mangent."",
+      ""translation"": ""They eat (referring to boys or a mixed group)."",
+      ""explanation"": ""Uses 'Ils' for a masculine or mixed plural 'they'.""
+    },
+    {
+      ""correct"": ""Elles chantent."",
+      ""translation"": ""They sing (referring to girls)."",
+      ""explanation"": ""Uses 'Elles' for a feminine plural 'they'.""
+    },
+    {
+      ""correct"": ""On va au parc."",
+      ""translation"": ""We are going to the park. / One goes to the park."",
+      ""explanation"": ""Uses 'On' as a common informal way to say 'we' or a general 'one'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Tu \u00eates (when speaking formally)"",
+      ""correct"": ""Vous \u00eates"",
+      ""explanation"": ""Using 'tu' instead of 'vous' when you need to be formal or when speaking to more than one person. Remember 'vous' for formal singular and all plurals, 'tu' for informal singular.""
+    },
+    {
+      ""incorrect"": ""Il est une voiture. (when 'voiture' is feminine)"",
+      ""correct"": ""Elle est une voiture."",
+      ""explanation"": ""Confusing 'il' and 'elle' when referring to objects. In French, every object (even things) has a grammatical gender (masculine or feminine). If the noun is feminine (like 'voiture' - car), you must use 'elle' for 'it'. If the noun is masculine, you use 'il'.""
+    },
+    {
+      ""incorrect"": ""Suis fatigu\u00e9."",
+      ""correct"": ""Je suis fatigu\u00e9."",
+      ""explanation"": ""Omitting the subject pronoun. Unlike English where you might sometimes drop 'you' in commands ('Go home!'), French almost always requires a subject pronoun for the verb. You cannot say 'Am tired' in French; you must say 'I am tired'.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Fill in the blank with the correct subject pronoun (je, tu, il, elle, nous, vous, ils, elles):\n____ suis fran\u00e7ais."",
+      ""answer"": ""Je"",
+      ""explanation"": ""The verb 'suis' goes with 'Je' (I am).""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct subject pronoun:\n____ \u00eates grands. (talking to a group of friends)"",
+      ""answer"": ""Vous"",
+      ""explanation"": ""For 'you' (plural, even informal) we use 'Vous'.""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct subject pronoun:\nLa fille est ici. ____ est tr\u00e8s gentille."",
+      ""answer"": ""Elle"",
+      ""explanation"": ""'La fille' (the girl) is feminine and singular, so we use 'Elle' (She/It).""
+    },
+    {
+      ""question"": ""Fill in the blank with the correct subject pronoun:\nLe gar\u00e7on est l\u00e0. ____ parle anglais."",
+      ""answer"": ""Il"",
+      ""explanation"": ""'Le gar\u00e7on' (the boy) is masculine and singular, so we use 'Il' (He/It).""
+    },
+    {
+      ""question"": ""Choose the correct pronoun:\nYou (informal, singular) are happy. (Tu / Vous) es content."",
+      ""answer"": ""Tu"",
+      ""explanation"": ""For informal singular 'you', we use 'Tu'.""
+    },
+    {
+      ""question"": ""Choose the correct pronoun:\nThey (a group of women) are friends. (Ils / Elles) sont amies."",
+      ""answer"": ""Elles"",
+      ""explanation"": ""For a group of only women ('a group of women'), we use 'Elles'.""
+    },
+    {
+      ""question"": ""Translate to French:\nWe are here."",
+      ""answer"": ""Nous sommes ici."",
+      ""explanation"": ""'We' translates to 'Nous'.""
+    },
+    {
+      ""question"": ""Translate to French:\nHe is small."",
+      ""answer"": ""Il est petit."",
+      ""explanation"": ""'He' translates to 'Il'.""
+    }
+  ]
+}",
+grammar,French,2,"{
+  ""topic"": ""L'Accord des Adjectifs (Adjective Agreement)"",
+  ""explanation"": ""In French, adjectives describe nouns (people, places, things). Just like nouns have a gender (masculine or feminine) and a number (singular or plural), the adjectives describing them must 'agree' or change their form to match the noun's gender and number. Think of it like a chameleon changing its color to match its surroundings!\n\n**1. Agreement in Gender (Masculine vs. Feminine)**\n*   **Masculine Singular:** This is usually the base form of the adjective.\n    *   *Example:* un **grand** gar\u00e7on (a tall boy)\n*   **Feminine Singular:** To make most adjectives feminine, you add an **-e** to the masculine singular form.\n    *   *Example:* une **grande** fille (a tall girl)\n    *   *Note:* If the masculine adjective already ends in **-e**, it usually doesn't change in the feminine form. (e.g., *rouge* (red) is the same for masculine and feminine: *un livre rouge*, *une pomme rouge*).\n\n**2. Agreement in Number (Singular vs. Plural)**\n*   **Plural:** To make an adjective plural, you generally add an **-s** to the singular form (both masculine and feminine).\n    *   *Example:* des grands gar\u00e7on**s** (tall boys), des grandes fille**s** (tall girls)\n    *   *Note:* If the adjective already ends in **-s** or **-x** in the singular form, it usually doesn't change for the plural (e.g., *gris* (grey) is the same for singular and plural: *un chat gris*, *des chats gris*).\n\n**Summary of Regular Adjective Endings:**\n*   **Masculine Singular:** (base form)\n*   **Feminine Singular:** Add **-e**\n*   **Masculine Plural:** Add **-s**\n*   **Feminine Plural:** Add **-es**"",
+  ""examples"": [
+    {
+      ""correct"": ""Mon p\u00e8re est grand."",
+      ""translation"": ""My father is tall."",
+      ""explanation"": ""The noun 'p\u00e8re' (father) is masculine singular, so the adjective 'grand' remains in its base (masculine singular) form.""
+    },
+    {
+      ""correct"": ""Ma m\u00e8re est grande."",
+      ""translation"": ""My mother is tall."",
+      ""explanation"": ""The noun 'm\u00e8re' (mother) is feminine singular, so 'grand' changes to 'grande' by adding an 'e'.""
+    },
+    {
+      ""correct"": ""Mes fr\u00e8res sont grands."",
+      ""translation"": ""My brothers are tall."",
+      ""explanation"": ""The noun 'fr\u00e8res' (brothers) is masculine plural, so 'grand' changes to 'grands' by adding an 's'.""
+    },
+    {
+      ""correct"": ""Mes s\u0153urs sont grandes."",
+      ""translation"": ""My sisters are tall."",
+      ""explanation"": ""The noun 's\u0153urs' (sisters) is feminine plural, so 'grand' changes to 'grandes' by adding 'es'.""
+    },
+    {
+      ""correct"": ""J'ai un crayon bleu."",
+      ""translation"": ""I have a blue pencil."",
+      ""explanation"": ""'Crayon' is masculine singular, so 'bleu' is in its masculine singular form.""
+    },
+    {
+      ""correct"": ""J'ai une voiture bleue."",
+      ""translation"": ""I have a blue car."",
+      ""explanation"": ""'Voiture' is feminine singular, so 'bleu' changes to 'bleue' by adding an 'e'.""
+    },
+    {
+      ""correct"": ""Les livres sont rouges."",
+      ""translation"": ""The books are red."",
+      ""explanation"": ""'Livres' is masculine plural. 'Rouge' already ends in 'e' in its masculine singular form, so it only needs an 's' for plural, becoming 'rouges'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Ma s\u0153ur est petit."",
+      ""correct"": ""Ma s\u0153ur est petite."",
+      ""explanation"": ""The noun 's\u0153ur' (sister) is feminine, so the adjective 'petit' must agree in gender and change to 'petite'.""
+    },
+    {
+      ""incorrect"": ""Les chats sont noir."",
+      ""correct"": ""Les chats sont noirs."",
+      ""explanation"": ""The noun 'chats' (cats) is plural, so the adjective 'noir' must agree in number and change to 'noirs'.""
+    },
+    {
+      ""incorrect"": ""Une fleur est vert."",
+      ""correct"": ""Une fleur est verte."",
+      ""explanation"": ""The noun 'fleur' (flower) is feminine singular, so the adjective 'vert' must agree in both gender and number, becoming 'verte'.""
+    },
+    {
+      ""incorrect"": ""J'aime les robes marrones."",
+      ""correct"": ""J'aime les robes marron."",
+      ""explanation"": ""Some color adjectives like 'marron' (brown) and 'orange' are invariable. They do not change for gender or number. This is a common exception.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Complete the sentence with the correct form of the adjective in parentheses:\nMon fr\u00e8re est ____ (grand)."",
+      ""answer"": ""grand"",
+      ""explanation"": ""'Fr\u00e8re' is masculine singular, so 'grand' remains in its base form.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct form of the adjective in parentheses:\nMa s\u0153ur est ____ (petit)."",
+      ""answer"": ""petite"",
+      ""explanation"": ""'S\u0153ur' is feminine singular, so 'petit' becomes 'petite' to agree.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct form of the adjective in parentheses:\nLes chiens sont ____ (noir)."",
+      ""answer"": ""noirs"",
+      ""explanation"": ""'Chiens' is masculine plural, so 'noir' becomes 'noirs' to agree in number.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct form of the adjective in parentheses:\nLes tables sont ____ (bleu)."",
+      ""answer"": ""bleues"",
+      ""explanation"": ""'Tables' is feminine plural, so 'bleu' becomes 'bleues' to agree in both gender and number.""
+    },
+    {
+      ""question"": ""Complete the sentence with the correct form of the adjective in parentheses:\nJ'ai un livre ____ (rouge)."",
+      ""answer"": ""rouge"",
+      ""explanation"": ""'Livre' is masculine singular. 'Rouge' already ends in 'e' in its base form, so it does not change for feminine singular. It would only change for plural (rouges).""
+    },
+    {
+      ""question"": ""Rewrite the sentence, changing the noun from singular to plural:\nLa voiture est verte."",
+      ""answer"": ""Les voitures sont vertes."",
+      ""explanation"": ""The article 'la' becomes 'les', the verb 'est' becomes 'sont', and the adjective 'verte' (feminine singular) becomes 'vertes' (feminine plural) by adding an 's'.""
+    },
+    {
+      ""question"": ""Rewrite the sentence, changing the noun from masculine to feminine:\nUn petit gar\u00e7on."",
+      ""answer"": ""Une petite fille."",
+      ""explanation"": ""The article 'un' becomes 'une', 'gar\u00e7on' becomes 'fille', and the adjective 'petit' becomes 'petite' to agree with the new feminine noun.""
+    }
+  ]
+}",
+grammar,French,3,"{
+  ""topic"": ""La N\u00e9gation: Ne...pas (Expressing Negation in French)"",
+  ""explanation"": ""In French, to make a sentence negative (to say 'not'), you usually use two words: 'ne' and 'pas'. They work together as a pair and surround the conjugated verb.\n\nHere's how it works:\n1.  **'Ne'** comes *before* the conjugated verb.\n2.  **'Pas'** comes *after* the conjugated verb.\n\n**Structure: Sujet + ne + verbe conjugu\u00e9 + pas + le reste de la phrase.**\n\n**Important Contraction:**\nWhen the verb starts with a vowel (a, e, i, o, u) or a silent 'h', 'ne' contracts to **n'**. This is similar to how 'le' becomes 'l'' before a vowel.\n\n**Example:**\n*   Il **aime** le caf\u00e9. (He likes coffee.)\n*   Il **n'aime pas** le caf\u00e9. (He does not like coffee.)"",
+  ""examples"": [
+    {
+      ""correct"": ""Je parle anglais."",
+      ""translation"": ""I speak English."",
+      ""explanation"": ""This is an affirmative sentence.""
+    },
+    {
+      ""correct"": ""Je ne parle pas anglais."",
+      ""translation"": ""I do not speak English."",
+      ""explanation"": ""We added 'ne' before the verb 'parle' and 'pas' after it to make the sentence negative. 'Ne' is not contracted because 'parle' starts with a consonant.""
+    },
+    {
+      ""correct"": ""Tu manges des pommes."",
+      ""translation"": ""You eat apples."",
+      ""explanation"": ""Affirmative sentence with a regular -ER verb and indefinite article 'des'.""
+    },
+    {
+      ""correct"": ""Tu ne manges pas de pommes."",
+      ""translation"": ""You do not eat apples."",
+      ""explanation"": ""'Ne' and 'pas' surround 'manges'. Note that 'des' changes to 'de' in negative sentences.""
+    },
+    {
+      ""correct"": ""Il est grand."",
+      ""translation"": ""He is tall."",
+      ""explanation"": ""Affirmative sentence with the verb '\u00eatre'.""
+    },
+    {
+      ""correct"": ""Il n'est pas grand."",
+      ""translation"": ""He is not tall."",
+      ""explanation"": ""The verb 'est' starts with a vowel, so 'ne' contracts to 'n'' for easier pronunciation.""
+    },
+    {
+      ""correct"": ""Nous avons soif."",
+      ""translation"": ""We are thirsty."",
+      ""explanation"": ""Affirmative sentence with the verb 'avoir'.""
+    },
+    {
+      ""correct"": ""Nous n'avons pas soif."",
+      ""translation"": ""We are not thirsty."",
+      ""explanation"": ""The verb 'avons' starts with a vowel, so 'ne' contracts to 'n''.""
+    },
+    {
+      ""correct"": ""Ils travaillent le week-end."",
+      ""translation"": ""They work on the weekend."",
+      ""explanation"": ""Affirmative sentence about a daily activity.""
+    },
+    {
+      ""correct"": ""Ils ne travaillent pas le week-end."",
+      ""translation"": ""They do not work on the weekend."",
+      ""explanation"": ""'Ne' and 'pas' surround 'travaillent'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Je parle pas fran\u00e7ais."",
+      ""correct"": ""Je ne parle pas fran\u00e7ais."",
+      ""explanation"": ""Forgetting 'ne' (or 'n''). Both 'ne' and 'pas' are necessary for correct negation in standard French. While 'ne' is sometimes dropped in very informal spoken French, it's crucial for learners to include both parts for grammatical correctness.""
+    },
+    {
+      ""incorrect"": ""Il pas aime le caf\u00e9."",
+      ""correct"": ""Il n'aime pas le caf\u00e9."",
+      ""explanation"": ""Incorrect placement of 'pas'. 'Pas' *always* comes after the conjugated verb, and 'ne' (or 'n'') *always* comes before it. They act like a 'negation sandwich' around the verb.""
+    },
+    {
+      ""incorrect"": ""Elle ne habite pas ici."",
+      ""correct"": ""Elle n'habite pas ici."",
+      ""explanation"": ""Not contracting 'ne' to 'n''. When the verb starts with a vowel (a, e, i, o, u) or a silent 'h', 'ne' *must* contract to 'n'' for pronunciation and grammatical correctness. Ignoring this can make sentences sound unnatural.""
+    },
+    {
+      ""incorrect"": ""Vous ne sont pas grands."",
+      ""correct"": ""Vous n'\u00eates pas grands."",
+      ""explanation"": ""Incorrect verb conjugation. This isn't strictly a negation mistake, but a common issue for beginners combining concepts. Ensure your verb is correctly conjugated *before* applying negation.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Transformez ces phrases \u00e0 la forme n\u00e9gative. (Transform these sentences into the negative form.)\n\n1. Tu travailles le samedi.\n2. Nous regardons la t\u00e9l\u00e9vision.\n3. Elle aime les chats.\n4. Ils ont un chien.\n5. Je suis fatigu\u00e9."",
+      ""answer"": ""1. Tu ne travailles pas le samedi.\n2. Nous ne regardons pas la t\u00e9l\u00e9vision.\n3. Elle n'aime pas les chats.\n4. Ils n'ont pas de chien.\n5. Je ne suis pas fatigu\u00e9."",
+      ""explanation"": ""1. 'ne' before 'travailles', 'pas' after. (Consonant start)\n2. 'ne' before 'regardons', 'pas' after. (Consonant start)\n3. 'n'' before 'aime' (starts with 'a'), 'pas' after. ('des' becomes 'de' in negation)\n4. 'n'' before 'ont' (starts with 'o'), 'pas' after. ('un' becomes 'de' in negation)\n5. 'ne' before 'suis', 'pas' after. (Consonant start)""
+    },
+    {
+      ""question"": ""Compl\u00e9tez avec 'ne'/'n'' et 'pas'. (Complete with 'ne'/'n'' and 'pas'.)\n\n1. Il ______ parle ______ espagnol.\n2. Vous ______ habitez ______ \u00e0 Paris.\n3. Nous ______ sommes ______ \u00e9tudiants.\n4. Elle ______ mange ______ de viande.\n5. Je ______ \u00e9tudie ______ le fran\u00e7ais."",
+      ""answer"": ""1. Il ne parle pas espagnol.\n2. Vous n'habitez pas \u00e0 Paris.\n3. Nous ne sommes pas \u00e9tudiants.\n4. Elle ne mange pas de viande.\n5. Je n'\u00e9tudie pas le fran\u00e7ais."",
+      ""explanation"": ""1. 'ne' because 'parle' starts with a consonant.\n2. 'n'' because 'habitez' starts with 'h'.\n3. 'ne' because 'sommes' starts with a consonant.\n4. 'ne' because 'mange' starts with a consonant.\n5. 'n'' because '\u00e9tudie' starts with '\u00e9' (a vowel).""
+    }
+  ]
+}",
+grammar,French,4,"{
+  ""topic"": ""L'Accord du Participe Pass\u00e9 (Past Participle Agreement) in the Pass\u00e9 Compos\u00e9"",
+  ""explanation"": ""In French, when you use the Pass\u00e9 Compos\u00e9 (the most common past tense for completed actions), the past participle sometimes needs to agree in gender and number with another part of the sentence. This agreement depends on which auxiliary verb (avoir or \u00eatre) is used.\n\n**1. Agreement with \u00caTRE verbs:**\nWhen the auxiliary verb is \u00caTRE, the past participle ALWAYS agrees in gender (masculine/feminine) and number (singular/plural) with the SUBJECT of the verb. These are typically verbs of movement or change of state (e.g., aller, venir, partir, arriver, na\u00eetre, mourir, rester, retourner, tomber, monter, descendre, passer par, entrer, sortir, devenir, revenir).\n\n*   **Masculine Singular:** no change (e.g., il est all\u00e9)\n*   **Feminine Singular:** add an -e (e.g., elle est all\u00e9e)\n*   **Masculine Plural:** add an -s (e.g., ils sont all\u00e9s)\n*   **Feminine Plural:** add -es (e.g., elles sont all\u00e9es)\n\n**2. Agreement with AVOIR verbs:**\nWhen the auxiliary verb is AVOIR, the past participle generally DOES NOT agree with the subject. However, it DOES agree in gender and number with the DIRECT OBJECT if the direct object comes BEFORE the auxiliary verb. This is a crucial distinction.\n\n*   **No agreement with the subject:** (e.g., J'ai mang\u00e9, Nous avons vu).\n*   **Agreement with a preceding Direct Object:** If the direct object (a noun or a direct object pronoun like le, la, les, l') appears before the verb, the past participle agrees with it.\n    *   Example with pronoun: 'Je **les** ai mang\u00e9es.' (Les refers to 'les pommes' - feminine plural)\n    *   Example with noun: 'Les fleurs **que** j'ai achet\u00e9es.' (Que refers to 'les fleurs' - feminine plural)"",
+  ""examples"": [
+    {
+      ""correct"": ""Elle est all\u00e9e au supermarch\u00e9."",
+      ""translation"": ""She went to the supermarket."",
+      ""explanation"": ""The auxiliary verb is '\u00eatre', and the subject 'Elle' is feminine singular, so 'all\u00e9' becomes 'all\u00e9e'.""
+    },
+    {
+      ""correct"": ""Ils sont partis t\u00f4t ce matin."",
+      ""translation"": ""They left early this morning."",
+      ""explanation"": ""The auxiliary verb is '\u00eatre', and the subject 'Ils' is masculine plural, so 'parti' becomes 'partis'.""
+    },
+    {
+      ""correct"": ""Nous avons mang\u00e9 une pizza."",
+      ""translation"": ""We ate a pizza."",
+      ""explanation"": ""The auxiliary verb is 'avoir', and the direct object 'une pizza' comes AFTER the verb. Therefore, there is no agreement with the subject 'Nous' or the direct object.""
+    },
+    {
+      ""correct"": ""La lettre que j'ai \u00e9crite \u00e9tait longue."",
+      ""translation"": ""The letter that I wrote was long."",
+      ""explanation"": ""The auxiliary verb is 'avoir'. The direct object 'La lettre' (feminine singular) comes BEFORE the verb (in the form of the relative pronoun 'que'). Therefore, '\u00e9crit' becomes '\u00e9crite' to agree with 'La lettre'.""
+    },
+    {
+      ""correct"": ""Tu les as vus hier ?"",
+      ""translation"": ""Did you see them yesterday?"",
+      ""explanation"": ""The auxiliary verb is 'avoir'. The direct object pronoun 'les' (referring to masculine plural people/things) comes BEFORE the verb. Therefore, 'vu' becomes 'vus' to agree with 'les'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Il est all\u00e9e \u00e0 l'\u00e9cole."",
+      ""correct"": ""Il est all\u00e9 \u00e0 l'\u00e9cole."",
+      ""explanation"": ""Mistake: 'All\u00e9e' is feminine singular, but the subject 'Il' is masculine singular. With '\u00eatre' verbs, the participle must match the subject's gender and number.""
+    },
+    {
+      ""incorrect"": ""Nous avons achet\u00e9es des pommes."",
+      ""correct"": ""Nous avons achet\u00e9 des pommes."",
+      ""explanation"": ""Mistake: The past participle 'achet\u00e9es' is incorrectly agreed. With 'avoir' verbs, the participle only agrees with the direct object if the direct object comes BEFORE the verb. Here, 'des pommes' (direct object) comes AFTER the verb, so no agreement is needed.""
+    },
+    {
+      ""incorrect"": ""Les fleurs que j'ai achet\u00e9 sont belles."",
+      ""correct"": ""Les fleurs que j'ai achet\u00e9es sont belles."",
+      ""explanation"": ""Mistake: The past participle 'achet\u00e9' is not agreed. Here, 'que' refers to 'Les fleurs' (feminine plural) and acts as the direct object, which comes BEFORE the verb. Therefore, 'achet\u00e9' must agree with 'les fleurs' and become 'achet\u00e9es'.""
+    },
+    {
+      ""incorrect"": ""Elles sont all\u00e9 au cin\u00e9ma."",
+      ""correct"": ""Elles sont all\u00e9es au cin\u00e9ma."",
+      ""explanation"": ""Mistake: The past participle 'all\u00e9' is not agreed in number and gender. The subject 'Elles' is feminine plural, so 'all\u00e9' must become 'all\u00e9es'.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Conjugate the verb in parentheses in the Pass\u00e9 Compos\u00e9, paying attention to participle agreement:\n1. Mes parents (rentrer) _______________ tard hier soir."",
+      ""answer"": ""sont rentr\u00e9s"",
+      ""explanation"": ""'Rentrer' uses '\u00eatre' as its auxiliary. 'Mes parents' is masculine plural, so 'rentr\u00e9' becomes 'rentr\u00e9s'.""
+    },
+    {
+      ""question"": ""2. Julia (regarder) _______________ un film int\u00e9ressant."",
+      ""answer"": ""a regard\u00e9"",
+      ""explanation"": ""'Regarder' uses 'avoir'. The direct object 'un film int\u00e9ressant' comes after the verb, so no agreement is needed.""
+    },
+    {
+      ""question"": ""3. Elles (aller) _______________ au parc ensemble."",
+      ""answer"": ""sont all\u00e9es"",
+      ""explanation"": ""'Aller' uses '\u00eatre'. 'Elles' is feminine plural, so 'all\u00e9' becomes 'all\u00e9es'.""
+    },
+    {
+      ""question"": ""4. Voici la voiture que j' (acheter) _______________ la semaine derni\u00e8re."",
+      ""answer"": ""ai achet\u00e9e"",
+      ""explanation"": ""'Acheter' uses 'avoir'. 'La voiture' (feminine singular) is the direct object and comes before the verb (via 'que'). So, 'achet\u00e9' becomes 'achet\u00e9e'.""
+    },
+    {
+      ""question"": ""5. Nous (finir) _______________ nos devoirs."",
+      ""answer"": ""avons fini"",
+      ""explanation"": ""'Finir' uses 'avoir'. 'Nos devoirs' (direct object) comes after the verb, so no agreement is needed.""
+    }
+  ]
+}",
+grammar,French,5,"{
+  ""topic"": ""Le Futur Simple: Describing Future Events, People, and Places"",
+  ""explanation"": ""The \""Futur Simple\"" (Simple Future) tense in French is used to talk about actions or states that *will happen* in the future. It's a single-word tense, making it distinct from the \""Futur Proche\"" (Near Future - *aller* + infinitive).\n\n**Formation of the Futur Simple:**\n\n1.  **Regular Verbs (-ER, -IR):**\n    *   Keep the **full infinitive** of the verb.\n    *   Add the following endings:\n        *   Je: **-ai**\n        *   Tu: **-as**\n        *   Il/Elle/On: **-a**\n        *   Nous: **-ons**\n        *   Vous: **-ez**\n        *   Ils/Elles: **-ont**\n\n    *Examples:*\n        *   **Parler** (to speak): je parler**ai**, tu parler**as**, il parler**a**, nous parler**ons**, vous parler**ez**, ils parler**ont**\n        *   **Finir** (to finish): je finir**ai**, tu finir**as**, il finir**a**, nous finir**ons**, vous finir**ez**, ils finir**ont**\n\n2.  **Regular Verbs (-RE):**\n    *   Drop the final **-e** from the infinitive.\n    *   Add the same endings as above.\n\n    *Example:*\n        *   **Attendre** (to wait): j'attendr**ai**, tu attendr**as**, il attendr**a**, nous attendr**ons**, vous attendr**ez**, ils attendr**ont**\n\n3.  **Common Irregular Verbs:**\n    *   Many common verbs have irregular stems in the Futur Simple, but they use the **same endings** (-ai, -as, -a, -ons, -ez, -ont). You need to learn these irregular stems.\n    *   Here are some crucial ones:\n        *   **\u00catre** (to be) -> **ser-** (e.g., je serai)\n        *   **Avoir** (to have) -> **aur-** (e.g., tu auras)\n        *   **Aller** (to go) -> **ir-** (e.g., il ira)\n        *   **Faire** (to do/make) -> **fer-** (e.g., nous ferons)\n        *   **Voir** (to see) -> **verr-** (e.g., vous verrez)\n        *   **Venir** (to come) -> **viendr-** (e.g., elles viendront)\n        *   **Pouvoir** (can/to be able to) -> **pourr-** (e.g., je pourrai)\n        *   **Vouloir** (to want) -> **voudr-** (e.g., tu voudras)\n        *   **Savoir** (to know) -> **saur-** (e.g., il saura)\n\n**When to Use the Futur Simple:**\n\n*   **Predictions and forecasts:** \""Il fera beau demain.\"" (It will be nice tomorrow.)\n*   **Plans and intentions for the distant future:** \""Nous voyagerons en France l'ann\u00e9e prochaine.\"" (We will travel to France next year.)\n*   **Descriptions of future states, people, or places:** This is where you can use verbs like *\u00eatre* (to be), *avoir* (to have), *para\u00eetre* (to seem), etc., in the future tense with adjectives or nouns to describe how things *will be*.\n\n    *Example:*\n        *   \""Mon ami **sera** grand et intelligent.\"" (My friend **will be** tall and intelligent.)\n        *   \""La ville **aura** beaucoup de gratte-ciel.\"" (The city **will have** many skyscrapers.)\n        *   \""Les maisons **seront** \u00e9cologiques.\"" (The houses **will be** ecological.)"",
+  ""examples"": [
+    {
+      ""correct"": ""Je parlerai fran\u00e7ais avec mes amis."",
+      ""translation"": ""I will speak French with my friends."",
+      ""explanation"": ""Example of a regular -ER verb ('parler') conjugated in the future simple. The full infinitive 'parler' is kept, and the ending '-ai' is added for 'je'.""
+    },
+    {
+      ""correct"": ""Le nouveau b\u00e2timent sera tr\u00e8s moderne."",
+      ""translation"": ""The new building will be very modern."",
+      ""explanation"": ""Example of describing a place in the future using the irregular verb '\u00eatre' (ser-) in the future simple. 'Sera' is the 3rd person singular conjugation.""
+    },
+    {
+      ""correct"": ""Vous verrez de belles choses pendant votre voyage."",
+      ""translation"": ""You will see beautiful things during your trip."",
+      ""explanation"": ""Example of describing future experiences using the irregular verb 'voir' (verr-) in the future simple. 'Verrez' is the 2nd person plural conjugation.""
+    },
+    {
+      ""correct"": ""Apr\u00e8s le coll\u00e8ge, elle aura plus de temps libre."",
+      ""translation"": ""After college, she will have more free time."",
+      ""explanation"": ""Example using the irregular verb 'avoir' (aur-) in the future simple to describe a future state or possession. 'Aura' is the 3rd person singular conjugation.""
+    },
+    {
+      ""correct"": ""Nous attendrons le bus ensemble."",
+      ""translation"": ""We will wait for the bus together."",
+      ""explanation"": ""Example of a regular -RE verb ('attendre') conjugated in the future simple. The final 'e' of the infinitive is dropped ('attendr-') before adding the ending '-ons' for 'nous'.""
+    }
+  ],
+  ""common_mistakes"": [
+    {
+      ""incorrect"": ""Nous allons parlerons demain."",
+      ""correct"": ""Nous parlerons demain. OR Nous allons parler demain."",
+      ""explanation"": ""Do not mix the Futur Simple and Futur Proche. 'Aller' + infinitive is the Futur Proche. For Futur Simple, just conjugate the main verb.""
+    },
+    {
+      ""incorrect"": ""Il finiraient son travail vite."",
+      ""correct"": ""Il finira son travail vite."",
+      ""explanation"": ""Incorrect ending. The ending for 'il/elle/on' is '-a', not '-aient' (which is for imparfait or conditional). Remember: Futur Simple uses the same endings as 'avoir' in the present tense (-ai, -as, -a, -ons, -ez, -ont).""
+    },
+    {
+      ""incorrect"": ""Tu faisseras tes devoirs."",
+      ""correct"": ""Tu feras tes devoirs."",
+      ""explanation"": ""Incorrect irregular stem. The irregular stem for 'faire' is 'fer-', not 'faiss-'. You need to memorize the irregular stems.""
+    },
+    {
+      ""incorrect"": ""Elles prenderont une d\u00e9cision."",
+      ""correct"": ""Elles prendront une d\u00e9cision."",
+      ""explanation"": ""For regular -RE verbs (like 'prendre'), you must drop the final 'e' from the infinitive before adding the future endings. So 'prendre' becomes 'prendr-' before adding '-ont'.""
+    }
+  ],
+  ""practice_exercises"": [
+    {
+      ""question"": ""Conjugate 'parler' (to speak) in the Futur Simple for 'nous'."",
+      ""answer"": ""Nous parlerons."",
+      ""explanation"": ""For regular -ER verbs, keep the full infinitive ('parler') and add the '-ons' ending for 'nous'.""
+    },
+    {
+      ""question"": ""Conjugate '\u00eatre' (to be) in the Futur Simple for 'je'."",
+      ""answer"": ""Je serai."",
+      ""explanation"": ""'\u00catre' is an irregular verb with the future stem 'ser-'. Add the '-ai' ending for 'je'.""
+    },
+    {
+      ""question"": ""Fill in the blank: Demain, le temps ______ (faire) beau."",
+      ""answer"": ""fera"",
+      ""explanation"": ""'Faire' is an irregular verb with the future stem 'fer-'. For 'le temps' (il), the ending is '-a'.""
+    },
+    {
+      ""question"": ""Translate: 'The new school will be very big.'"",
+      ""answer"": ""La nouvelle \u00e9cole sera tr\u00e8s grande."",
+      ""explanation"": ""Use '\u00eatre' (ser-) in the future simple for 'la nouvelle \u00e9cole' (elle). Remember adjective agreement: 'grande' for '\u00e9cole'.""
+    },
+    {
+      ""question"": ""Fill in the blank: Dans cinq ans, mes parents ______ (acheter) une nouvelle maison."",
+      ""answer"": ""ach\u00e8teront"",
+      ""explanation"": ""'Acheter' is a regular -ER verb. For 'mes parents' (ils/elles), the ending is '-ont'. Note that 'acheter' often changes 'e' to '\u00e8' in the stem in the future tense.""
+    },
+    {
+      ""question"": ""Translate: 'You (formal/plural) will discover amazing places.'"",
+      ""answer"": ""Vous d\u00e9couvrirez des endroits incroyables."",
+      ""explanation"": ""'D\u00e9couvrir' is a regular -IR verb. Keep the full infinitive ('d\u00e9couvrir') and add '-ez' for 'vous'. 'Endroits' means 'places' and 'incroyables' means 'amazing'.""
+    }
+  ]
+}",

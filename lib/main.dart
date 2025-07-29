@@ -3,6 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:vocaboo/provider/language_provider.dart';
+import 'package:vocaboo/provider/user_provider.dart';
 import 'package:vocaboo/routes/routes.dart';
 import 'package:vocaboo/screens/account_process/confirmation_screen.dart';
 import 'package:vocaboo/screens/account_process/language_selection_screen.dart';
@@ -27,7 +28,10 @@ Future<void> main() async {
 
   runApp(
     MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => LanguageProvider())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => UserProvider()),
+        ChangeNotifierProvider(create: (_) => LanguageProvider()),
+      ],
       child: const MyApp(),
     ),
   );

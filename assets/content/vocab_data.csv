@@ -1,0 +1,1682 @@
+﻿category,language,level,raw,audio
+vocabulary,Japanese,1,"{
+  ""theme"": ""First Steps in Japanese: Greetings and Basic Numbers"",
+  ""introduction"": ""Welcome to your first steps in Japanese! This vocabulary set introduces essential greetings and your initial numbers, crucial for starting basic conversations and understanding everyday interactions. Mastering these words will give you a solid foundation as you begin your exciting language journey!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""\u3053\u3093\u306b\u3061\u306f"",
+      ""pronunciation"": ""kon-nee-chee-wah"",
+      ""translation"": ""Hello / Good Day"",
+      ""example"": ""\u3053\u3093\u306b\u3061\u306f\u3001\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f"",
+      ""example_translation"": ""Hello, how are you?""
+    },
+    {
+      ""word"": ""\u3042\u308a\u304c\u3068\u3046"",
+      ""pronunciation"": ""ah-ree-gah-toh"",
+      ""translation"": ""Thank you"",
+      ""example"": ""\u3042\u308a\u304c\u3068\u3046\uff01"",
+      ""example_translation"": ""Thank you!""
+    },
+    {
+      ""word"": ""\u3059\u307f\u307e\u305b\u3093"",
+      ""pronunciation"": ""soo-mee-mah-sen"",
+      ""translation"": ""Excuse me / Sorry"",
+      ""example"": ""\u3059\u307f\u307e\u305b\u3093\u3001\u304a\u624b\u6d17\u3044\u3069\u3053\u3067\u3059\u304b\uff1f"",
+      ""example_translation"": ""Excuse me, where is the restroom?""
+    },
+    {
+      ""word"": ""\u306f\u3044"",
+      ""pronunciation"": ""hah-ee"",
+      ""translation"": ""Yes"",
+      ""example"": ""\u306f\u3044\u3001\u305d\u3046\u3067\u3059\u3002"",
+      ""example_translation"": ""Yes, that's right.""
+    },
+    {
+      ""word"": ""\u3044\u3044\u3048"",
+      ""pronunciation"": ""ee-eh"",
+      ""translation"": ""No"",
+      ""example"": ""\u3044\u3044\u3048\u3001\u9055\u3044\u307e\u3059\u3002"",
+      ""example_translation"": ""No, that's wrong/different.""
+    },
+    {
+      ""word"": ""\u3055\u3088\u3046\u306a\u3089"",
+      ""pronunciation"": ""sah-yoh-nah-rah"",
+      ""translation"": ""Goodbye (often for longer separations)"",
+      ""example"": ""\u3055\u3088\u3046\u306a\u3089\u3001\u307e\u305f\u660e\u65e5\uff01"",
+      ""example_translation"": ""Goodbye, see you tomorrow!""
+    },
+    {
+      ""word"": ""\u306f\u3058\u3081\u307e\u3057\u3066"",
+      ""pronunciation"": ""hah-jee-meh-mah-she-teh"",
+      ""translation"": ""Nice to meet you (used upon first meeting)"",
+      ""example"": ""\u306f\u3058\u3081\u307e\u3057\u3066\u3002"",
+      ""example_translation"": ""Nice to meet you.""
+    },
+    {
+      ""word"": ""\u3044\u3061"",
+      ""pronunciation"": ""ee-chee"",
+      ""translation"": ""One"",
+      ""example"": ""\u3044\u3061\u3001\u306b\u3001\u3055\u3093\u3002"",
+      ""example_translation"": ""One, two, three.""
+    },
+    {
+      ""word"": ""\u306b"",
+      ""pronunciation"": ""nee"",
+      ""translation"": ""Two"",
+      ""example"": ""\u306b\u3001\u3055\u3093\u3001\u3057\u3002"",
+      ""example_translation"": ""Two, three, four.""
+    },
+    {
+      ""word"": ""\u3055\u3093"",
+      ""pronunciation"": ""sahn"",
+      ""translation"": ""Three"",
+      ""example"": ""\u3044\u3061\u3001\u306b\u3001\u3055\u3093\u3002"",
+      ""example_translation"": ""One, two, three.""
+    }
+  ]
+}","[{""text"": ""こんにちは"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062218_cf2e3764fad3.mp3""}, {""text"": ""ありがとう"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_fbb4ffa3648f.mp3""}, {""text"": ""すみません"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_2e9ca34e1734.mp3""}, {""text"": ""はい"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_644c588ab346.mp3""}, {""text"": ""いいえ"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_afc3bf3c05c5.mp3""}, {""text"": ""さようなら"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_b742d6b1198b.mp3""}, {""text"": ""はじめまして"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062219_ec97c0c7f1d5.mp3""}, {""text"": ""いち"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062220_84de5c2aa213.mp3""}, {""text"": ""に"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062220_7e9ac4a09582.mp3""}, {""text"": ""さん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062220_1a6e9ca6660e.mp3""}]"
+vocabulary,Japanese,2,"{
+  ""theme"": ""Everyday Essentials: Family, Colors, and Days of the Week"",
+  ""introduction"": ""This vocabulary set introduces fundamental words crucial for daily conversations and basic descriptions in Japanese. You'll learn how to talk about your immediate family members, identify common colors, and name two key days of the week. Mastering these words will greatly enhance your ability to describe your surroundings and daily life."",
+  ""vocabulary"": [
+    {
+      ""word"": ""\u304a\u7236\u3055\u3093"",
+      ""pronunciation"": ""Otousan"",
+      ""translation"": ""Father (respectful)"",
+      ""example"": ""\u79c1\u306e\u304a\u7236\u3055\u3093\u306f\u4f1a\u793e\u54e1\u3067\u3059\u3002"",
+      ""example_translation"": ""My father is an office worker.""
+    },
+    {
+      ""word"": ""\u304a\u6bcd\u3055\u3093"",
+      ""pronunciation"": ""Okaasan"",
+      ""translation"": ""Mother (respectful)"",
+      ""example"": ""\u304a\u6bcd\u3055\u3093\u306f\u6599\u7406\u304c\u4e0a\u624b\u3067\u3059\u3002"",
+      ""example_translation"": ""My mother is good at cooking.""
+    },
+    {
+      ""word"": ""\u304a\u5144\u3055\u3093"",
+      ""pronunciation"": ""Oniisan"",
+      ""translation"": ""Older brother (respectful)"",
+      ""example"": ""\u304a\u5144\u3055\u3093\u306f\u5927\u5b66\u751f\u3067\u3059\u3002"",
+      ""example_translation"": ""My older brother is a university student.""
+    },
+    {
+      ""word"": ""\u304a\u59c9\u3055\u3093"",
+      ""pronunciation"": ""Oneesan"",
+      ""translation"": ""Older sister (respectful)"",
+      ""example"": ""\u304a\u59c9\u3055\u3093\u306f\u3068\u3066\u3082\u89aa\u5207\u3067\u3059\u3002"",
+      ""example_translation"": ""My older sister is very kind.""
+    },
+    {
+      ""word"": ""\u5f1f"",
+      ""pronunciation"": ""Ot\u014dto"",
+      ""translation"": ""Younger brother"",
+      ""example"": ""\u5f1f\u306f\u9ad8\u6821\u751f\u3067\u3059\u3002"",
+      ""example_translation"": ""My younger brother is a high school student.""
+    },
+    {
+      ""word"": ""\u59b9"",
+      ""pronunciation"": ""Im\u014dto"",
+      ""translation"": ""Younger sister"",
+      ""example"": ""\u59b9\u306f\u304b\u308f\u3044\u3044\u3067\u3059\u3002"",
+      ""example_translation"": ""My younger sister is cute.""
+    },
+    {
+      ""word"": ""\u8d64"",
+      ""pronunciation"": ""Aka"",
+      ""translation"": ""Red"",
+      ""example"": ""\u3053\u308c\u306f\u8d64\u3044\u3044\u3061\u3054\u3067\u3059\u3002"",
+      ""example_translation"": ""This is a red strawberry.""
+    },
+    {
+      ""word"": ""\u9752"",
+      ""pronunciation"": ""Ao"",
+      ""translation"": ""Blue"",
+      ""example"": ""\u9752\u3044\u7a7a\u304c\u304d\u308c\u3044\u3067\u3059\u3002"",
+      ""example_translation"": ""The blue sky is beautiful.""
+    },
+    {
+      ""word"": ""\u9ec4\u8272"",
+      ""pronunciation"": ""Kiiro"",
+      ""translation"": ""Yellow"",
+      ""example"": ""\u9ec4\u8272\u3044\u30ec\u30e2\u30f3\u304c\u597d\u304d\u3067\u3059\u3002"",
+      ""example_translation"": ""I like yellow lemons.""
+    },
+    {
+      ""word"": ""\u7dd1"",
+      ""pronunciation"": ""Midori"",
+      ""translation"": ""Green"",
+      ""example"": ""\u516c\u5712\u306b\u306f\u7dd1\u306e\u6728\u304c\u305f\u304f\u3055\u3093\u3042\u308a\u307e\u3059\u3002"",
+      ""example_translation"": ""There are many green trees in the park.""
+    },
+    {
+      ""word"": ""\u6708\u66dc\u65e5"",
+      ""pronunciation"": ""Getsuy\u014dbi"",
+      ""translation"": ""Monday"",
+      ""example"": ""\u6708\u66dc\u65e5\u306b\u5b66\u6821\u3078\u884c\u304d\u307e\u3059\u3002"",
+      ""example_translation"": ""I go to school on Monday.""
+    },
+    {
+      ""word"": ""\u65e5\u66dc\u65e5"",
+      ""pronunciation"": ""Nichiy\u014dbi"",
+      ""translation"": ""Sunday"",
+      ""example"": ""\u65e5\u66dc\u65e5\u306f\u4f11\u307f\u3067\u3059\u3002"",
+      ""example_translation"": ""Sunday is a holiday/day off.""
+    }
+  ]
+}","[{""text"": ""お父さん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062232_c9eb6cdafd49.mp3""}, {""text"": ""お母さん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062232_3dd77923bfe9.mp3""}, {""text"": ""お兄さん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062232_bc2fa7441af9.mp3""}, {""text"": ""お姉さん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062232_3c18075d2bc6.mp3""}, {""text"": ""弟"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_276ecbeda64d.mp3""}, {""text"": ""妹"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_de8193933e84.mp3""}, {""text"": ""赤"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_cfb01155af45.mp3""}, {""text"": ""青"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_fca58d12f635.mp3""}, {""text"": ""黄色"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_09492dcf5dee.mp3""}, {""text"": ""緑"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_3c600eec1d3a.mp3""}, {""text"": ""月曜日"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062233_27337386be97.mp3""}, {""text"": ""日曜日"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062234_6a1276dfcc97.mp3""}]"
+vocabulary,Japanese,3,"{
+  ""theme"": ""Daily Activities and Routines"",
+  ""introduction"": ""This vocabulary list focuses on common verbs and time expressions you'll use to talk about your daily activities and routines in Japanese. Mastering these words will help you describe your everyday life using simple present tense forms."",
+  ""vocabulary"": [
+    {
+      ""word"": ""\u8d77\u304d\u308b"",
+      ""pronunciation"": ""okiru"",
+      ""translation"": ""to wake up, to get up"",
+      ""example"": ""\u79c1\u306f\u6bce\u671d6\u6642\u306b\u8d77\u304d\u307e\u3059\u3002"",
+      ""example_translation"": ""I wake up at 6 AM every morning.""
+    },
+    {
+      ""word"": ""\u98df\u3079\u308b"",
+      ""pronunciation"": ""taberu"",
+      ""translation"": ""to eat"",
+      ""example"": ""\u663c\u3054\u306f\u3093\u306b\u30b5\u30f3\u30c9\u30a4\u30c3\u30c1\u3092\u98df\u3079\u307e\u3059\u3002"",
+      ""example_translation"": ""I eat a sandwich for lunch.""
+    },
+    {
+      ""word"": ""\u98f2\u3080"",
+      ""pronunciation"": ""nomu"",
+      ""translation"": ""to drink"",
+      ""example"": ""\u79c1\u306f\u3088\u304f\u30b3\u30fc\u30d2\u30fc\u3092\u98f2\u307f\u307e\u3059\u3002"",
+      ""example_translation"": ""I often drink coffee.""
+    },
+    {
+      ""word"": ""\u884c\u304f"",
+      ""pronunciation"": ""iku"",
+      ""translation"": ""to go"",
+      ""example"": ""\u6bce\u65e5\u5b66\u6821\u3078\u884c\u304d\u307e\u3059\u3002"",
+      ""example_translation"": ""I go to school every day.""
+    },
+    {
+      ""word"": ""\u6765\u308b"",
+      ""pronunciation"": ""kuru"",
+      ""translation"": ""to come"",
+      ""example"": ""\u53cb\u9054\u304c\u79c1\u306e\u5bb6\u306b\u6765\u307e\u3059\u3002"",
+      ""example_translation"": ""My friend comes to my house.""
+    },
+    {
+      ""word"": ""\u5bdd\u308b"",
+      ""pronunciation"": ""neru"",
+      ""translation"": ""to sleep, to go to bed"",
+      ""example"": ""\u79c1\u306f\u591c10\u6642\u306b\u5bdd\u307e\u3059\u3002"",
+      ""example_translation"": ""I go to bed at 10 PM.""
+    },
+    {
+      ""word"": ""\u52c9\u5f37\u3059\u308b"",
+      ""pronunciation"": ""benkyou suru"",
+      ""translation"": ""to study"",
+      ""example"": ""\u79c1\u306f\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3057\u307e\u3059\u3002"",
+      ""example_translation"": ""I study Japanese.""
+    },
+    {
+      ""word"": ""\u4ed5\u4e8b"",
+      ""pronunciation"": ""shigoto"",
+      ""translation"": ""work, job"",
+      ""example"": ""\u5f7c\u306f\u6bce\u65e5\u4ed5\u4e8b\u3092\u3057\u307e\u3059\u3002"",
+      ""example_translation"": ""He works every day.""
+    },
+    {
+      ""word"": ""\u6bce\u65e5"",
+      ""pronunciation"": ""mainichi"",
+      ""translation"": ""every day"",
+      ""example"": ""\u6bce\u65e5\u6f22\u5b57\u3092\u7df4\u7fd2\u3057\u307e\u3059\u3002"",
+      ""example_translation"": ""I practice kanji every day.""
+    },
+    {
+      ""word"": ""\u671d"",
+      ""pronunciation"": ""asa"",
+      ""translation"": ""morning"",
+      ""example"": ""\u6bce\u671d\u30d1\u30f3\u3092\u98df\u3079\u307e\u3059\u3002"",
+      ""example_translation"": ""I eat bread every morning.""
+    },
+    {
+      ""word"": ""\u663c"",
+      ""pronunciation"": ""hiru"",
+      ""translation"": ""daytime, noon"",
+      ""example"": ""\u663c\u306f\u516c\u5712\u3067\u4f11\u307f\u307e\u3059\u3002"",
+      ""example_translation"": ""I rest in the park during the daytime.""
+    },
+    {
+      ""word"": ""\u591c"",
+      ""pronunciation"": ""yoru"",
+      ""translation"": ""night"",
+      ""example"": ""\u79c1\u306f\u591c\u672c\u3092\u8aad\u307f\u307e\u3059\u3002"",
+      ""example_translation"": ""I read a book at night.""
+    }
+  ]
+}","[{""text"": ""起きる"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062244_51bf76710e65.mp3""}, {""text"": ""食べる"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_37f643c22b80.mp3""}, {""text"": ""飲む"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_7cc653db57d6.mp3""}, {""text"": ""行く"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_2f026b2cb1ce.mp3""}, {""text"": ""来る"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_f3789a768715.mp3""}, {""text"": ""寝る"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_4c56d78ef94b.mp3""}, {""text"": ""勉強する"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_a5343ec79933.mp3""}, {""text"": ""仕事"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062245_ae1c599f1d10.mp3""}, {""text"": ""毎日"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062246_78ff3a58c921.mp3""}, {""text"": ""朝"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062246_8ffe4e23f944.mp3""}, {""text"": ""昼"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062246_bac62a7d3ae4.mp3""}, {""text"": ""夜"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062246_4dc2a951c306.mp3""}]"
+vocabulary,Japanese,4,"{
+  ""theme"": ""Recounting Past Events and Daily Activities"",
+  ""introduction"": ""At Level 4, you're moving beyond basic self-introductions and descriptions to talk about things that have already happened. This vocabulary set focuses on common verbs, adjectives, and time expressions in their past tense forms, as well as useful phrases to describe and ask about past experiences. Mastering these will significantly enhance your ability to engage in more complex and natural conversations about daily life and past events in Japanese."",
+  ""vocabulary"": [
+    {
+      ""word"": ""\u6628\u65e5"",
+      ""pronunciation"": ""kin\u014d"",
+      ""translation"": ""yesterday"",
+      ""example"": ""\u6628\u65e5\u3001\u53cb\u9054\u3068\u6620\u753b\u3092\u898b\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""Yesterday, I watched a movie with my friend.""
+    },
+    {
+      ""word"": ""\u5148\u9031"",
+      ""pronunciation"": ""sensh\u016b"",
+      ""translation"": ""last week"",
+      ""example"": ""\u5148\u9031\u3001\u5927\u962a\u306b\u884c\u304d\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""Last week, I went to Osaka.""
+    },
+    {
+      ""word"": ""\u884c\u3063\u305f"",
+      ""pronunciation"": ""itta"",
+      ""translation"": ""went (past tense of \u884c\u304f iku)"",
+      ""example"": ""\u5f7c\u5973\u306f\u65e5\u672c\u306b\u884c\u3063\u305f\u3053\u3068\u304c\u3042\u308a\u307e\u3059\u3002"",
+      ""example_translation"": ""She has been to Japan before.""
+    },
+    {
+      ""word"": ""\u98df\u3079\u305f"",
+      ""pronunciation"": ""tabeta"",
+      ""translation"": ""ate (past tense of \u98df\u3079\u308b taberu)"",
+      ""example"": ""\u6628\u65e5\u306e\u591c\u3001\u5bff\u53f8\u3092\u98df\u3079\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""Last night, I ate sushi.""
+    },
+    {
+      ""word"": ""\u898b\u305f"",
+      ""pronunciation"": ""mita"",
+      ""translation"": ""saw/watched (past tense of \u898b\u308b miru)"",
+      ""example"": ""\u30c6\u30ec\u30d3\u3067\u9762\u767d\u3044\u756a\u7d44\u3092\u898b\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""I saw an interesting program on TV.""
+    },
+    {
+      ""word"": ""\u52c9\u5f37\u3057\u305f"",
+      ""pronunciation"": ""benky\u014d shita"",
+      ""translation"": ""studied (past tense of \u52c9\u5f37\u3059\u308b benky\u014d suru)"",
+      ""example"": ""\u6628\u65e5\u306f\u65e5\u672c\u8a9e\u3092\u305f\u304f\u3055\u3093\u52c9\u5f37\u3057\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""Yesterday, I studied a lot of Japanese.""
+    },
+    {
+      ""word"": ""\u697d\u3057\u304b\u3063\u305f"",
+      ""pronunciation"": ""tanoshikatta"",
+      ""translation"": ""was fun (past tense of \u697d\u3057\u3044 tanoshii)"",
+      ""example"": ""\u65c5\u884c\u306f\u3068\u3066\u3082\u697d\u3057\u304b\u3063\u305f\u3067\u3059\u3002"",
+      ""example_translation"": ""The trip was very fun.""
+    },
+    {
+      ""word"": ""\u96e3\u3057\u304b\u3063\u305f"",
+      ""pronunciation"": ""muzukashikatta"",
+      ""translation"": ""was difficult (past tense of \u96e3\u3057\u3044 muzukashii)"",
+      ""example"": ""\u8a66\u9a13\u306f\u5c11\u3057\u96e3\u3057\u304b\u3063\u305f\u3067\u3059\u3002"",
+      ""example_translation"": ""The exam was a little difficult.""
+    },
+    {
+      ""word"": ""\u7d42\u308f\u3063\u305f"",
+      ""pronunciation"": ""owatta"",
+      ""translation"": ""finished/ended (past tense of \u7d42\u308f\u308b owaru)"",
+      ""example"": ""\u4ed5\u4e8b\u306f\u3082\u3046\u7d42\u308f\u308a\u307e\u3057\u305f\u304b\u3002"",
+      ""example_translation"": ""Has your work already finished?""
+    },
+    {
+      ""word"": ""\u305f\u304f\u3055\u3093"",
+      ""pronunciation"": ""takusan"",
+      ""translation"": ""a lot, many"",
+      ""example"": ""\u516c\u5712\u306b\u4eba\u304c\u305f\u304f\u3055\u3093\u3044\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""There were a lot of people in the park.""
+    },
+    {
+      ""word"": ""\uff5e\u306b\u3064\u3044\u3066"",
+      ""pronunciation"": ""~ni tsuite"",
+      ""translation"": ""about ~"",
+      ""example"": ""\u65e5\u672c\u306e\u6587\u5316\u306b\u3064\u3044\u3066\u8a71\u3057\u307e\u3057\u305f\u3002"",
+      ""example_translation"": ""We talked about Japanese culture.""
+    },
+    {
+      ""word"": ""\u3069\u3046\u3067\u3057\u305f\u304b"",
+      ""pronunciation"": ""d\u014d deshitaka"",
+      ""translation"": ""How was it?"",
+      ""example"": ""\u9031\u672b\u306f\u3069\u3046\u3067\u3057\u305f\u304b\u3002"",
+      ""example_translation"": ""How was your weekend?""
+    }
+  ]
+}","[{""text"": ""昨日"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062300_f59ecfd6aed5.mp3""}, {""text"": ""先週"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062300_d7e49d5f8926.mp3""}, {""text"": ""行った"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062300_2a773dbaaf0a.mp3""}, {""text"": ""食べた"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062300_353bedf2105b.mp3""}, {""text"": ""見た"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062300_adb9b1dc38c5.mp3""}, {""text"": ""勉強した"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_8748870652b6.mp3""}, {""text"": ""楽しかった"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_e3c3b5383841.mp3""}, {""text"": ""難しかった"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_6733058b1960.mp3""}, {""text"": ""終わった"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_f0b38f283de4.mp3""}, {""text"": ""たくさん"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_00db8fc8e2ed.mp3""}, {""text"": ""～について"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_6f8c7879766c.mp3""}, {""text"": ""どうでしたか"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062301_8f9457627caa.mp3""}]"
+vocabulary,Japanese,5,"{
+  ""theme"": ""Describing Future Plans and Characteristics"",
+  ""introduction"": ""This vocabulary set focuses on words essential for expressing future plans and intentions, as well as describing people and places. Mastering these words will enable you to talk about what you or others will do, and to vividly describe the characteristics of individuals and various locations."",
+  ""vocabulary"": [
+    {
+      ""word"": ""\u3067\u3057\u3087\u3046"",
+      ""pronunciation"": ""deshou"",
+      ""translation"": ""will probably; perhaps (future prediction)"",
+      ""example"": ""\u660e\u65e5\u306f\u6674\u308c\u308b\u3067\u3057\u3087\u3046\u3002"",
+      ""example_translation"": ""It will probably be sunny tomorrow.""
+    },
+    {
+      ""word"": ""\u3064\u3082\u308a"",
+      ""pronunciation"": ""tsumori"",
+      ""translation"": ""intend to; plan to (personal intention)"",
+      ""example"": ""\u9031\u672b\u306f\u6620\u753b\u3092\u898b\u308b\u3064\u3082\u308a\u3067\u3059\u3002"",
+      ""example_translation"": ""I intend to watch a movie this weekend.""
+    },
+    {
+      ""word"": ""\u4e88\u5b9a"",
+      ""pronunciation"": ""yotei"",
+      ""translation"": ""plan; schedule (formal plan/arrangement)"",
+      ""example"": ""\u6765\u6708\u3001\u65e5\u672c\u3078\u884c\u304f\u4e88\u5b9a\u3067\u3059\u3002"",
+      ""example_translation"": ""I'm scheduled to go to Japan next month.""
+    },
+    {
+      ""word"": ""\u5c06\u6765"",
+      ""pronunciation"": ""shourai"",
+      ""translation"": ""future (long-term, distant future)"",
+      ""example"": ""\u5c06\u6765\u3001\u533b\u8005\u306b\u306a\u308a\u305f\u3044\u3067\u3059\u3002"",
+      ""example_translation"": ""I want to become a doctor in the future.""
+    },
+    {
+      ""word"": ""\u80cc\u304c\u9ad8\u3044"",
+      ""pronunciation"": ""se ga takai"",
+      ""translation"": ""tall (describing a person's height)"",
+      ""example"": ""\u5f7c\u306f\u80cc\u304c\u9ad8\u3044\u3067\u3059\u306d\u3002"",
+      ""example_translation"": ""He is tall, isn't he?""
+    },
+    {
+      ""word"": ""\u512a\u3057\u3044"",
+      ""pronunciation"": ""yasashii"",
+      ""translation"": ""kind; gentle (describing a person's character)"",
+      ""example"": ""\u5f7c\u5973\u306f\u3068\u3066\u3082\u512a\u3057\u3044\u4eba\u3067\u3059\u3002"",
+      ""example_translation"": ""She is a very kind person.""
+    },
+    {
+      ""word"": ""\u8cd1\u3084\u304b"",
+      ""pronunciation"": ""nigiyaka"",
+      ""translation"": ""lively; bustling (describing a place)"",
+      ""example"": ""\u3053\u306e\u8857\u306f\u3044\u3064\u3082\u8cd1\u3084\u304b\u3067\u3059\u3002"",
+      ""example_translation"": ""This town is always lively.""
+    },
+    {
+      ""word"": ""\u9759\u304b"",
+      ""pronunciation"": ""shizuka"",
+      ""translation"": ""quiet (describing a place or person)"",
+      ""example"": ""\u56f3\u66f8\u9928\u306f\u3068\u3066\u3082\u9759\u304b\u3067\u3059\u3002"",
+      ""example_translation"": ""The library is very quiet.""
+    },
+    {
+      ""word"": ""\u4fbf\u5229"",
+      ""pronunciation"": ""benri"",
+      ""translation"": ""convenient (describing a place or thing)"",
+      ""example"": ""\u99c5\u306e\u8fd1\u304f\u306e\u5bb6\u306f\u4fbf\u5229\u3067\u3059\u3002"",
+      ""example_translation"": ""A house near the station is convenient.""
+    },
+    {
+      ""word"": ""\u5e83\u3044"",
+      ""pronunciation"": ""hiroi"",
+      ""translation"": ""spacious; wide (describing a place)"",
+      ""example"": ""\u3053\u306e\u516c\u5712\u306f\u3068\u3066\u3082\u5e83\u3044\u3067\u3059\u3002"",
+      ""example_translation"": ""This park is very spacious.""
+    },
+    {
+      ""word"": ""\u697d\u3057\u3044"",
+      ""pronunciation"": ""tanoshii"",
+      ""translation"": ""fun; enjoyable"",
+      ""example"": ""\u660e\u65e5\u306e\u65c5\u884c\u306f\u304d\u3063\u3068\u697d\u3057\u3044\u3067\u3057\u3087\u3046\u3002"",
+      ""example_translation"": ""Tomorrow's trip will surely be fun.""
+    }
+  ]
+}","[{""text"": ""でしょう"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062313_c2dafe59b083.mp3""}, {""text"": ""つもり"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062313_10367c0fa4c3.mp3""}, {""text"": ""予定"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_98470fc99d5c.mp3""}, {""text"": ""将来"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_d7c083d90144.mp3""}, {""text"": ""背が高い"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_aec36654e21c.mp3""}, {""text"": ""優しい"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_e95fbf620f7b.mp3""}, {""text"": ""賑やか"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_64a7e684232f.mp3""}, {""text"": ""静か"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_348c4f7a08d7.mp3""}, {""text"": ""便利"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062314_924b316b6661.mp3""}, {""text"": ""広い"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062315_284b69d0b319.mp3""}, {""text"": ""楽しい"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062315_7f8b29299b59.mp3""}]"
+vocabulary,English,1,"{
+  ""theme"": ""Essential First Words: Greetings, Politeness, and Basic Numbers"",
+  ""introduction"": ""Welcome to English! This set of vocabulary will introduce you to some of the most basic and important words you'll need for your first conversations. We'll learn how to greet people, say thank you, ask politely, and count to three. These words are your first steps to communicating in English!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""Hello"",
+      ""pronunciation"": ""huh-LOH"",
+      ""translation"": ""A common greeting when you meet someone."",
+      ""example"": ""Hello!"",
+      ""example_translation"": ""This is a simple greeting used to welcome someone or start a conversation.""
+    },
+    {
+      ""word"": ""Goodbye"",
+      ""pronunciation"": ""GOOD-bye"",
+      ""translation"": ""A common farewell when you leave someone."",
+      ""example"": ""Goodbye!"",
+      ""example_translation"": ""This is a simple word used to say farewell when you leave someone.""
+    },
+    {
+      ""word"": ""Please"",
+      ""pronunciation"": ""pleez"",
+      ""translation"": ""Used to make a request polite."",
+      ""example"": ""Please sit down."",
+      ""example_translation"": ""Use 'Please' to be polite when you ask for something.""
+    },
+    {
+      ""word"": ""Thank you"",
+      ""pronunciation"": ""THANK yoo"",
+      ""translation"": ""Used to express gratitude or appreciation."",
+      ""example"": ""Thank you!"",
+      ""example_translation"": ""This shows you are grateful or appreciative for something.""
+    },
+    {
+      ""word"": ""Yes"",
+      ""pronunciation"": ""yes"",
+      ""translation"": ""Used to give an affirmative answer."",
+      ""example"": ""Yes, I understand."",
+      ""example_translation"": ""'Yes' means agreement or to confirm something is true.""
+    },
+    {
+      ""word"": ""No"",
+      ""pronunciation"": ""noh"",
+      ""translation"": ""Used to give a negative answer."",
+      ""example"": ""No, thank you."",
+      ""example_translation"": ""'No' means disagreement or to say something is not true.""
+    },
+    {
+      ""word"": ""I"",
+      ""pronunciation"": ""eye"",
+      ""translation"": ""Refers to yourself (the person speaking)."",
+      ""example"": ""I am happy."",
+      ""example_translation"": ""'I' means me, the speaker.""
+    },
+    {
+      ""word"": ""You"",
+      ""pronunciation"": ""yoo"",
+      ""translation"": ""Refers to the person being spoken to."",
+      ""example"": ""You are kind."",
+      ""example_translation"": ""'You' means the person I am talking to.""
+    },
+    {
+      ""word"": ""One"",
+      ""pronunciation"": ""wuhn"",
+      ""translation"": ""The number 1."",
+      ""example"": ""One apple."",
+      ""example_translation"": ""This refers to a single item, the quantity 1.""
+    },
+    {
+      ""word"": ""Two"",
+      ""pronunciation"": ""too"",
+      ""translation"": ""The number 2."",
+      ""example"": ""Two books."",
+      ""example_translation"": ""This refers to two items, the quantity 2.""
+    },
+    {
+      ""word"": ""Three"",
+      ""pronunciation"": ""three"",
+      ""translation"": ""The number 3."",
+      ""example"": ""Three friends."",
+      ""example_translation"": ""This refers to three items or people, the quantity 3.""
+    }
+  ]
+}","[{""text"": ""Hello"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_a738dbe6adfd.mp3""}, {""text"": ""Goodbye"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_6eeebead6f3d.mp3""}, {""text"": ""Please"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_bcd794ac7dbb.mp3""}, {""text"": ""Thank you"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_4281c0598f44.mp3""}, {""text"": ""Yes"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_4abf5332b787.mp3""}, {""text"": ""No"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062328_5fbfb6b028d0.mp3""}, {""text"": ""I"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062329_9e0417d36039.mp3""}, {""text"": ""You"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062329_144e7ff9a89c.mp3""}, {""text"": ""One"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062329_a1426f926d0a.mp3""}, {""text"": ""Two"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062329_788acb8895ad.mp3""}, {""text"": ""Three"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062329_fe36b9ed7505.mp3""}]"
+vocabulary,English,2,"{
+  ""theme"": ""Everyday Essentials: Family, Colors, and Days"",
+  ""introduction"": ""Welcome, English learners! In this lesson, you will discover important words to talk about your family, common colors you see every day, and the days of the week. These words are fundamental for beginner conversations and describing your world."",
+  ""vocabulary"": [
+    {
+      ""word"": ""Mom"",
+      ""pronunciation"": ""/mahm/"",
+      ""translation"": ""Your mother; a female parent."",
+      ""example"": ""My Mom is happy."",
+      ""example_translation"": ""My Mom is happy.""
+    },
+    {
+      ""word"": ""Dad"",
+      ""pronunciation"": ""/dad/"",
+      ""translation"": ""Your father; a male parent."",
+      ""example"": ""His Dad works hard."",
+      ""example_translation"": ""His Dad works hard.""
+    },
+    {
+      ""word"": ""Brother"",
+      ""pronunciation"": ""/bruh-ther/"",
+      ""translation"": ""A male sibling; a boy or man who has the same parents as you."",
+      ""example"": ""I have one brother."",
+      ""example_translation"": ""I have one brother.""
+    },
+    {
+      ""word"": ""Sister"",
+      ""pronunciation"": ""/sis-ter/"",
+      ""translation"": ""A female sibling; a girl or woman who has the same parents as you."",
+      ""example"": ""She has a big sister."",
+      ""example_translation"": ""She has a big sister.""
+    },
+    {
+      ""word"": ""Family"",
+      ""pronunciation"": ""/fam-uh-lee/"",
+      ""translation"": ""A group of people related by blood or marriage, living together."",
+      ""example"": ""My family is small."",
+      ""example_translation"": ""My family is small.""
+    },
+    {
+      ""word"": ""Red"",
+      ""pronunciation"": ""/red/"",
+      ""translation"": ""A primary color, like the color of an apple or a stop sign."",
+      ""example"": ""The apple is red."",
+      ""example_translation"": ""The apple is red.""
+    },
+    {
+      ""word"": ""Blue"",
+      ""pronunciation"": ""/bloo/"",
+      ""translation"": ""A primary color, like the color of the sky or the ocean."",
+      ""example"": ""The car is blue."",
+      ""example_translation"": ""The car is blue.""
+    },
+    {
+      ""word"": ""Green"",
+      ""pronunciation"": ""/green/"",
+      ""translation"": ""A color made by mixing blue and yellow, like the color of grass or leaves."",
+      ""example"": ""The tree is green."",
+      ""example_translation"": ""The tree is green.""
+    },
+    {
+      ""word"": ""Yellow"",
+      ""pronunciation"": ""/yel-oh/"",
+      ""translation"": ""A primary color, like the color of the sun or a lemon."",
+      ""example"": ""The sun is yellow."",
+      ""example_translation"": ""The sun is yellow.""
+    },
+    {
+      ""word"": ""Monday"",
+      ""pronunciation"": ""/mun-day/"",
+      ""translation"": ""The first day of the typical work or school week, after Sunday."",
+      ""example"": ""Today is Monday."",
+      ""example_translation"": ""Today is Monday.""
+    },
+    {
+      ""word"": ""Saturday"",
+      ""pronunciation"": ""/sat-er-day/"",
+      ""translation"": ""The sixth day of the week, often the first day of the weekend."",
+      ""example"": ""We play on Saturday."",
+      ""example_translation"": ""We play on Saturday.""
+    },
+    {
+      ""word"": ""Sunday"",
+      ""pronunciation"": ""/sun-day/"",
+      ""translation"": ""The seventh day of the week, often the second day of the weekend."",
+      ""example"": ""I rest on Sunday."",
+      ""example_translation"": ""I rest on Sunday.""
+    }
+  ]
+}","[{""text"": ""Mom"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062347_1f378e50299a.mp3""}, {""text"": ""Dad"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062347_31337406143f.mp3""}, {""text"": ""Brother"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062347_81c38e1ca661.mp3""}, {""text"": ""Sister"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_4c95d349431d.mp3""}, {""text"": ""Family"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_3c9509eab81b.mp3""}, {""text"": ""Red"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_73d6998e7ce2.mp3""}, {""text"": ""Blue"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_d1f0fb488376.mp3""}, {""text"": ""Green"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_e62e3e8f0261.mp3""}, {""text"": ""Yellow"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_4f8eef906d21.mp3""}, {""text"": ""Monday"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062348_fbe86a4b73f9.mp3""}, {""text"": ""Saturday"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062349_eb9da0a4fb99.mp3""}, {""text"": ""Sunday"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062349_378d026cda6e.mp3""}]"
+vocabulary,English,3,"{
+  ""theme"": ""Daily Routines and Actions"",
+  ""introduction"": ""This vocabulary list introduces common verbs and phrases you use every day to talk about your routine, from morning to night. We'll focus on simple actions in the present tense."",
+  ""vocabulary"": [
+    {
+      ""word"": ""Wake up"",
+      ""pronunciation"": ""WEYK UP"",
+      ""translation"": ""To stop sleeping; to open your eyes in the morning."",
+      ""example"": ""I wake up at 7 o'clock every morning."",
+      ""example_translation"": ""I stop sleeping at 7 AM daily.""
+    },
+    {
+      ""word"": ""Get up"",
+      ""pronunciation"": ""GET UP"",
+      ""translation"": ""To leave your bed after waking up."",
+      ""example"": ""After I wake up, I get up and make coffee."",
+      ""example_translation"": ""First, I open my eyes, then I leave my bed.""
+    },
+    {
+      ""word"": ""Eat"",
+      ""pronunciation"": ""EET"",
+      ""translation"": ""To put food in your mouth and swallow it."",
+      ""example"": ""We eat breakfast together every day."",
+      ""example_translation"": ""We have our morning meal as a family daily.""
+    },
+    {
+      ""word"": ""Drink"",
+      ""pronunciation"": ""DRINK"",
+      ""translation"": ""To swallow liquid."",
+      ""example"": ""She drinks water after she exercises."",
+      ""example_translation"": ""She consumes water after her workout.""
+    },
+    {
+      ""word"": ""Go"",
+      ""pronunciation"": ""GO"",
+      ""translation"": ""To move from one place to another."",
+      ""example"": ""My father goes to work by bus."",
+      ""example_translation"": ""My father travels to his job using the bus.""
+    },
+    {
+      ""word"": ""Work"",
+      ""pronunciation"": ""WURK"",
+      ""translation"": ""To do a job or tasks."",
+      ""example"": ""They work at the hospital."",
+      ""example_translation"": ""They have jobs at the hospital.""
+    },
+    {
+      ""word"": ""Study"",
+      ""pronunciation"": ""STUH-dee"",
+      ""translation"": ""To spend time learning, especially from books or a teacher."",
+      ""example"": ""He studies English at night."",
+      ""example_translation"": ""He learns English during the evening.""
+    },
+    {
+      ""word"": ""Cook"",
+      ""pronunciation"": ""KUUK"",
+      ""translation"": ""To prepare food by heating it."",
+      ""example"": ""I cook dinner for my family."",
+      ""example_translation"": ""I prepare the evening meal for my relatives.""
+    },
+    {
+      ""word"": ""Watch"",
+      ""pronunciation"": ""WAHTCH"",
+      ""translation"": ""To look at something carefully, especially a moving picture (like on TV)."",
+      ""example"": ""We watch TV in the evening."",
+      ""example_translation"": ""We view television during the night.""
+    },
+    {
+      ""word"": ""Sleep"",
+      ""pronunciation"": ""SLEEP"",
+      ""translation"": ""To rest with your eyes closed, usually at night."",
+      ""example"": ""I sleep for eight hours every night."",
+      ""example_translation"": ""I rest with my eyes closed for eight hours daily.""
+    }
+  ]
+}","[{""text"": ""Wake up"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_577994cd0d36.mp3""}, {""text"": ""Get up"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_dc522a20282a.mp3""}, {""text"": ""Eat"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_07cb72bcfdf6.mp3""}, {""text"": ""Drink"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_e11e8aed7bfc.mp3""}, {""text"": ""Go"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_afa4e6376473.mp3""}, {""text"": ""Work"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062403_49a377913e27.mp3""}, {""text"": ""Study"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062404_db27c107733b.mp3""}, {""text"": ""Cook"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062404_0d6ccc64bcc0.mp3""}, {""text"": ""Watch"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062404_b186df3147ca.mp3""}, {""text"": ""Sleep"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062404_4ff0a5dc5a71.mp3""}]"
+vocabulary,English,4,"{
+  ""theme"": ""Talking About Your Day: Past Simple Actions"",
+  ""introduction"": ""This vocabulary set introduces common verbs in their past simple form, helping you talk about daily activities you completed. Mastering these words will allow you to share what you did yesterday, last week, or at any point in the past. Pay close attention to their irregular forms, which are very common!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""went"",
+      ""pronunciation"": ""(went)"",
+      ""translation"": ""The past tense form of 'go'. To move or travel to a place."",
+      ""example"": ""I went to the supermarket this morning."",
+      ""example_translation"": ""I went to the supermarket this morning.""
+    },
+    {
+      ""word"": ""ate"",
+      ""pronunciation"": ""(ayt)"",
+      ""translation"": ""The past tense form of 'eat'. To put food into your mouth and swallow it."",
+      ""example"": ""We ate pizza for dinner last night."",
+      ""example_translation"": ""We ate pizza for dinner last night.""
+    },
+    {
+      ""word"": ""drank"",
+      ""pronunciation"": ""(drank)"",
+      ""translation"": ""The past tense form of 'drink'. To take liquid into your body through your mouth."",
+      ""example"": ""She drank a glass of water after her run."",
+      ""example_translation"": ""She drank a glass of water after her run.""
+    },
+    {
+      ""word"": ""slept"",
+      ""pronunciation"": ""(slept)"",
+      ""translation"": ""The past tense form of 'sleep'. To rest with your eyes closed and your mind and body inactive."",
+      ""example"": ""My baby slept for ten hours last night."",
+      ""example_translation"": ""My baby slept for ten hours last night.""
+    },
+    {
+      ""word"": ""saw"",
+      ""pronunciation"": ""(saw)"",
+      ""translation"": ""The past tense form of 'see'. To notice or become aware of someone or something using your eyes."",
+      ""example"": ""They saw a new movie at the cinema."",
+      ""example_translation"": ""They saw a new movie at the cinema.""
+    },
+    {
+      ""word"": ""read"",
+      ""pronunciation"": ""(red) - Note: Same spelling as present, different sound."",
+      ""translation"": ""The past tense form of 'read'. To look at written words and understand their meaning."",
+      ""example"": ""He read an interesting book over the weekend."",
+      ""example_translation"": ""He read an interesting book over the weekend.""
+    },
+    {
+      ""word"": ""made"",
+      ""pronunciation"": ""(mayd)"",
+      ""translation"": ""The past tense form of 'make'. To create or produce something."",
+      ""example"": ""I made a delicious cake for my friend's birthday."",
+      ""example_translation"": ""I made a delicious cake for my friend's birthday.""
+    },
+    {
+      ""word"": ""had"",
+      ""pronunciation"": ""(had)"",
+      ""translation"": ""The past tense form of 'have'. To possess or experience something."",
+      ""example"": ""We had a good time at the party yesterday."",
+      ""example_translation"": ""We had a good time at the party yesterday.""
+    },
+    {
+      ""word"": ""got"",
+      ""pronunciation"": ""(got)"",
+      ""translation"": ""The past tense form of 'get'. To receive or obtain something."",
+      ""example"": ""She got a new job last month."",
+      ""example_translation"": ""She got a new job last month.""
+    },
+    {
+      ""word"": ""came"",
+      ""pronunciation"": ""(kaym)"",
+      ""translation"": ""The past tense form of 'come'. To move toward someone or something."",
+      ""example"": ""My brother came to visit us from another city."",
+      ""example_translation"": ""My brother came to visit us from another city.""
+    },
+    {
+      ""word"": ""woke up"",
+      ""pronunciation"": ""(wohk up)"",
+      ""translation"": ""The past tense form of 'wake up'. To stop sleeping."",
+      ""example"": ""I woke up early this morning to exercise."",
+      ""example_translation"": ""I woke up early this morning to exercise.""
+    },
+    {
+      ""word"": ""finished"",
+      ""pronunciation"": ""(fin-isht)"",
+      ""translation"": ""The past tense form of 'finish'. To complete something."",
+      ""example"": ""We finished our homework before dinner."",
+      ""example_translation"": ""We finished our homework before dinner.""
+    }
+  ]
+}","[{""text"": ""went"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062425_05ff520fc35e.mp3""}, {""text"": ""ate"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062425_0ca9c156bca4.mp3""}, {""text"": ""drank"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062425_f945ff4f0781.mp3""}, {""text"": ""slept"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062425_a65b64669c9a.mp3""}, {""text"": ""saw"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_3de38193dd09.mp3""}, {""text"": ""read"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_b5daba14f850.mp3""}, {""text"": ""made"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_f613d99f5e1c.mp3""}, {""text"": ""had"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_c2c1fab02f71.mp3""}, {""text"": ""got"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_8c144a2b0bc8.mp3""}, {""text"": ""came"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_d3d0e49d6727.mp3""}, {""text"": ""woke up"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062426_2ec9d6a3ba85.mp3""}, {""text"": ""finished"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062427_0eb5079f5936.mp3""}]"
+vocabulary,English,5,"{
+  ""theme"": ""Talking About the Future and Describing What It Will Be Like"",
+  ""introduction"": ""Hello, language learners! In this lesson, we're going to learn new words that help us talk about the future and describe people or places. We'll practice using 'will be' and 'going to be' to describe things that haven't happened yet. Let's explore how to talk about what's coming next!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""tomorrow"",
+      ""pronunciation"": ""/t\u0259\u02c8m\u0252r.\u0259\u028a/"",
+      ""translation"": ""The day after today."",
+      ""example"": ""Tomorrow, I will visit my grandparents."",
+      ""example_translation"": ""Not today, but the next day, I plan to see my grandparents.""
+    },
+    {
+      ""word"": ""next"",
+      ""pronunciation"": ""/nekst/"",
+      ""translation"": ""Coming immediately after; in the coming time (e.g., next week, next year)."",
+      ""example"": ""Next week, we are going to have a party."",
+      ""example_translation"": ""In the week that comes after this one, we will celebrate with a party.""
+    },
+    {
+      ""word"": ""will be"",
+      ""pronunciation"": ""/w\u026al bi\u02d0/"",
+      ""translation"": ""Used to talk about a future state or situation."",
+      ""example"": ""She will be very happy when she sees her new dog."",
+      ""example_translation"": ""She is going to feel great joy when she meets her new dog.""
+    },
+    {
+      ""word"": ""going to be"",
+      ""pronunciation"": ""/\u02c8\u0261o\u028a.\u026a\u014b tu\u02d0 bi\u02d0/"",
+      ""translation"": ""Used to talk about a future state or situation, often planned or predicted."",
+      ""example"": ""It's going to be sunny tomorrow, so let's go outside."",
+      ""example_translation"": ""We expect the weather to be bright with sunshine on the next day, so we should enjoy it outdoors.""
+    },
+    {
+      ""word"": ""busy"",
+      ""pronunciation"": ""/\u02c8b\u026az.i/"",
+      ""translation"": ""Having a lot of things to do; full of activity."",
+      ""example"": ""The city center will be very busy during the festival."",
+      ""example_translation"": ""Many people and activities will fill the city center when the festival happens.""
+    },
+    {
+      ""word"": ""friendly"",
+      ""pronunciation"": ""/\u02c8frend.li/"",
+      ""translation"": ""Kind and pleasant to others."",
+      ""example"": ""Our new teacher is going to be very friendly."",
+      ""example_translation"": ""We expect our new teacher to be kind and nice to everyone.""
+    },
+    {
+      ""word"": ""beautiful"",
+      ""pronunciation"": ""/\u02c8bju\u02d0.t\u026a.f\u0259l/"",
+      ""translation"": ""Very attractive or pleasant to look at."",
+      ""example"": ""The flowers in the garden will be beautiful in spring."",
+      ""example_translation"": ""When spring arrives, the garden's flowers will look very lovely and pretty.""
+    },
+    {
+      ""word"": ""quiet"",
+      ""pronunciation"": ""/\u02c8kwa\u026a.\u0259t/"",
+      ""translation"": ""Making little or no noise; peaceful."",
+      ""example"": ""The library will be quiet in the evenings."",
+      ""example_translation"": ""Afternoon, the library is expected to be a peaceful place with little sound.""
+    },
+    {
+      ""word"": ""modern"",
+      ""pronunciation"": ""/\u02c8m\u0252d.\u0259rn/"",
+      ""translation"": ""Using new and current ideas or technology; not old-fashioned."",
+      ""example"": ""The new school building will be very modern."",
+      ""example_translation"": ""The recently built school will have a new and up-to-date design and technology.""
+    },
+    {
+      ""word"": ""exciting"",
+      ""pronunciation"": ""/\u026ak\u02c8sa\u026a.t\u026a\u014b/"",
+      ""translation"": ""Causing great enthusiasm and interest."",
+      ""example"": ""Our trip to the museum is going to be very exciting."",
+      ""example_translation"": ""We anticipate that our visit to the museum will be full of interest and make us feel enthusiastic.""
+    }
+  ]
+}","[{""text"": ""tomorrow"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062449_dd5c4b2fc4a9.mp3""}, {""text"": ""next"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_50c3381e2c73.mp3""}, {""text"": ""will be"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_0bc9346783d8.mp3""}, {""text"": ""going to be"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_8de27b0bf6d4.mp3""}, {""text"": ""busy"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_c81aaf99fb1a.mp3""}, {""text"": ""friendly"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_06b1fc620238.mp3""}, {""text"": ""beautiful"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062450_c876f7a1211f.mp3""}, {""text"": ""quiet"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062451_39c4eb5e5017.mp3""}, {""text"": ""modern"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062451_4a5108c8ed84.mp3""}, {""text"": ""exciting"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062451_7917a7cf65f3.mp3""}]"
+vocabulary,Spanish,1,"{
+  ""theme"": ""Basic Greetings and Numbers 1-5"",
+  ""introduction"": ""Welcome to your first steps in Spanish! This vocabulary set introduces essential greetings used daily in Spanish-speaking cultures and the fundamental numbers from one to five. Mastering these words will allow you to initiate simple conversations and understand basic quantities, laying a strong foundation for your language journey."",
+  ""vocabulary"": [
+    {
+      ""word"": ""Hola"",
+      ""pronunciation"": ""OH-lah"",
+      ""translation"": ""Hello / Hi"",
+      ""example"": ""\u00a1Hola! \u00bfC\u00f3mo est\u00e1s?"",
+      ""example_translation"": ""Hello! How are you?""
+    },
+    {
+      ""word"": ""Adi\u00f3s"",
+      ""pronunciation"": ""ah-dee-OHS"",
+      ""translation"": ""Goodbye"",
+      ""example"": ""Adi\u00f3s, hasta ma\u00f1ana."",
+      ""example_translation"": ""Goodbye, see you tomorrow.""
+    },
+    {
+      ""word"": ""Buenos d\u00edas"",
+      ""pronunciation"": ""BWEH-nohs DEE-ahs"",
+      ""translation"": ""Good morning"",
+      ""example"": ""Buenos d\u00edas, se\u00f1or L\u00f3pez."",
+      ""example_translation"": ""Good morning, Mr. Lopez.""
+    },
+    {
+      ""word"": ""Buenas tardes"",
+      ""pronunciation"": ""BWEH-nahs TAR-des"",
+      ""translation"": ""Good afternoon / Good evening"",
+      ""example"": ""Buenas tardes a todos."",
+      ""example_translation"": ""Good afternoon everyone.""
+    },
+    {
+      ""word"": ""Buenas noches"",
+      ""pronunciation"": ""BWEH-nahs NOH-ches"",
+      ""translation"": ""Good night / Good evening"",
+      ""example"": ""Buenas noches, que duermas bien."",
+      ""example_translation"": ""Good night, sleep well.""
+    },
+    {
+      ""word"": ""Gracias"",
+      ""pronunciation"": ""GRAH-syahs"",
+      ""translation"": ""Thank you"",
+      ""example"": ""Gracias por tu ayuda."",
+      ""example_translation"": ""Thank you for your help.""
+    },
+    {
+      ""word"": ""Por favor"",
+      ""pronunciation"": ""por fah-VOHR"",
+      ""translation"": ""Please"",
+      ""example"": ""\u00bfUn caf\u00e9, por favor?"",
+      ""example_translation"": ""A coffee, please?""
+    },
+    {
+      ""word"": ""Uno"",
+      ""pronunciation"": ""OO-noh"",
+      ""translation"": ""One"",
+      ""example"": ""Tengo un perro."",
+      ""example_translation"": ""I have one dog.""
+    },
+    {
+      ""word"": ""Dos"",
+      ""pronunciation"": ""DOHS"",
+      ""translation"": ""Two"",
+      ""example"": ""Quiero dos manzanas."",
+      ""example_translation"": ""I want two apples.""
+    },
+    {
+      ""word"": ""Tres"",
+      ""pronunciation"": ""TREHS"",
+      ""translation"": ""Three"",
+      ""example"": ""Somos tres amigos."",
+      ""example_translation"": ""We are three friends.""
+    },
+    {
+      ""word"": ""Cuatro"",
+      ""pronunciation"": ""KWAH-troh"",
+      ""translation"": ""Four"",
+      ""example"": ""Hay cuatro sillas."",
+      ""example_translation"": ""There are four chairs.""
+    },
+    {
+      ""word"": ""Cinco"",
+      ""pronunciation"": ""SEEN-koh"",
+      ""translation"": ""Five"",
+      ""example"": ""Son las cinco de la tarde."",
+      ""example_translation"": ""It's five in the afternoon.""
+    }
+  ]
+}","[{""text"": ""Hola"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062501_554bcdd030bb.mp3""}, {""text"": ""Adiós"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062501_1eaefe6a3cec.mp3""}, {""text"": ""Buenos días"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_4a79888fbab9.mp3""}, {""text"": ""Buenas tardes"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_96df083667cf.mp3""}, {""text"": ""Buenas noches"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_4ee40cec7c29.mp3""}, {""text"": ""Gracias"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_1ba397ca027b.mp3""}, {""text"": ""Por favor"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_4726b2b7ad7d.mp3""}, {""text"": ""Uno"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_7797aa7b7320.mp3""}, {""text"": ""Dos"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_436950a9742b.mp3""}, {""text"": ""Tres"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062502_fef0b3228f8c.mp3""}, {""text"": ""Cuatro"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062503_67e8b348d8ee.mp3""}, {""text"": ""Cinco"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062503_91f1c2c97deb.mp3""}]"
+vocabulary,Spanish,2,"{
+  ""theme"": ""Beginner Spanish: Family, Colors, and Days of the Week"",
+  ""introduction"": ""Welcome to Level 2 Spanish! In this set of vocabulary, we'll explore essential words for describing your family, identifying common colors, and talking about the days of the week. Mastering these words will help you have basic conversations and understand common descriptions in Spanish."",
+  ""vocabulary"": [
+    {
+      ""word"": ""madre"",
+      ""pronunciation"": ""MAH-dray"",
+      ""translation"": ""mother"",
+      ""example"": ""Mi madre es muy amable."",
+      ""example_translation"": ""My mother is very kind.""
+    },
+    {
+      ""word"": ""padre"",
+      ""pronunciation"": ""PAH-dray"",
+      ""translation"": ""father"",
+      ""example"": ""Su padre trabaja mucho."",
+      ""example_translation"": ""His/Her father works a lot.""
+    },
+    {
+      ""word"": ""familia"",
+      ""pronunciation"": ""fah-MEE-lyah"",
+      ""translation"": ""family"",
+      ""example"": ""Tengo una familia grande."",
+      ""example_translation"": ""I have a big family.""
+    },
+    {
+      ""word"": ""rojo"",
+      ""pronunciation"": ""ROH-ho"",
+      ""translation"": ""red"",
+      ""example"": ""La manzana es roja."",
+      ""example_translation"": ""The apple is red.""
+    },
+    {
+      ""word"": ""azul"",
+      ""pronunciation"": ""ah-SOOL"",
+      ""translation"": ""blue"",
+      ""example"": ""El cielo es azul."",
+      ""example_translation"": ""The sky is blue.""
+    },
+    {
+      ""word"": ""amarillo"",
+      ""pronunciation"": ""ah-mah-REE-yoh"",
+      ""translation"": ""yellow"",
+      ""example"": ""El sol es amarillo."",
+      ""example_translation"": ""The sun is yellow.""
+    },
+    {
+      ""word"": ""lunes"",
+      ""pronunciation"": ""LOO-nes"",
+      ""translation"": ""Monday"",
+      ""example"": ""Hoy es lunes."",
+      ""example_translation"": ""Today is Monday.""
+    },
+    {
+      ""word"": ""martes"",
+      ""pronunciation"": ""MAR-tes"",
+      ""translation"": ""Tuesday"",
+      ""example"": ""La clase de espa\u00f1ol es el martes."",
+      ""example_translation"": ""The Spanish class is on Tuesday.""
+    },
+    {
+      ""word"": ""mi\u00e9rcoles"",
+      ""pronunciation"": ""mee-AIR-koh-les"",
+      ""translation"": ""Wednesday"",
+      ""example"": ""Tengo una reuni\u00f3n el mi\u00e9rcoles."",
+      ""example_translation"": ""I have a meeting on Wednesday.""
+    },
+    {
+      ""word"": ""s\u00e1bado"",
+      ""pronunciation"": ""SAH-bah-doh"",
+      ""translation"": ""Saturday"",
+      ""example"": ""El s\u00e1bado vamos al parque."",
+      ""example_translation"": ""On Saturday, we go to the park.""
+    },
+    {
+      ""word"": ""domingo"",
+      ""pronunciation"": ""doh-MEEN-goh"",
+      ""translation"": ""Sunday"",
+      ""example"": ""El domingo descanso en casa."",
+      ""example_translation"": ""On Sunday, I rest at home.""
+    }
+  ]
+}","[{""text"": ""madre"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_85f021902605.mp3""}, {""text"": ""padre"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_1dcf48b3c9ef.mp3""}, {""text"": ""familia"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_8afef4e2b1dc.mp3""}, {""text"": ""rojo"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_b971a8889de4.mp3""}, {""text"": ""azul"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_7d3769aba98e.mp3""}, {""text"": ""amarillo"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062515_ad0d070c6114.mp3""}, {""text"": ""lunes"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062516_9754a3725ecd.mp3""}, {""text"": ""martes"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062516_bff4707525af.mp3""}, {""text"": ""miércoles"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062516_ac99bc418971.mp3""}, {""text"": ""sábado"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062516_ac027cd4cdff.mp3""}, {""text"": ""domingo"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062516_f28b196e6c89.mp3""}]"
+vocabulary,Spanish,3,"{
+  ""theme"": ""Mi Rutina Diaria: Actividades Cotidianas"",
+  ""introduction"": ""This vocabulary set focuses on common verbs and nouns you'll use to describe your daily activities and routine. Mastering these words will help you talk about what you do every day, from waking up to going to bed, all in the simple present tense."",
+  ""vocabulary"": [
+    {
+      ""word"": ""levantarse"",
+      ""pronunciation"": ""leh-vahn-TAR-seh"",
+      ""translation"": ""to get up"",
+      ""example"": ""Me levanto a las siete de la ma\u00f1ana."",
+      ""example_translation"": ""I get up at seven in the morning.""
+    },
+    {
+      ""word"": ""desayunar"",
+      ""pronunciation"": ""deh-sah-yoo-NAR"",
+      ""translation"": ""to have breakfast"",
+      ""example"": ""Siempre desayuno caf\u00e9 con pan."",
+      ""example_translation"": ""I always have coffee with bread for breakfast.""
+    },
+    {
+      ""word"": ""trabajar"",
+      ""pronunciation"": ""trah-bah-HAR"",
+      ""translation"": ""to work"",
+      ""example"": ""Ella trabaja en una oficina grande."",
+      ""example_translation"": ""She works in a big office.""
+    },
+    {
+      ""word"": ""almorzar"",
+      ""pronunciation"": ""ahl-mor-SAR"",
+      ""translation"": ""to have lunch"",
+      ""example"": ""Yo almuerzo a la una de la tarde."",
+      ""example_translation"": ""I have lunch at one in the afternoon.""
+    },
+    {
+      ""word"": ""estudiar"",
+      ""pronunciation"": ""es-too-dee-AR"",
+      ""translation"": ""to study"",
+      ""example"": ""Despu\u00e9s de cenar, estudio mis apuntes."",
+      ""example_translation"": ""After dinner, I study my notes.""
+    },
+    {
+      ""word"": ""cenar"",
+      ""pronunciation"": ""seh-NAR"",
+      ""translation"": ""to have dinner"",
+      ""example"": ""Mis padres cenan tarde los fines de semana."",
+      ""example_translation"": ""My parents have dinner late on weekends.""
+    },
+    {
+      ""word"": ""ver"",
+      ""pronunciation"": ""vehr"",
+      ""translation"": ""to see / to watch"",
+      ""example"": ""\u00bfQu\u00e9 programas ves en la televisi\u00f3n?"",
+      ""example_translation"": ""What shows do you watch on television?""
+    },
+    {
+      ""word"": ""leer"",
+      ""pronunciation"": ""leh-EHR"",
+      ""translation"": ""to read"",
+      ""example"": ""Me gusta leer un libro antes de dormir."",
+      ""example_translation"": ""I like to read a book before sleeping.""
+    },
+    {
+      ""word"": ""ir"",
+      ""pronunciation"": ""eer"",
+      ""translation"": ""to go"",
+      ""example"": ""Voy al gimnasio los martes y jueves."",
+      ""example_translation"": ""I go to the gym on Tuesdays and Thursdays.""
+    },
+    {
+      ""word"": ""dormir"",
+      ""pronunciation"": ""dor-MEER"",
+      ""translation"": ""to sleep"",
+      ""example"": ""Duermo ocho horas cada noche."",
+      ""example_translation"": ""I sleep eight hours every night.""
+    },
+    {
+      ""word"": ""la ma\u00f1ana"",
+      ""pronunciation"": ""lah mah-NYAH-nah"",
+      ""translation"": ""the morning"",
+      ""example"": ""Por la ma\u00f1ana, tomo caf\u00e9."",
+      ""example_translation"": ""In the morning, I drink coffee.""
+    },
+    {
+      ""word"": ""la noche"",
+      ""pronunciation"": ""lah NOH-cheh"",
+      ""translation"": ""the night / evening"",
+      ""example"": ""Leo un libro por la noche."",
+      ""example_translation"": ""I read a book at night.""
+    }
+  ]
+}","[{""text"": ""levantarse"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062532_1ff7975fd44d.mp3""}, {""text"": ""desayunar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062532_27ec26fc2f1b.mp3""}, {""text"": ""trabajar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062532_1319aa433500.mp3""}, {""text"": ""almorzar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062532_b053c0835ed2.mp3""}, {""text"": ""estudiar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062533_073720e54e2f.mp3""}, {""text"": ""cenar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062533_50f964a43d76.mp3""}, {""text"": ""ver"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062533_6504d26178c7.mp3""}, {""text"": ""leer"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062533_4c5a6bd2228e.mp3""}, {""text"": ""ir"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062533_3a2e0f4835ab.mp3""}, {""text"": ""dormir"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062534_5bf23e5753ca.mp3""}, {""text"": ""la mañana"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062534_f93407abd20e.mp3""}, {""text"": ""la noche"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062534_2dd83c452ab6.mp3""}]"
+vocabulary,Spanish,4,"{
+  ""theme"": ""Describing Past Events and Activities"",
+  ""introduction"": ""At Level 4, you're ready to start talking about things that happened in the past! This vocabulary will help you share what you did, what you saw, and how things were. We'll focus on key verbs in the past tense (preterite and imperfect) and useful words to recount your experiences from yesterday, last weekend, or even longer ago."",
+  ""vocabulary"": [
+    {
+      ""word"": ""Ayer"",
+      ""pronunciation"": ""ah-YAIR"",
+      ""translation"": ""Yesterday"",
+      ""example"": ""Ayer fui al parque con mis amigos."",
+      ""example_translation"": ""Yesterday I went to the park with my friends.""
+    },
+    {
+      ""word"": ""Fui"",
+      ""pronunciation"": ""FWEE"",
+      ""translation"": ""I went (from 'ir')"",
+      ""example"": ""El s\u00e1bado fui a la casa de mi abuela."",
+      ""example_translation"": ""On Saturday I went to my grandmother's house.""
+    },
+    {
+      ""word"": ""Hice"",
+      ""pronunciation"": ""EE-say"",
+      ""translation"": ""I did/made (from 'hacer')"",
+      ""example"": ""Para la cena, hice espaguetis con tomate."",
+      ""example_translation"": ""For dinner, I made spaghetti with tomato.""
+    },
+    {
+      ""word"": ""Estaba"",
+      ""pronunciation"": ""es-TAH-bah"",
+      ""translation"": ""I/He/She/It was (imperfect of 'estar')"",
+      ""example"": ""Cuando era ni\u00f1o, mi casa estaba cerca de la playa."",
+      ""example_translation"": ""When I was a child, my house was near the beach.""
+    },
+    {
+      ""word"": ""Comimos"",
+      ""pronunciation"": ""koh-MEE-mos"",
+      ""translation"": ""We ate (from 'comer')"",
+      ""example"": ""Anoche comimos tacos en un restaurante mexicano."",
+      ""example_translation"": ""Last night we ate tacos at a Mexican restaurant.""
+    },
+    {
+      ""word"": ""Vio"",
+      ""pronunciation"": ""VEE-oh"",
+      ""translation"": ""He/She/It saw (from 'ver')"",
+      ""example"": ""Mi hermana vio una pel\u00edcula muy interesante."",
+      ""example_translation"": ""My sister saw a very interesting movie.""
+    },
+    {
+      ""word"": ""Interesante"",
+      ""pronunciation"": ""een-teh-reh-SAN-teh"",
+      ""translation"": ""Interesting"",
+      ""example"": ""El museo ten\u00eda una exposici\u00f3n muy interesante."",
+      ""example_translation"": ""The museum had a very interesting exhibition.""
+    },
+    {
+      ""word"": ""El fin de semana"",
+      ""pronunciation"": ""el feen deh seh-MAH-nah"",
+      ""translation"": ""The weekend"",
+      ""example"": ""El fin de semana pasado visit\u00e9 a mis primos."",
+      ""example_translation"": ""Last weekend I visited my cousins.""
+    },
+    {
+      ""word"": ""Durante"",
+      ""pronunciation"": ""doo-RAN-teh"",
+      ""translation"": ""During"",
+      ""example"": ""Durante las vacaciones, le\u00ed muchos libros."",
+      ""example_translation"": ""During the holidays, I read many books.""
+    },
+    {
+      ""word"": ""Luego"",
+      ""pronunciation"": ""LWEH-go"",
+      ""translation"": ""Then/Later"",
+      ""example"": ""Primero fuimos al cine, y luego cenamos."",
+      ""example_translation"": ""First we went to the cinema, and then we had dinner.""
+    },
+    {
+      ""word"": ""Visit\u00e9"",
+      ""pronunciation"": ""vee-see-TAY"",
+      ""translation"": ""I visited (from 'visitar')"",
+      ""example"": ""El a\u00f1o pasado visit\u00e9 Espa\u00f1a por primera vez."",
+      ""example_translation"": ""Last year I visited Spain for the first time.""
+    },
+    {
+      ""word"": ""Caminaba"",
+      ""pronunciation"": ""kah-mee-NAH-bah"",
+      ""translation"": ""I/He/She was walking/used to walk (imperfect of 'caminar')"",
+      ""example"": ""Cada ma\u00f1ana, mi abuelo caminaba por el parque."",
+      ""example_translation"": ""Every morning, my grandfather used to walk through the park.""
+    }
+  ]
+}","[{""text"": ""Ayer"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_89f1d70f14b1.mp3""}, {""text"": ""Fui"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_e36e43a0443d.mp3""}, {""text"": ""Hice"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_fb3589ecaeac.mp3""}, {""text"": ""Estaba"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_7640dec3d13b.mp3""}, {""text"": ""Comimos"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_ec7b67598f66.mp3""}, {""text"": ""Vio"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062554_ff626b3df365.mp3""}, {""text"": ""Interesante"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_0a1602e3944e.mp3""}, {""text"": ""El fin de semana"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_7d543ea1a3e5.mp3""}, {""text"": ""Durante"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_f5ca3393baa0.mp3""}, {""text"": ""Luego"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_a13ea1677fd7.mp3""}, {""text"": ""Visité"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_7121f27dc5be.mp3""}, {""text"": ""Caminaba"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062555_d78dbd64ee82.mp3""}]"
+vocabulary,Spanish,5,"{
+  ""theme"": ""El Futuro y la Descripci\u00f3n de Lugares y Personas"",
+  ""introduction"": ""En este nivel, vamos a expandir tu vocabulario para hablar sobre tus planes futuros y para describir con m\u00e1s detalle los lugares y las personas que conocer\u00e1s. Usaremos el tiempo futuro para expresar lo que har\u00e1s o lo que esperas que sea."",
+  ""vocabulary"": [
+    {
+      ""word"": ""El futuro"",
+      ""pronunciation"": ""el foo-TOO-roh"",
+      ""translation"": ""The future"",
+      ""example"": ""\u00bfQu\u00e9 har\u00e1s en el futuro?"",
+      ""example_translation"": ""What will you do in the future?""
+    },
+    {
+      ""word"": ""Planear"",
+      ""pronunciation"": ""plah-neh-AR"",
+      ""translation"": ""To plan"",
+      ""example"": ""Mi familia y yo planearemos un viaje a M\u00e9xico."",
+      ""example_translation"": ""My family and I will plan a trip to Mexico.""
+    },
+    {
+      ""word"": ""Viajar"",
+      ""pronunciation"": ""vee-ah-HAR"",
+      ""translation"": ""To travel"",
+      ""example"": ""Este verano, viajar\u00e9 a Espa\u00f1a por primera vez."",
+      ""example_translation"": ""This summer, I will travel to Spain for the first time.""
+    },
+    {
+      ""word"": ""Hermoso/a"",
+      ""pronunciation"": ""er-MOH-soh/sah"",
+      ""translation"": ""Beautiful"",
+      ""example"": ""La ciudad de Cusco ser\u00e1 hermosa en primavera."",
+      ""example_translation"": ""The city of Cusco will be beautiful in spring.""
+    },
+    {
+      ""word"": ""Tranquilo/a"",
+      ""pronunciation"": ""trahn-KEE-loh/lah"",
+      ""translation"": ""Calm / Quiet"",
+      ""example"": ""Espero que el parque sea un lugar tranquilo para leer."",
+      ""example_translation"": ""I hope the park will be a quiet place to read.""
+    },
+    {
+      ""word"": ""Moderno/a"",
+      ""pronunciation"": ""moh-DER-noh/nah"",
+      ""translation"": ""Modern"",
+      ""example"": ""El nuevo edificio de oficinas ser\u00e1 muy moderno."",
+      ""example_translation"": ""The new office building will be very modern.""
+    },
+    {
+      ""word"": ""Antiguo/a"",
+      ""pronunciation"": ""ahn-TEE-gwoh/gwah"",
+      ""translation"": ""Ancient / Old (for objects/places)"",
+      ""example"": ""Visitaremos un castillo antiguo en las monta\u00f1as."",
+      ""example_translation"": ""We will visit an ancient castle in the mountains.""
+    },
+    {
+      ""word"": ""Amable"",
+      ""pronunciation"": ""ah-MAH-bleh"",
+      ""translation"": ""Kind / Friendly"",
+      ""example"": ""S\u00e9 que la gente del pueblo ser\u00e1 muy amable."",
+      ""example_translation"": ""I know the people of the town will be very kind.""
+    },
+    {
+      ""word"": ""Explorar"",
+      ""pronunciation"": ""eks-ploh-RAR"",
+      ""translation"": ""To explore"",
+      ""example"": ""Ma\u00f1ana exploraremos el centro hist\u00f3rico de la ciudad."",
+      ""example_translation"": ""Tomorrow we will explore the historic city center.""
+    },
+    {
+      ""word"": ""El destino"",
+      ""pronunciation"": ""el des-TEE-noh"",
+      ""translation"": ""The destination"",
+      ""example"": ""\u00bfCu\u00e1l ser\u00e1 tu pr\u00f3ximo destino de vacaciones?"",
+      ""example_translation"": ""What will be your next vacation destination?""
+    }
+  ]
+}","[{""text"": ""El futuro"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_dd3094758276.mp3""}, {""text"": ""Planear"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_24db63aab960.mp3""}, {""text"": ""Viajar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_6aa33622d93d.mp3""}, {""text"": ""Hermoso/a"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_075a02f9d624.mp3""}, {""text"": ""Tranquilo/a"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_1ad2362bb85f.mp3""}, {""text"": ""Moderno/a"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_be6f44cfbdeb.mp3""}, {""text"": ""Antiguo/a"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062610_80f737d25057.mp3""}, {""text"": ""Amable"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062611_e282ff7e2697.mp3""}, {""text"": ""Explorar"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062611_095ed17db6e1.mp3""}, {""text"": ""El destino"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062611_ef640b0fe5d3.mp3""}]"
+vocabulary,French,1,"{
+  ""theme"": ""First Steps in French: Greetings, Basic Phrases, and Numbers"",
+  ""introduction"": ""Welcome to French! This foundational vocabulary set will equip you with essential words and phrases for your very first interactions. You'll learn how to greet people, say please and thank you, ask and answer how you are, and count to three. Practice these often to build your confidence and start communicating in French!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""Bonjour"",
+      ""pronunciation"": ""bohn-ZHOOR"",
+      ""translation"": ""Hello / Good morning / Good day"",
+      ""example"": ""Bonjour, Madame!"",
+      ""example_translation"": ""Hello, Madam!""
+    },
+    {
+      ""word"": ""Salut"",
+      ""pronunciation"": ""sah-LEW"",
+      ""translation"": ""Hi / Bye (informal)"",
+      ""example"": ""Salut, \u00e7a va ?"",
+      ""example_translation"": ""Hi, how are you?""
+    },
+    {
+      ""word"": ""Au revoir"",
+      ""pronunciation"": ""oh ruh-VWAR"",
+      ""translation"": ""Goodbye"",
+      ""example"": ""Au revoir et bonne journ\u00e9e!"",
+      ""example_translation"": ""Goodbye and have a good day!""
+    },
+    {
+      ""word"": ""Merci"",
+      ""pronunciation"": ""mehr-SEE"",
+      ""translation"": ""Thank you"",
+      ""example"": ""Merci beaucoup!"",
+      ""example_translation"": ""Thank you very much!""
+    },
+    {
+      ""word"": ""Oui"",
+      ""pronunciation"": ""wee"",
+      ""translation"": ""Yes"",
+      ""example"": ""Oui, c'est \u00e7a."",
+      ""example_translation"": ""Yes, that's right.""
+    },
+    {
+      ""word"": ""Non"",
+      ""pronunciation"": ""nohn"",
+      ""translation"": ""No"",
+      ""example"": ""Non, ce n'est pas \u00e7a."",
+      ""example_translation"": ""No, that's not it.""
+    },
+    {
+      ""word"": ""S'il vous pla\u00eet"",
+      ""pronunciation"": ""seel voo PLEH"",
+      ""translation"": ""Please (formal)"",
+      ""example"": ""Un caf\u00e9, s'il vous pla\u00eet."",
+      ""example_translation"": ""A coffee, please.""
+    },
+    {
+      ""word"": ""Comment \u00e7a va ?"",
+      ""pronunciation"": ""koh-MOHN sah VAH?"",
+      ""translation"": ""How are you? / How's it going?"",
+      ""example"": ""Bonjour, comment \u00e7a va ?"",
+      ""example_translation"": ""Hello, how are you?""
+    },
+    {
+      ""word"": ""\u00c7a va."",
+      ""pronunciation"": ""sah VAH"",
+      ""translation"": ""I'm fine. / It's going well. (can also be a question)"",
+      ""example"": ""\u00c7a va, et vous?"",
+      ""example_translation"": ""I'm fine, and you?""
+    },
+    {
+      ""word"": ""Un"",
+      ""pronunciation"": ""uhn (nasal 'un' as in 'sung' but without the 'g')"",
+      ""translation"": ""One"",
+      ""example"": ""J'ai un livre."",
+      ""example_translation"": ""I have one book.""
+    },
+    {
+      ""word"": ""Deux"",
+      ""pronunciation"": ""duh (like 'duh' but with rounded lips)"",
+      ""translation"": ""Two"",
+      ""example"": ""Il y a deux chats."",
+      ""example_translation"": ""There are two cats.""
+    },
+    {
+      ""word"": ""Trois"",
+      ""pronunciation"": ""TRWAH"",
+      ""translation"": ""Three"",
+      ""example"": ""Nous avons trois stylos."",
+      ""example_translation"": ""We have three pens.""
+    }
+  ]
+}","[{""text"": ""Bonjour"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062623_c99f5e58ac37.mp3""}, {""text"": ""Salut"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_7c25950c98a4.mp3""}, {""text"": ""Au revoir"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_0ab17d10c9b1.mp3""}, {""text"": ""Merci"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_82a0e5a25fee.mp3""}, {""text"": ""Oui"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_3865b25064b0.mp3""}, {""text"": ""Non"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_00f13de8893d.mp3""}, {""text"": ""S'il vous plaît"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062624_9375a000080e.mp3""}, {""text"": ""Comment ça va ?"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062625_a4389a7525fe.mp3""}, {""text"": ""Ça va."", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062625_8c8ffb1ed266.mp3""}, {""text"": ""Un"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062625_208a6b5de4d5.mp3""}, {""text"": ""Deux"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062625_2da29b30e6b0.mp3""}, {""text"": ""Trois"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062625_347eeb449153.mp3""}]"
+vocabulary,French,2,"{
+  ""theme"": ""My First Words: Family, Colors, and Days"",
+  ""introduction"": ""Learning about your immediate surroundings is key to building a strong foundation in French. In this set, we'll explore basic vocabulary for common family members, essential colors you see every day, and the names of the first few days of the week. These words will help you describe your world and organize your time in French!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""Maman"",
+      ""pronunciation"": ""mah-MAHN"",
+      ""translation"": ""Mom/Mommy"",
+      ""example"": ""Ma maman est tr\u00e8s gentille."",
+      ""example_translation"": ""My mom is very kind.""
+    },
+    {
+      ""word"": ""Papa"",
+      ""pronunciation"": ""pa-PAH"",
+      ""translation"": ""Dad/Daddy"",
+      ""example"": ""Mon papa aime lire des livres."",
+      ""example_translation"": ""My dad likes to read books.""
+    },
+    {
+      ""word"": ""Fr\u00e8re"",
+      ""pronunciation"": ""frehr"",
+      ""translation"": ""Brother"",
+      ""example"": ""J'ai un fr\u00e8re plus jeune."",
+      ""example_translation"": ""I have a younger brother.""
+    },
+    {
+      ""word"": ""S\u0153ur"",
+      ""pronunciation"": ""soor"",
+      ""translation"": ""Sister"",
+      ""example"": ""Ma s\u0153ur aime jouer."",
+      ""example_translation"": ""My sister likes to play.""
+    },
+    {
+      ""word"": ""Grand-m\u00e8re"",
+      ""pronunciation"": ""grahn-MEHR"",
+      ""translation"": ""Grandmother"",
+      ""example"": ""Ma grand-m\u00e8re pr\u00e9pare de bons g\u00e2teaux."",
+      ""example_translation"": ""My grandmother makes good cakes.""
+    },
+    {
+      ""word"": ""Grand-p\u00e8re"",
+      ""pronunciation"": ""grahn-PEHR"",
+      ""translation"": ""Grandfather"",
+      ""example"": ""Mon grand-p\u00e8re raconte des histoires."",
+      ""example_translation"": ""My grandfather tells stories.""
+    },
+    {
+      ""word"": ""Rouge"",
+      ""pronunciation"": ""rooj"",
+      ""translation"": ""Red"",
+      ""example"": ""La pomme est rouge."",
+      ""example_translation"": ""The apple is red.""
+    },
+    {
+      ""word"": ""Bleu"",
+      ""pronunciation"": ""bloo"",
+      ""translation"": ""Blue"",
+      ""example"": ""Le ciel est bleu."",
+      ""example_translation"": ""The sky is blue.""
+    },
+    {
+      ""word"": ""Vert"",
+      ""pronunciation"": ""vehr"",
+      ""translation"": ""Green"",
+      ""example"": ""Le crayon est vert."",
+      ""example_translation"": ""The pencil is green.""
+    },
+    {
+      ""word"": ""Lundi"",
+      ""pronunciation"": ""luhn-DEE"",
+      ""translation"": ""Monday"",
+      ""example"": ""Aujourd'hui, c'est lundi."",
+      ""example_translation"": ""Today is Monday.""
+    },
+    {
+      ""word"": ""Mardi"",
+      ""pronunciation"": ""mahr-DEE"",
+      ""translation"": ""Tuesday"",
+      ""example"": ""Demain, c'est mardi."",
+      ""example_translation"": ""Tomorrow is Tuesday.""
+    },
+    {
+      ""word"": ""Mercredi"",
+      ""pronunciation"": ""mehr-kruh-DEE"",
+      ""translation"": ""Wednesday"",
+      ""example"": ""Nous avons \u00e9cole le mercredi."",
+      ""example_translation"": ""We have school on Wednesday.""
+    }
+  ]
+}","[{""text"": ""Maman"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062636_4c1ec4917a27.mp3""}, {""text"": ""Papa"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062636_e091f887cb30.mp3""}, {""text"": ""Frère"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062636_3396d198c644.mp3""}, {""text"": ""Sœur"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062636_6bb86831ba68.mp3""}, {""text"": ""Grand-mère"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062636_9dcfba559ba1.mp3""}, {""text"": ""Grand-père"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_48976b625bda.mp3""}, {""text"": ""Rouge"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_80f3523c3314.mp3""}, {""text"": ""Bleu"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_4dfa6bba7194.mp3""}, {""text"": ""Vert"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_b2c11ed63d11.mp3""}, {""text"": ""Lundi"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_64844ec934db.mp3""}, {""text"": ""Mardi"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062637_b0d5f0e8fd29.mp3""}, {""text"": ""Mercredi"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062638_d881d7e9162a.mp3""}]"
+vocabulary,French,3,"{
+  ""theme"": ""Ma Routine Quotidienne (My Daily Routine)"",
+  ""introduction"": ""Bienvenue ! In this section, we'll learn essential vocabulary for talking about your daily activities in French. These words are commonly used in the simple present tense to describe what you do every day."",
+  ""vocabulary"": [
+    {
+      ""word"": ""se lever"",
+      ""pronunciation"": ""suh luh-VAY"",
+      ""translation"": ""to get up"",
+      ""example"": ""Je me l\u00e8ve \u00e0 sept heures du matin."",
+      ""example_translation"": ""I get up at seven in the morning.""
+    },
+    {
+      ""word"": ""prendre le petit-d\u00e9jeuner"",
+      ""pronunciation"": ""prahndr luh puh-tee day-zhuh-NAY"",
+      ""translation"": ""to have breakfast"",
+      ""example"": ""Nous prenons le petit-d\u00e9jeuner ensemble."",
+      ""example_translation"": ""We have breakfast together.""
+    },
+    {
+      ""word"": ""travailler"",
+      ""pronunciation"": ""trah-vah-YAY"",
+      ""translation"": ""to work"",
+      ""example"": ""Mon p\u00e8re travaille \u00e0 l'h\u00f4pital."",
+      ""example_translation"": ""My father works at the hospital.""
+    },
+    {
+      ""word"": ""manger"",
+      ""pronunciation"": ""mahn-ZHAY"",
+      ""translation"": ""to eat"",
+      ""example"": ""Tu manges une pomme chaque jour."",
+      ""example_translation"": ""You eat an apple every day.""
+    },
+    {
+      ""word"": ""rentrer"",
+      ""pronunciation"": ""rahn-TRAY"",
+      ""translation"": ""to return / to go back (home)"",
+      ""example"": ""Je rentre \u00e0 la maison apr\u00e8s le travail."",
+      ""example_translation"": ""I go back home after work.""
+    },
+    {
+      ""word"": ""regarder"",
+      ""pronunciation"": ""ruh-gahr-DAY"",
+      ""translation"": ""to watch / to look at"",
+      ""example"": ""Ils regardent un film \u00e0 la t\u00e9l\u00e9vision."",
+      ""example_translation"": ""They watch a movie on television.""
+    },
+    {
+      ""word"": ""lire"",
+      ""pronunciation"": ""leer"",
+      ""translation"": ""to read"",
+      ""example"": ""Elle lit un livre tous les soirs."",
+      ""example_translation"": ""She reads a book every evening.""
+    },
+    {
+      ""word"": ""faire du sport"",
+      ""pronunciation"": ""fair doo spor"",
+      ""translation"": ""to do sports / to exercise"",
+      ""example"": ""Vous faites du sport le week-end ?"",
+      ""example_translation"": ""Do you (plural/formal) do sports on the weekend?""
+    },
+    {
+      ""word"": ""d\u00eener"",
+      ""pronunciation"": ""dee-NAY"",
+      ""translation"": ""to have dinner / to dine"",
+      ""example"": ""Nous d\u00eenons \u00e0 vingt heures."",
+      ""example_translation"": ""We have dinner at eight PM.""
+    },
+    {
+      ""word"": ""dormir"",
+      ""pronunciation"": ""dor-MEER"",
+      ""translation"": ""to sleep"",
+      ""example"": ""Il dort huit heures par nuit."",
+      ""example_translation"": ""He sleeps eight hours per night.""
+    }
+  ]
+}","[{""text"": ""se lever"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062649_126e2bd6aa78.mp3""}, {""text"": ""prendre le petit-déjeuner"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062649_23e9fe8a5672.mp3""}, {""text"": ""travailler"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_3067abab9609.mp3""}, {""text"": ""manger"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_bae8a4459d66.mp3""}, {""text"": ""rentrer"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_72e570115f3d.mp3""}, {""text"": ""regarder"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_f54392cea62c.mp3""}, {""text"": ""lire"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_4845b75c3b05.mp3""}, {""text"": ""faire du sport"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_af9eccc11a4b.mp3""}, {""text"": ""dîner"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062650_bdcc6ffcb309.mp3""}, {""text"": ""dormir"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062651_9d9a6ca0e12f.mp3""}]"
+vocabulary,French,4,"{
+  ""theme"": ""D\u00e9crire les activit\u00e9s du week-end pass\u00e9 (Describing Past Weekend Activities)"",
+  ""introduction"": ""\u00c0 ce niveau, vous commencez \u00e0 parler d'\u00e9v\u00e9nements pass\u00e9s en utilisant le Pass\u00e9 Compos\u00e9. Cette liste de vocabulaire vous aidera \u00e0 raconter ce que vous avez fait le week-end dernier ou lors d'autres \u00e9v\u00e9nements r\u00e9cents. Concentrez-vous sur les verbes courants et les phrases utiles pour les conversations quotidiennes."",
+  ""vocabulary"": [
+    {
+      ""word"": ""Le week-end dernier"",
+      ""pronunciation"": ""[luh wee-kend derr-nyay]"",
+      ""translation"": ""Last weekend"",
+      ""example"": ""Le week-end dernier, j'ai visit\u00e9 Paris."",
+      ""example_translation"": ""Last weekend, I visited Paris.""
+    },
+    {
+      ""word"": ""faire (j'ai fait)"",
+      ""pronunciation"": ""[fair] (zheh fay)"",
+      ""translation"": ""to do/make (I did/made)"",
+      ""example"": ""J'ai fait du sport samedi matin."",
+      ""example_translation"": ""I did some sport on Saturday morning.""
+    },
+    {
+      ""word"": ""aller (je suis all\u00e9(e))"",
+      ""pronunciation"": ""[a-lay] (zhuh swee za-lay)"",
+      ""translation"": ""to go (I went)"",
+      ""example"": ""Je suis all\u00e9(e) au cin\u00e9ma avec des amis."",
+      ""example_translation"": ""I went to the cinema with friends.""
+    },
+    {
+      ""word"": ""voir (j'ai vu)"",
+      ""pronunciation"": ""[vwar] (zheh vyoo)"",
+      ""translation"": ""to see (I saw)"",
+      ""example"": ""J'ai vu un bon film \u00e0 la t\u00e9l\u00e9vision."",
+      ""example_translation"": ""I saw a good movie on television.""
+    },
+    {
+      ""word"": ""manger (nous avons mang\u00e9)"",
+      ""pronunciation"": ""[mahn-zhay] (noo za-vawn mahn-zhay)"",
+      ""translation"": ""to eat (we ate)"",
+      ""example"": ""Nous avons mang\u00e9 au restaurant dimanche soir."",
+      ""example_translation"": ""We ate at the restaurant on Sunday evening.""
+    },
+    {
+      ""word"": ""lire (j'ai lu)"",
+      ""pronunciation"": ""[leer] (zheh lyoo)"",
+      ""translation"": ""to read (I read)"",
+      ""example"": ""J'ai lu un livre int\u00e9ressant toute l'apr\u00e8s-midi."",
+      ""example_translation"": ""I read an interesting book all afternoon.""
+    },
+    {
+      ""word"": ""regarder (j'ai regard\u00e9)"",
+      ""pronunciation"": ""[ruh-gar-day] (zheh ruh-gar-day)"",
+      ""translation"": ""to watch/look at (I watched/looked at)"",
+      ""example"": ""J'ai regard\u00e9 un match de foot."",
+      ""example_translation"": ""I watched a soccer game.""
+    },
+    {
+      ""word"": ""rester (je suis rest\u00e9(e))"",
+      ""pronunciation"": ""[ress-tay] (zhuh swee res-tay)"",
+      ""translation"": ""to stay (I stayed)"",
+      ""example"": ""Je suis rest\u00e9(e) \u00e0 la maison et j'ai relax\u00e9."",
+      ""example_translation"": ""I stayed at home and relaxed.""
+    },
+    {
+      ""word"": ""visiter (j'ai visit\u00e9)"",
+      ""pronunciation"": ""[vee-zee-tay] (zheh vee-zee-tay)"",
+      ""translation"": ""to visit (I visited)"",
+      ""example"": ""J'ai visit\u00e9 un nouveau mus\u00e9e en ville."",
+      ""example_translation"": ""I visited a new museum in town.""
+    },
+    {
+      ""word"": ""chez (chez des amis)"",
+      ""pronunciation"": ""[shay] (shay dez-ah-mee)"",
+      ""translation"": ""at (someone's) place (at friends' place)"",
+      ""example"": ""Nous sommes all\u00e9s chez des amis pour le d\u00eener."",
+      ""example_translation"": ""We went to friends' place for dinner.""
+    }
+  ]
+}","[{""text"": ""Le week-end dernier"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062706_5a475dcc065b.mp3""}, {""text"": ""faire (j'ai fait)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062706_3b0b45aab1b6.mp3""}, {""text"": ""aller (je suis allé(e))"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062706_df670a2b0fef.mp3""}, {""text"": ""voir (j'ai vu)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062706_5cb996c2d0b7.mp3""}, {""text"": ""manger (nous avons mangé)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_6a50a71cb103.mp3""}, {""text"": ""lire (j'ai lu)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_f2b4d9a71e61.mp3""}, {""text"": ""regarder (j'ai regardé)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_8b08716b07b3.mp3""}, {""text"": ""rester (je suis resté(e))"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_43a6b6e524f6.mp3""}, {""text"": ""visiter (j'ai visité)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_f54dfc849980.mp3""}, {""text"": ""chez (chez des amis)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062707_64cf1e64784c.mp3""}]"
+vocabulary,French,5,"{
+  ""theme"": ""Describing People and Places: What will they be like?"",
+  ""introduction"": ""This vocabulary will help you talk about how people and places will be in the future, or what you will do there. We'll use the future tense (futur simple) to describe these future situations, allowing you to project your thoughts into what's next!"",
+  ""vocabulary"": [
+    {
+      ""word"": ""Grand(e)"",
+      ""pronunciation"": ""grahn(d)"",
+      ""translation"": ""Tall (for people), Big (for places/things)"",
+      ""example"": ""Mon fr\u00e8re sera grand quand il sera adulte."",
+      ""example_translation"": ""My brother will be tall when he is an adult.""
+    },
+    {
+      ""word"": ""Petit(e)"",
+      ""pronunciation"": ""p'tee(t)"",
+      ""translation"": ""Short (for people), Small (for places/things)"",
+      ""example"": ""Notre future maison sera petite mais confortable."",
+      ""example_translation"": ""Our future house will be small but comfortable.""
+    },
+    {
+      ""word"": ""Sympathique"",
+      ""pronunciation"": ""sam-pa-teek"",
+      ""translation"": ""Nice, Friendly"",
+      ""example"": ""Les gens de ce village seront tr\u00e8s sympathiques."",
+      ""example_translation"": ""The people in this village will be very friendly.""
+    },
+    {
+      ""word"": ""Anim\u00e9(e)"",
+      ""pronunciation"": ""a-nee-may"",
+      ""translation"": ""Lively, Busy"",
+      ""example"": ""La place du march\u00e9 sera tr\u00e8s anim\u00e9e le samedi."",
+      ""example_translation"": ""The market square will be very lively on Saturday.""
+    },
+    {
+      ""word"": ""Tranquille"",
+      ""pronunciation"": ""tran-keel"",
+      ""translation"": ""Quiet, Peaceful"",
+      ""example"": ""Nous chercherons un endroit tranquille pour nos vacances."",
+      ""example_translation"": ""We will look for a quiet place for our holidays.""
+    },
+    {
+      ""word"": ""D\u00e9couvrir"",
+      ""pronunciation"": ""day-koo-vreer"",
+      ""translation"": ""To discover"",
+      ""example"": ""Dans ce voyage, vous d\u00e9couvrirez de nouveaux paysages."",
+      ""example_translation"": ""On this trip, you will discover new landscapes.""
+    },
+    {
+      ""word"": ""Visiter"",
+      ""pronunciation"": ""vee-zee-tay"",
+      ""translation"": ""To visit"",
+      ""example"": ""Quand nous irons \u00e0 Paris, nous visiterons la Tour Eiffel."",
+      ""example_translation"": ""When we go to Paris, we will visit the Eiffel Tower.""
+    },
+    {
+      ""word"": ""Ressembler \u00e0"",
+      ""pronunciation"": ""ruh-sam-blay ah"",
+      ""translation"": ""To look like, To resemble"",
+      ""example"": ""Mon futur chien ressemblera \u00e0 un berger allemand."",
+      ""example_translation"": ""My future dog will look like a German Shepherd.""
+    },
+    {
+      ""word"": ""Moderne"",
+      ""pronunciation"": ""moh-dern"",
+      ""translation"": ""Modern"",
+      ""example"": ""Le nouveau quartier sera tr\u00e8s moderne et innovant."",
+      ""example_translation"": ""The new neighborhood will be very modern and innovative.""
+    },
+    {
+      ""word"": ""Ancien(ne)"",
+      ""pronunciation"": ""ahn-syen(n)"",
+      ""translation"": ""Old, Ancient (for places/things)"",
+      ""example"": ""Ils ach\u00e8teront une maison ancienne avec beaucoup de charme."",
+      ""example_translation"": ""They will buy an old house with a lot of charm.""
+    }
+  ]
+}","[{""text"": ""Grand(e)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062723_b00154aad4b3.mp3""}, {""text"": ""Petit(e)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_405583a19029.mp3""}, {""text"": ""Sympathique"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_5923388c5545.mp3""}, {""text"": ""Animé(e)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_c226668410ca.mp3""}, {""text"": ""Tranquille"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_5c0a48536d54.mp3""}, {""text"": ""Découvrir"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_59b568ff3ff0.mp3""}, {""text"": ""Visiter"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062724_f4bc3262a47e.mp3""}, {""text"": ""Ressembler à"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062725_2559852a6da5.mp3""}, {""text"": ""Moderne"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062725_0b4d2378ec3f.mp3""}, {""text"": ""Ancien(ne)"", ""audio"": ""https://vocaboo-audio-files.s3.eu-north-1.amazonaws.com/audio/20250729_062725_d71d40abc4cd.mp3""}]"

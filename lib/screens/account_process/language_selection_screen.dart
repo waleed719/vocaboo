@@ -70,10 +70,28 @@ class LanguageSelectionScreen extends StatelessWidget {
                                 )
                                 : null,
                         onTap: () async {
+                          final supportedLanguages = ['ja', 'en', 'es', 'fr'];
+                          final isSupported = supportedLanguages.contains(
+                            language['code'],
+                          );
+
+                          if (!isSupported) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content: Text('Coming soon!'),
+                                duration: Duration(seconds: 2),
+                              ),
+                            );
+                            return;
+                          }
+
                           languageProvider.setSelectedLanguage(
                             language['code']!,
                           );
-                          Provider.of<UserProvider>(context).updateLanguage(
+                          Provider.of<UserProvider>(
+                            context,
+                            listen: false,
+                          ).updateLanguage(
                             languageProvider.selectedLanguageName!,
                           );
                         },

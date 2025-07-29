@@ -43,9 +43,10 @@ dependencies:
   image_picker: ^1.1.2
   http: ^1.4.0
   just_audio: ^0.10.4
-  speech_to_text: ^6.4.0
   supabase_flutter: ^2.9.1
-  flutter_dotenv: ^5.2.1
+  flutter_dotenv: ^5.2.1 
+  csv: ^6.0.0
+
 
 dev_dependencies:
   flutter_test:
@@ -81,6 +82,7 @@ flutter:
     - assets/login/
     - assets/animations/
     - assets/flags/
+    - assets/content/grammer_data.csv
     - .env
   #   - images/a_dot_ham.jpeg
 

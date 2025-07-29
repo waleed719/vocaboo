@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vocaboo/screens/speaking_screens/speaking_detial_screen.dart';
 
 class SpeakingScreen extends StatefulWidget {
   const SpeakingScreen({super.key});
@@ -38,123 +37,143 @@ class _SpeakingScreenState extends State<SpeakingScreen> {
     int levelcompleted = 5;
 
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.blue.shade600, Colors.blue.shade900],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
-        child: SafeArea(
-          bottom: false,
-          child: Column(
-            children: [
-              Text(
-                'Speaking',
-                style: TextStyle(
-                  fontSize: 36,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
+      body: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.blue.shade600, Colors.blue.shade900],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              Text(
-                'Level 1',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            ),
+            child: SafeArea(
+              bottom: false,
+              child: Column(
                 children: [
-                  _buildProgressCardForScreens(
-                    title: "22H",
-                    subtitle: 'time spend',
-                    backgroundColor: Colors.blue.shade900,
-                    context: context,
-                  ),
-                  _buildProgressCardForScreens(
-                    title: "340",
-                    subtitle: 'Stars',
-                    backgroundColor: Colors.blue.shade900,
-                    context: context,
-                  ),
-                ],
-              ),
-              SizedBox(height: 10),
-              Expanded(
-                child: Container(
-                  padding: EdgeInsets.only(
-                    left: 16,
-                    right: 16,
-                    top: 16,
-                  ), // No bottom padding
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30),
+                  Text(
+                    'Speaking',
+                    style: TextStyle(
+                      fontSize: 36,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  // color: Colors.white,
-                  width: double.infinity,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                  Text(
+                    'Level 1',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Text(
-                            'Speaking Lessons',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 24,
-                            ),
-                          ),
-                          Spacer(),
-                          Text('Total Level: 20'),
-                        ],
+                      _buildProgressCardForScreens(
+                        title: "22H",
+                        subtitle: 'time spend',
+                        backgroundColor: Colors.blue.shade900,
+                        context: context,
                       ),
-
-                      Expanded(
-                        child: ListView.builder(
-                          itemCount: 20,
-
-                          itemBuilder: (context, index) {
-                            int levelNum = index + 1;
-                            bool isLocked = levelNum > levelcompleted;
-
-                            return LevelCard(
-                              level: levelNum,
-                              questions: 10 + levelNum,
-                              stars: 2,
-                              totalStars: (10 + levelNum) * 3,
-                              isLocked: isLocked,
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder:
-                                        (context) => SpeakingDetailScreen(
-                                          level: levelNum,
-                                          theme: 'greetings',
-                                        ),
-                                  ),
-                                );
-                              },
-                            );
-                          },
-                        ),
+                      _buildProgressCardForScreens(
+                        title: "340",
+                        subtitle: 'Stars',
+                        backgroundColor: Colors.blue.shade900,
+                        context: context,
                       ),
                     ],
                   ),
+                  SizedBox(height: 10),
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        top: 16,
+                      ), // No bottom padding
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(30),
+                          topRight: Radius.circular(30),
+                        ),
+                      ),
+                      // color: Colors.white,
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text(
+                                'Speaking Lessons',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Spacer(),
+                              Text('Total Level: 20'),
+                            ],
+                          ),
+
+                          Expanded(
+                            child: ListView.builder(
+                              itemCount: 20,
+
+                              itemBuilder: (context, index) {
+                                int levelNum = index + 1;
+                                bool isLocked = levelNum > levelcompleted;
+
+                                return LevelCard(
+                                  level: levelNum,
+                                  questions: 10 + levelNum,
+                                  stars: 2,
+                                  totalStars: (10 + levelNum) * 3,
+                                  isLocked: isLocked,
+                                  onTap: () {
+                                    // Navigator.push(
+                                    //   context,
+                                    //   MaterialPageRoute(
+                                    //     builder:
+                                    //         (context) => SpeakingDetailScreen(
+                                    //           level: levelNum,
+                                    //           theme: 'greetings',
+                                    //         ),
+                                    //   ),
+                                    // );
+                                  },
+                                );
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          IgnorePointer(
+            ignoring: true, // Prevent any touches on this overlay
+            child: Container(
+              color: Colors.black.withValues(alpha: 0.25),
+              child: Center(
+                child: Text(
+                  "Coming Soon",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
